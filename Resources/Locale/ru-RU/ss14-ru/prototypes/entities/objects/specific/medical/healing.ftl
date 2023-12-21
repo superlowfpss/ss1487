@@ -131,5 +131,7 @@ ent-SyringePhalanximine = шприц фалангимина
 ent-SyringeSaline = шприц физраствора
     .desc = { ent-BaseSyringe.desc }
 ent-SyringeRomerol = { ent-BaseSyringe }
+    .desc = { ent-BaseSyringe.desc }
     .suffix = шприц ромерола
+ent-SyringeStimulants = шприц стимулятора
     .desc = { ent-BaseSyringe.desc }
