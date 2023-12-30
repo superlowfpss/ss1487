@@ -48,6 +48,7 @@ research-technology-basic-xenoarcheology = Основы ксеноархеоло
 research-technology-alternative-research = Альтернативные исследования
 research-technology-magnets-tech = Локализованный магнетизм
 research-technology-advanced-parts = Продвинутые компоненты
+research-technology-anomaly-harnessing = Применение ядер аномалий
 research-technology-grappling = Технология захвата
 research-technology-abnormal-artifact-manipulation = Абнормальное манипулирование артефактами
 research-technology-gravity-manipulation = Манипулирование гравитацией
