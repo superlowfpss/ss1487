@@ -74,6 +74,9 @@
   components:
   - type: Item
     size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: Tag
     tags:
     - Sidearm
