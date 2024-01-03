@@ -141,3 +141,9 @@ WarpPointBeaconService: null
 # 2023-12-30
 ClothingEyesGlassesCosmeticSunglasses: ClothingEyesGlassesSunglasses
 SpawnPointAssistant: SpawnPointPassenger
+
+# 2024-01-02 - SS220 Stairs
+StairsSolo: SteelStairsSolo
+StairsLeft: SteelStairsLeft
+StairsMiddle: SteelStairsMiddle
+StairsRight: SteelStairsRight
