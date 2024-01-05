@@ -1,10 +1,10 @@
+using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Cuffs;
 using Content.Server.Forensics;
 using Content.Server.Humanoid;
 using Content.Server.Store.Components;
 using Content.Server.Store.Systems;
 using Content.Shared.Chemistry.Components.SolutionManager;
-using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Humanoid;
 using Content.Shared.Implants;
@@ -48,13 +48,13 @@ public sealed class SubdermalImplantSystem : SharedSubdermalImplantSystem
         if (args.Handled || reagentCapsule.IsUsed)
             return;
 
-        if (!ownerSolutionContainerComp.Solutions.TryGetValue("chemicals", out var chemicals))
+        if (!_solutionContainer.TryGetSolution(new(args.Performer, ownerSolutionContainerComp), "chemicals", out var chemicals))
             return;
 
-        if (!capsuleContainer.Solutions.TryGetValue("beaker", out var beaker))
+        if (!_solutionContainer.TryGetSolution(new(uid, capsuleContainer), "beaker", out var beaker))
             return;
 
-        _solutionContainer.TryTransferSolution(args.Performer, chemicals, beaker, beaker.Volume);
+        _solutionContainer.TryTransferSolution(chemicals.Value, beaker.Value.Comp.Solution, beaker.Value.Comp.Solution.Volume);
         reagentCapsule.IsUsed = true;
         args.Handled = true;
 

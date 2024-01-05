@@ -220,3 +220,5 @@
       map: ["flame"]
       visible: false
       shader: unshaded
+  # - type: StealTarget
+  #   stealGroup: FlippoEngravedLighter
