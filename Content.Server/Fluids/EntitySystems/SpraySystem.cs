@@ -5,7 +5,6 @@ using Content.Server.Extinguisher;
 using Content.Server.Fluids.Components;
 using Content.Server.Gravity;
 using Content.Server.Popups;
-using Content.Shared.Cooldown;
 using Content.Shared.Disposal.Components;
 using Content.Shared.FixedPoint;
 using Content.Shared.Interaction;
