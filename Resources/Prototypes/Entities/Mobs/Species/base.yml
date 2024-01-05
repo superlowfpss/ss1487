@@ -221,6 +221,8 @@
     - FootstepSound
     - DoorBumpOpener
     - ZombifyableByMelee
+  - type: StatusIcon
+    bounds: "-0.5,-0.5,0.5,0.5"
 
 - type: entity
   save: false
