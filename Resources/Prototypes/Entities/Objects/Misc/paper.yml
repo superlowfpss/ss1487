@@ -241,6 +241,7 @@
   - type: Tag
     tags:
     - Write
+    - Pen
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: pen
@@ -288,7 +289,6 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: overpriced_pen
-  - type: ItemCooldown
   - type: MeleeWeapon
     wideAnimationRotation: -45
     damage:

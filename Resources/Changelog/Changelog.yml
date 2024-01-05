@@ -1,4 +1,28 @@
 Entries:
+- author: daerSeebaer
+  changes:
+  - message: The AME controller now shows the current load and maximum capacity.
+    type: Add
+  id: 5020
+  time: '2023-10-18T17:46:33.0000000+00:00'
+- author: Errant
+  changes:
+  - message: Temperature alerts are now more accurate for different species.
+    type: Fix
+  id: 5021
+  time: '2023-10-18T18:05:15.0000000+00:00'
+- author: Phunny
+  changes:
+  - message: Added Tortilla doughs and variants.
+    type: Add
+  - message: Added Taco shells and recipe
+    type: Add
+  - message: Added various types of Tacos
+    type: Add
+  - message: Changed naming of the original taco to soft shell taco
+    type: Tweak
+  id: 5022
+  time: '2023-10-18T21:03:23.0000000+00:00'
 - author: TemporalOroboros
   changes:
   - message: Thieving gloves now hide the entire pickpocketing action from other players,
@@ -4029,6 +4053,76 @@ Entries:
   id: 5511
   time: '2024-01-02T08:15:29.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23355
+- author: Rainbeon
+  changes:
+  - message: The ChemMaster buffer no longer shuffles list ordering when removing
+      a reagent.
+    type: Fix
+  id: 5512
+  time: '2024-01-02T15:51:22.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23352
+- author: DrMelon
+  changes:
+  - message: Fixed the Tesla Ball moving too fast by being pushed with explosions.
+      Now it moves as-designed.
+    type: Fix
+  id: 5513
+  time: '2024-01-02T18:09:06.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23377
+- author: tday
+  changes:
+  - message: The admin log will now include attempts to draw from mobs with a syringe.
+    type: Add
+  id: 5514
+  time: '2024-01-02T18:47:31.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23333
+- author: 778b
+  changes:
+  - message: Improved mice's eating everything behavior, now they can stop!
+    type: Tweak
+  id: 5515
+  time: '2024-01-02T18:49:20.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23322
+- author: Ilya246
+  changes:
+  - message: Science may now research the Biofabricator, which can make animal cubes
+      from biomass!
+    type: Add
+  id: 5516
+  time: '2024-01-02T18:53:35.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23319
+- author: themias
+  changes:
+  - message: Welders can be refilled directly from wall fuel dispensers
+    type: Tweak
+  id: 5517
+  time: '2024-01-02T21:11:10.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23376
+- author: Admiral-Obvious-001
+  changes:
+  - message: Added a few words to body bag descriptor so you know they stop rot.
+    type: Add
+  id: 5518
+  time: '2024-01-03T01:36:18.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23407
+- author: CaasGit
+  changes:
+  - message: Give slimes their custom speech bubble!
+    type: Tweak
+  id: 5519
+  time: '2024-01-03T05:12:56.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23415
+- author: zzylex
+  changes:
+  - message: You can now make plungers stick to walls.
+    type: Tweak
+  - message: A sound is made when a plunger gets stuck to something.
+    type: Add
+  - message: You can now shoot plungers with bows.
+    type: Tweak
+  id: 5520
+  time: '2024-01-03T05:36:17.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23406
 - author: TheArturZh
   changes:
   - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D \u0440\u0430\u0437\
