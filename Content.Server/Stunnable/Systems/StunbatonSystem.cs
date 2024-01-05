@@ -7,6 +7,7 @@ using Content.Shared.Damage.Events;
 using Content.Shared.Examine;
 using Content.Shared.Item;
 using Content.Shared.Item.ItemToggle;
+using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Popups;
 using Content.Shared.Stunnable;
 using Content.Shared.Weapons.Melee.Events;
@@ -29,7 +30,7 @@ namespace Content.Server.Stunnable.Systems
             SubscribeLocalEvent<StunbatonComponent, SolutionContainerChangedEvent>(OnSolutionChange);
             SubscribeLocalEvent<StunbatonComponent, GetHeavyDamageModifierEvent>(MeleeAttackRateEvent);
             SubscribeLocalEvent<StunbatonComponent, ItemToggleActivateAttemptEvent>(TryTurnOn);
-            SubscribeLocalEvent<StunbatonComponent, ItemToggleDoneEvent>(ToggleDone);
+            SubscribeLocalEvent<StunbatonComponent, ItemToggledEvent>(ToggleDone);
         }
 
         // SS220-Stunbaton-rework begin
@@ -62,12 +63,12 @@ namespace Content.Server.Stunnable.Systems
             args.PushMarkup(chargeMessage);
         }
 
-        private void ToggleDone(Entity<StunbatonComponent> entity, ref ItemToggleDoneEvent args)
+        private void ToggleDone(Entity<StunbatonComponent> entity, ref ItemToggledEvent args)
         {
             if (!TryComp<ItemComponent>(entity, out var item))
                 return;
 
-            _item.SetHeldPrefix(entity.Owner, args.Activated ? "on" : "off", item);
+            _item.SetHeldPrefix(entity.Owner, args.Activated ? "on" : "off", component: item);
         }
 
         private void TryTurnOn(Entity<StunbatonComponent> entity, ref ItemToggleActivateAttemptEvent args)
