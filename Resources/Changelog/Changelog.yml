@@ -1,29 +1,4 @@
 Entries:
-- author: themias
-  changes:
-  - message: You can now drag and drop to enter mechs.
-    type: Tweak
-  id: 5106
-  time: '2023-11-04T15:23:46.0000000+00:00'
-- author: daerSeebaer
-  changes:
-  - message: Radiation Shutters (and some other things) are now better at keeping
-      out radiation.
-    type: Tweak
-  id: 5107
-  time: '2023-11-04T15:25:56.0000000+00:00'
-- author: themias
-  changes:
-  - message: Critical vaccinated crew no longer immune to zombie fists
-    type: Fix
-  id: 5108
-  time: '2023-11-04T17:57:21.0000000+00:00'
-- author: themias
-  changes:
-  - message: Fixed accidental crayon graffiti when writing on paper
-    type: Fix
-  id: 5109
-  time: '2023-11-04T22:44:10.0000000+00:00'
 - author: crazybrain
   changes:
   - message: Mice no longer eat soap.
@@ -4090,4 +4065,35 @@ Entries:
     type: Remove
   id: 5523
   time: '2024-01-08T09:32:58.0000000+00:00'
+  url: null
+- author: spo9k
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0451\u043D Marathon"
+    type: Tweak
+  id: 5524
+  time: '2024-01-09T20:46:07.0000000+00:00'
+  url: null
+- author: Kit0vras
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
+      \u0442\u0430 NSS Nox."
+    type: Tweak
+  id: 5525
+  time: '2024-01-09T20:44:35.0000000+00:00'
+  url: null
+- author: spo9k
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
+      \u0442\u0430 \u0410\u0432\u0440\u0438\u0442"
+    type: Tweak
+  id: 5526
+  time: '2024-01-09T20:44:54.0000000+00:00'
+  url: null
+- author: ZoNeSRuS
+  changes:
+  - message: "\u0421\u0411 \u0445\u0443\u0434\u044B \u0432\u043E\u0437\u0432\u0440\
+      \u0430\u0449\u0435\u043D\u044B \u0421\u0411."
+    type: Fix
+  id: 5527
+  time: '2024-01-09T20:45:19.0000000+00:00'
   url: null
