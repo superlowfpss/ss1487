@@ -1,10 +1,4 @@
 Entries:
-- author: crazybrain
-  changes:
-  - message: Mice no longer eat soap.
-    type: Fix
-  id: 5110
-  time: '2023-11-05T23:47:19.0000000+00:00'
 - author: deltanedas
   changes:
   - message: Chemistry bags had their storage rebalanced and can now hold beakers.
@@ -4096,4 +4090,12 @@ Entries:
     type: Fix
   id: 5527
   time: '2024-01-09T20:45:19.0000000+00:00'
+  url: null
+- author: Kit0vras
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
+      \u0442\u0430 Frankenstein."
+    type: Tweak
+  id: 5528
+  time: '2024-01-10T12:21:35.0000000+00:00'
   url: null
