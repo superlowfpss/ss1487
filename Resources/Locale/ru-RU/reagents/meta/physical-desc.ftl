@@ -94,3 +94,4 @@ reagent-physical-desc-fluffy = пушистое
 reagent-physical-desc-reflective = светоотражающее
 reagent-physical-desc-alkaline = щелочное
 reagent-physical-desc-holy = святое
+reagent-physical-desc-slimy = склизкое
