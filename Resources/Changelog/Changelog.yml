@@ -1,15 +1,4 @@
 Entries:
-- author: EmoGarbage404
-  changes:
-  - message: The action bar now dynamically expands to the amount of actions present.
-    type: Tweak
-  - message: The action bar is now positioned along the top of the screen in the separated
-      UI mode.
-    type: Tweak
-  - message: Fixed the action bar not displaying the correct hotkeys for actions.
-    type: Fix
-  id: 5168
-  time: '2023-11-14T03:27:14.0000000+00:00'
 - author: ElectroJr
   changes:
   - message: Fixed candle in-hand sprites not updating when the candle is extinguished.
@@ -3788,4 +3777,27 @@ Entries:
     type: Tweak
   id: 5659
   time: '2024-01-16T16:18:23.0000000+00:00'
+  url: null
+- author: TTTomaTTT
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0442\u0435\u043A\u0441\
+      \u0442\u0443\u0440\u044B \u0448\u0430\u0445\u043C\u0430\u0442\u043D\u043E\u0439\
+      \ \u0434\u043E\u0441\u043A\u0438, \u0448\u0430\u0445\u043C\u0430\u0442\u043D\
+      \u044B\u0445 \u0444\u0438\u0433\u0443\u0440 \u0438 \u0448\u0430\u0448\u0435\u043A\
+      ."
+    type: Tweak
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
+      \u0435\u043B\u044C\u0435!"
+    type: Add
+  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
+      \u0435!"
+    type: Remove
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
+      \u043B\u044C\u0435!"
+    type: Tweak
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
+      \u0441\u0435\u043B\u044C\u0435!"
+    type: Fix
+  id: 5660
+  time: '2024-01-16T16:20:11.0000000+00:00'
   url: null
