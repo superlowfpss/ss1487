@@ -1,11 +1,4 @@
 Entries:
-- author: TheShuEd
-  changes:
-  - message: Animal carriers can now be found in the maintenance or bought in cargo.
-      They are useful for carrying someone heavy in your arms.
-    type: Add
-  id: 5167
-  time: '2023-11-13T23:55:48.0000000+00:00'
 - author: EmoGarbage404
   changes:
   - message: The action bar now dynamically expands to the amount of actions present.
@@ -3778,4 +3771,21 @@ Entries:
     type: Add
   id: 5658
   time: '2024-01-14T14:38:48.0000000+00:00'
+  url: null
+- author: Kit0vras
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E 3 \u0432\u0438\
+      \u0434\u0430 \u043D\u043E\u0432\u044B\u0445 \u043C\u043E\u0441\u0442\u0438\u043A\
+      \u043E\u0432."
+    type: Add
+  - message: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0451\u043D \u0440\u0435\
+      \u0441\u043F\u0440\u0430\u0439\u0442 \u0431\u043E\u043B\u044C\u0448\u043E\u0433\
+      \u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0442\u0430\
+      \u0439\u043B\u043E\u0432."
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u0434\u0435\u043A\u0430\u043B\u0435\u0439."
+    type: Tweak
+  id: 5659
+  time: '2024-01-16T16:18:23.0000000+00:00'
   url: null
