@@ -1,11 +1,4 @@
 Entries:
-- author: Chubbygummibear
-  changes:
-  - message: Fixed thrown entities physics being set to sleep if the throw was stopped
-      by colliding with something
-    type: Fix
-  id: 5170
-  time: '2023-11-14T12:54:35.0000000+00:00'
 - author: themias
   changes:
   - message: Science built cyborgs can now emote
@@ -3814,4 +3807,12 @@ Entries:
     type: Fix
   id: 5661
   time: '2024-01-16T21:19:56.0000000+00:00'
+  url: null
+- author: Imleriya
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u0430\u043F\u0438\
+      \u0442\u043E\u043A \u0413\u043B\u0438\u043D\u0442\u0432\u0435\u0439\u043D."
+    type: Add
+  id: 5662
+  time: '2024-01-19T21:48:45.0000000+00:00'
   url: null
