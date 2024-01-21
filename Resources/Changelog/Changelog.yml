@@ -1,10 +1,4 @@
 Entries:
-- author: liltenhead
-  changes:
-  - message: Removed the ability to link IEDs to a remote signal.
-    type: Remove
-  id: 5178
-  time: '2023-11-15T10:02:37.0000000+00:00'
 - author: TsjipTsjip
   changes:
   - message: Kettle's exterior airlocks are now far less likely to end up bolted,
@@ -3880,4 +3874,12 @@ Entries:
     type: Remove
   id: 5669
   time: '2024-01-21T13:23:13.0000000+00:00'
+  url: null
+- author: TheArturZh
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0428\u043B\u0451\u043F\
+      '\u041E'\u0412\u0435\u043D\u0434"
+    type: Add
+  id: 5670
+  time: '2024-01-21T14:29:58.0000000+00:00'
   url: null
