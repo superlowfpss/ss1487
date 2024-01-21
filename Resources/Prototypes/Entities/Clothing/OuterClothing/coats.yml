@@ -204,6 +204,13 @@
     modifiers:
       coefficients:
         Caustic: 0.75
+  #ss220 special_sounds start
+  - type: SpecialSounds
+  - type: Vocal
+    sounds:
+      Male: MaleScientist
+      Unsexed: MaleScientist
+  #ss220 special_sounds end
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -372,6 +379,13 @@
     modifiers:
       coefficients:
         Caustic: 0.75
+  #ss220 special_sounds start
+  - type: SpecialSounds
+  - type: Vocal
+    sounds:
+      Male: MaleScientist
+      Unsexed: MaleScientist
+  #ss220 special_sounds end
 
 - type: entity
   parent: ClothingOuterStorageBase
