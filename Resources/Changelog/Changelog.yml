@@ -1,11 +1,4 @@
 Entries:
-- author: metalgearsloth
-  changes:
-  - message: Added 5 minute initial timer to gateway + bump new portal generation
-      from 45 minutes to 75 minutes.
-    type: Tweak
-  id: 5177
-  time: '2023-11-15T06:23:53.0000000+00:00'
 - author: liltenhead
   changes:
   - message: Removed the ability to link IEDs to a remote signal.
@@ -3876,4 +3869,15 @@ Entries:
     type: Fix
   id: 5668
   time: '2024-01-21T02:45:39.0000000+00:00'
+  url: null
+- author: spo9k
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043D\u043E\u0432\
+      \u0430\u044F \u043A\u0430\u0440\u0442\u0430 The Hive"
+    type: Add
+  - message: "\u0423\u0431\u0440\u0430\u043D\u0430 \u043A\u0430\u0440\u0442\u0430\
+      \ Gate Stations"
+    type: Remove
+  id: 5669
+  time: '2024-01-21T13:23:13.0000000+00:00'
   url: null
