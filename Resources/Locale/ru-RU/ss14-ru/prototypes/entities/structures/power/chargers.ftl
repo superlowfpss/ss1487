@@ -1,5 +1,7 @@
 ent-PowerCellRecharger = зарядник батарей
     .desc = { ent-BaseItemRecharger.desc }
+ent-PowerCageRecharger = зарядник энергоячеек
+  .desc = { ent-BaseItemRecharger.desc }
 ent-WeaponCapacitorRecharger = зарядник энергооружия
     .desc = { ent-BaseItemRecharger.desc }
 ent-TurboItemRecharger = турбозарядник
