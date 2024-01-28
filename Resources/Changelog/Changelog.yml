@@ -1,10 +1,4 @@
 ﻿Entries:
-- author: Emisse
-  changes:
-  - message: Chemical explosions are powerful again.
-    type: Tweak
-  id: 5288
-  time: '2023-12-08T10:58:25.0000000+00:00'
 - author: EmoGarbage404
   changes:
   - message: V and shift-V can now be used to open the bag and belt, respectively.
@@ -3996,4 +3990,12 @@
     type: Tweak
   id: 5771
   time: '2024-01-26T06:31:51.0000000+00:00'
+  url: null
+- author: spo9k
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
+      \u0439 \u0445\u0432\u043E\u0441\u0442 \u041B\u0438\u0441\u0438\u0439."
+    type: Add
+  id: 5772
+  time: '2024-01-28T12:50:35.0000000+00:00'
   url: null
