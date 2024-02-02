@@ -51,6 +51,14 @@
   components:
   - type: Loadout
     prototypes: [ EbentSpaceWarsAgentGear ]
+  - type: RandomMetadata
+    nameSegments: [ "Агент", SyndicateNamesNormal ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: GhostRole
+    name: (Ивент) Агент Синдиката
+  - type: GhostTakeoverAvailable
 #### AGENT END ####
 
 #### LEADER START ####
@@ -110,6 +118,14 @@
   components:
   - type: Loadout
     prototypes: [ EbentSpaceWarsLeaderGear ]
+  - type: RandomMetadata
+    nameSegments: [ "Командир", SyndicateNamesElite ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: GhostRole
+    name: (Ивент) Командир Синдиката
+  - type: GhostTakeoverAvailable
 #### LEADER END ####
 
 #### OPERATIVE START ####
@@ -168,6 +184,14 @@
   components:
   - type: Loadout
     prototypes: [ EbentSpaceWarsOperativeGear ]
+  - type: RandomMetadata
+    nameSegments: [ "Оперативник", SyndicateNamesElite ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: GhostRole
+    name: (Ивент) Штурмовик Синдиката
+  - type: GhostTakeoverAvailable
 #### OPERATIVE END ####
 
 #### ENGINEER START ####
@@ -244,6 +268,14 @@
   components:
   - type: Loadout
     prototypes: [ EbentSpaceWarsEngineerGear ]
+  - type: RandomMetadata
+    nameSegments: [ "Техник", SyndicateNamesNormal ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: GhostRole
+    name: (Ивент) Техник Синдиката
+  - type: GhostTakeoverAvailable
 #### ENGINEER END ####
 
 #### MEIDC START ####
@@ -299,4 +331,12 @@
   components:
   - type: Loadout
     prototypes: [ EbentSpaceWarsMedicGear ]
+  - type: RandomMetadata
+    nameSegments: [ "Санитар", SyndicateNamesNormal ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: GhostRole
+    name: (Ивент) Медик Синдиката
+  - type: GhostTakeoverAvailable
 #### MEDIC END ####
