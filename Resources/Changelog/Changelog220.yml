@@ -1,4 +1,4 @@
-Entries:
+﻿Entries:
 - author: Ady4
   changes:
   - message: "\u0417\u0430\u043C\u0435\u043D\u0435\u043D\u044B \u043F\u0430\u043A\u0435\
@@ -14,3 +14,12 @@ Entries:
   id: 1
   time: '2024-01-30T11:51:26.0000000+00:00'
   url: null
+- author: Ady4
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\
+      \u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0441\u043B\u043E\u043C\
+      \u0430\u0442\u044C Windoor \u0440\u0443\u043A\u0430\u043C\u0438."
+    type: Fix
+  id: 2
+  time: '2024-02-04T10:24:06.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/712
