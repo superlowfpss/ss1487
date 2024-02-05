@@ -46,3 +46,10 @@
   id: 4
   time: '2024-02-05T07:17:49.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/711
+- author: VladIsLove-e
+  changes:
+  - message: "\u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0451\u043D VladIsLove."
+    type: Tweak
+  id: 5
+  time: '2024-02-05T17:46:54.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/713
