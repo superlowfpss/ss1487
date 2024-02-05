@@ -1,4 +1,112 @@
 ﻿Entries:
+- author: deltanedas
+  changes:
+  - message: Combat boots and friends use a slot for sidearms instead of a storage
+      window.
+    type: Tweak
+  id: 5277
+  time: '2023-12-06T21:58:25.0000000+00:00'
+- author: Bhijn and Myr
+  changes:
+  - message: Speech bubbles for the living now again have names when fancy speech
+      bubbles are enabled
+    type: Fix
+  id: 5278
+  time: '2023-12-06T21:58:53.0000000+00:00'
+- author: TemporalOroboros
+  changes:
+  - message: Pickaxes have a more accurate shape in storage.
+    type: Tweak
+  id: 5279
+  time: '2023-12-07T00:52:57.0000000+00:00'
+- author: Nairodian
+  changes:
+  - message: Added a new lizard chest marking, an underbelly.
+    type: Add
+  id: 5280
+  time: '2023-12-07T01:05:43.0000000+00:00'
+- author: Nimfar11
+  changes:
+  - message: Adds Space Cobras, invisible at rest and venom blind.
+    type: Add
+  - message: Adds snake meat and fancy snakeskin boots.
+    type: Add
+  - message: The too weak space spider has been strengthened.
+    type: Tweak
+  id: 5281
+  time: '2023-12-07T01:25:57.0000000+00:00'
+- author: CrigCrag
+  changes:
+  - message: Added three new specialized brute healing chemicals and a guidebook entry
+      on how to safely use them.
+    type: Add
+  - message: Added Razorium, which is basically liquid razor blades.
+    type: Add
+  id: 5282
+  time: '2023-12-07T03:05:29.0000000+00:00'
+- author: EmoGarbage404
+  changes:
+  - message: Speed penalties for duffels and hardsuits now apply when held, not just
+      when worn.
+    type: Add
+  id: 5283
+  time: '2023-12-07T03:41:29.0000000+00:00'
+- author: deltanedas
+  changes:
+  - message: Fixed explosion resistance being ignored.
+    type: Fix
+  id: 5284
+  time: '2023-12-07T18:51:46.0000000+00:00'
+- author: Aexxie
+  changes:
+  - message: Paramed no longer has external access.
+    type: Remove
+  id: 5285
+  time: '2023-12-07T23:27:18.0000000+00:00'
+- author: EmoGarbage404
+  changes:
+  - message: Hovering over an item in storage now shows a tooltip with the name.
+    type: Add
+  id: 5286
+  time: '2023-12-08T02:38:07.0000000+00:00'
+- author: Nimfar11
+  changes:
+  - message: Adds a bed for the psychologist's office.
+    type: Add
+  id: 5287
+  time: '2023-12-08T05:24:35.0000000+00:00'
+- author: Emisse
+  changes:
+  - message: Chemical explosions are powerful again.
+    type: Tweak
+  id: 5288
+  time: '2023-12-08T10:58:25.0000000+00:00'
+- author: EmoGarbage404
+  changes:
+  - message: V and shift-V can now be used to open the bag and belt, respectively.
+    type: Add
+  - message: Interacting with a storage item now has context-sensitive logic based
+      on whether or not the window is open or focused.
+    type: Fix
+  id: 5289
+  time: '2023-12-08T18:43:37.0000000+00:00'
+- author: EmoGarbage404
+  changes:
+  - message: When viewing a storage container, the item that will be removed via smart-equip
+      is now marked with a small star icon.
+    type: Add
+  id: 5290
+  time: '2023-12-08T18:43:58.0000000+00:00'
+- author: Whisper
+  changes:
+  - message: Rat king and his servants properly heal from miasma.
+    type: Fix
+  - message: Rat king no longer rummages from an infinite distance.
+    type: Fix
+  - message: Rat king generates more miasma to fill larger rooms.
+    type: Tweak
+  id: 5291
+  time: '2023-12-08T18:46:28.0000000+00:00'
 - author: Emisse
   changes:
   - message: Command staff has brig access.
@@ -2770,23 +2878,6 @@
   id: 5656
   time: '2024-01-10T04:11:29.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23829
-- author: TTTomaTTT
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
-      \u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
-    type: Fix
-  id: 5656
-  time: '2024-01-14T13:33:24.0000000+00:00'
-  url: null
 - author: Dutch-VanDerLinde
   changes:
   - message: Tarantulas and space spiders now have the arachnid speech bubble.
@@ -2794,26 +2885,6 @@
   id: 5657
   time: '2024-01-10T08:30:39.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23816
-- author: ZoNeSRuS
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u043A\u043E\u043B\u0438\
-      \u0447\u0435\u0441\u0442\u0432\u043E \u0438 \u0441\u043A\u043E\u0440\u043E\u0441\
-      \u0442\u044C \u0433\u0430\u0437\u0430 \u043F\u0440\u0438 \u0441\u043E\u0431\u044B\
-      \u0442\u0438\u0438 \u0443\u0442\u0435\u0447\u043A\u0438."
-    type: Tweak
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u0440\u0430\u0431\u043E\
-      \u0442\u0430 \u0432\u043E\u0437\u0434\u0443\u0448\u043D\u044B\u0445 \u0442\u0440\
-      \u0435\u0432\u043E\u0433, \u0442\u0435\u043F\u0435\u0440\u044C \u0432 \u0441\
-      \u043B\u0443\u0447\u0430\u0435 \u0443\u0442\u0435\u0447\u043A\u0438 \u043A\u0430\
-      \u043A\u043E\u0433\u043E \u043B\u0438\u0431\u043E \u0433\u0430\u0437\u0430 \u0430\
-      \u0442\u043C\u043E\u0442\u0435\u0445\u0430\u043C \u043F\u0440\u0438\u0434\u0435\
-      \u0442\u0441\u044F \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\
-      \u044C \u043A\u0430\u043B\u0438\u0431\u0440\u043E\u0432\u043A\u0443 \u043D\u0430\
-      \ \u043C\u0435\u0441\u0442\u0435."
-    type: Tweak
-  id: 5657
-  time: '2024-01-13T07:01:05.0000000+00:00'
-  url: null
 - author: Bhijn and Myr
   changes:
   - message: Tables now have their own footstep sounds!
@@ -2821,15 +2892,6 @@
   id: 5658
   time: '2024-01-10T08:48:39.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23851
-- author: VladIsLove-e
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0434\u0435\u0431\
-      \u0430\u0433 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B \u0434\u043B\u044F\
-      \ \u0430\u0434\u043C\u0438\u043D\u043E\u0432."
-    type: Add
-  id: 5658
-  time: '2024-01-14T14:38:48.0000000+00:00'
-  url: null
 - author: Emisse
   changes:
   - message: radsuits are toggleable now
@@ -2837,23 +2899,6 @@
   id: 5659
   time: '2024-01-10T09:54:29.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23854
-- author: Kit0vras
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E 3 \u0432\u0438\
-      \u0434\u0430 \u043D\u043E\u0432\u044B\u0445 \u043C\u043E\u0441\u0442\u0438\u043A\
-      \u043E\u0432."
-    type: Add
-  - message: "\u041F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0451\u043D \u0440\u0435\
-      \u0441\u043F\u0440\u0430\u0439\u0442 \u0431\u043E\u043B\u044C\u0448\u043E\u0433\
-      \u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0442\u0430\
-      \u0439\u043B\u043E\u0432."
-    type: Tweak
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
-      \u0439\u0442\u044B \u0434\u0435\u043A\u0430\u043B\u0435\u0439."
-    type: Tweak
-  id: 5659
-  time: '2024-01-16T16:18:23.0000000+00:00'
-  url: null
 - author: Ubaser
   changes:
   - message: Moths now have insect blood.
@@ -2861,29 +2906,6 @@
   id: 5660
   time: '2024-01-10T11:42:20.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23671
-- author: TTTomaTTT
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0442\u0435\u043A\u0441\
-      \u0442\u0443\u0440\u044B \u0448\u0430\u0445\u043C\u0430\u0442\u043D\u043E\u0439\
-      \ \u0434\u043E\u0441\u043A\u0438, \u0448\u0430\u0445\u043C\u0430\u0442\u043D\
-      \u044B\u0445 \u0444\u0438\u0433\u0443\u0440 \u0438 \u0448\u0430\u0448\u0435\u043A\
-      ."
-    type: Tweak
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
-      \u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
-    type: Fix
-  id: 5660
-  time: '2024-01-16T16:20:11.0000000+00:00'
-  url: null
 - author: quatre
   changes:
   - message: Examining bodies now shows how close they are to rotting.
@@ -2891,29 +2913,6 @@
   id: 5661
   time: '2024-01-10T12:00:22.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23530
-- author: neuromachinery
-  changes:
-  - message: "\u041F\u043E\u0440\u0442\u0430\u0442\u0438\u0432\u043D\u044B\u0435 \u0440\
-      \u0430\u0446\u0438\u0438 \u0442\u0435\u043F\u0435\u0440\u044C \u043C\u043E\u0433\
-      \u0443\u0442 \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u043C\u0438\
-      \u043A\u0440\u043E\u0444\u043E\u043D \u0438 \u0434\u0438\u043D\u0430\u043C\u0438\
-      \u043A \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u0434\u0440\
-      \u0443\u0433 \u043E\u0442 \u0434\u0440\u0443\u0433\u0430. \u0418 \u0438\u0445\
-      \ \u043C\u043E\u0436\u043D\u043E \u043D\u0430\u0441\u0442\u0440\u043E\u0438\u0442\
-      \u044C \u043D\u0430 \u043E\u0434\u0438\u043D \u0438\u0437 \u0432\u044B\u0434\
-      \u0435\u043B\u0435\u043D\u043D\u044B\u0445 \u0440\u0430\u0434\u0438\u043E\u043A\
-      \u0430\u043D\u0430\u043B\u043E\u0432."
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430 \u200B\u200B\
-      \u043E\u0448\u0438\u0431\u043A\u0430, \u0438\u0437-\u0437\u0430 \u043A\u043E\
-      \u0442\u043E\u0440\u043E\u0439 \u0438\u043D\u0442\u0435\u0440\u043A\u043E\u043C\
-      \u044B \u043D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043F\
-      \u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u043B\u0438 \u043A\u0430\u043D\
-      \u0430\u043B\u044B."
-    type: Fix
-  id: 5661
-  time: '2024-01-16T21:19:56.0000000+00:00'
-  url: null
 - author: metalgearsloth
   changes:
   - message: Fix planets sometimes not loading.
@@ -2921,14 +2920,6 @@
   id: 5662
   time: '2024-01-10T12:28:42.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23864
-- author: Imleriya
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u0430\u043F\u0438\
-      \u0442\u043E\u043A \u0413\u043B\u0438\u043D\u0442\u0432\u0435\u0439\u043D."
-    type: Add
-  id: 5662
-  time: '2024-01-19T21:48:45.0000000+00:00'
-  url: null
 - author: snebl
   changes:
   - message: Fixed cargo airlock changing color while open.
@@ -2936,14 +2927,6 @@
   id: 5663
   time: '2024-01-10T21:12:46.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23889
-- author: spo9k
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
-      \u0430 \u0410\u0432\u0440\u0438\u0442."
-    type: Tweak
-  id: 5663
-  time: '2024-01-21T02:48:10.0000000+00:00'
-  url: null
 - author: nikthechampiongr
   changes:
   - message: Aghosts and other powerful beings can now change light bulbs.
@@ -2951,14 +2934,6 @@
   id: 5664
   time: '2024-01-10T21:39:56.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23879
-- author: spo9k
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
-      \u0430 Marathon"
-    type: Tweak
-  id: 5664
-  time: '2024-01-21T02:47:50.0000000+00:00'
-  url: null
 - author: Dygon
   changes:
   - message: Attempting to emag a borg with a closed panel won't permanently make
@@ -2967,16 +2942,6 @@
   id: 5665
   time: '2024-01-10T22:01:38.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23729
-- author: Kit0vras
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
-      \u0439\u0442\u044B \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0445 \u043F\
-      \u0430\u043D\u0435\u043B\u0435\u0439 \u0438 \u0442\u0440\u0435\u043A\u0435\u0440\
-      \u0430."
-    type: Tweak
-  id: 5665
-  time: '2024-01-21T02:47:26.0000000+00:00'
-  url: null
 - author: nikthechampiongr
   changes:
   - message: Nanotrasen has fixed a recent design defect with tranquilizer shells.
@@ -2985,21 +2950,6 @@
   id: 5666
   time: '2024-01-10T23:02:37.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23886
-- author: ZoNeSRuS
-  changes:
-  - message: "\u0422\u042D\u0413 \u043C\u043E\u0436\u043D\u043E \u043A\u0443\u043F\
-      \u0438\u0442\u044C \u0432 \u043A\u0430\u0440\u0433\u043E \u0437\u0430 2\u043A\
-      ."
-    type: Add
-  - message: "\u0422\u042D\u0413 \u0443\u0434\u0430\u043B\u0435\u043D \u0441\u043E\
-      \ \u0432\u0441\u0435\u0445 \u043A\u0430\u0440\u0442."
-    type: Remove
-  - message: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0434\u0435\
-      \u0442\u0430\u043B\u0435\u0439 \u0432 \u0414\u0410\u041C\u0435 9>12"
-    type: Tweak
-  id: 5666
-  time: '2024-01-21T02:46:34.0000000+00:00'
-  url: null
 - author: Flareguy
   changes:
   - message: Light fixtures are now more visually consistent with small lights.
@@ -3007,16 +2957,6 @@
   id: 5667
   time: '2024-01-11T00:07:15.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23898
-- author: Skriler
-  changes:
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043E\u0442\
-      \u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0442\u0440\u0430\u043D\
-      \u0441\u043F\u043E\u0440\u0442\u043D\u044B\u0445 \u0441\u0440\u0435\u0434\u0441\
-      \u0442\u0432."
-    type: Fix
-  id: 5667
-  time: '2024-01-21T02:44:56.0000000+00:00'
-  url: null
 - author: Emisse
   changes:
   - message: AME parts can no longer be bought from cargo
@@ -3024,60 +2964,6 @@
   id: 5668
   time: '2024-01-11T00:07:41.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23903
-- author: SkaldetSkaeg
-  changes:
-  - message: "\u0421\u043B\u0435\u0433\u043A\u0430 \u0438\u0437\u043C\u0435\u043D\u0438\
-      \u043B \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\
-      \u0438\u0435, \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u0438\u043C\u0435\u043D\
-      \u044F\u043B\u0438\u0441\u044C \u043A\u0440\u0438\u043A\u0438 \u043F\u0440\u0435\
-      \u0434\u043C\u0435\u0442\u0430, \u0435\u0441\u043B\u0438 \u0442\u0430\u043A\u0438\
-      \u0435 \u0435\u0441\u0442\u044C"
-    type: Tweak
-  - message: "\u0421\u043C\u0435\u0445 \u042F\u041E \u0442\u0435\u043F\u0435\u0440\
-      \u044C \u0438\u043C\u0435\u0435\u0442 \u0438 \u043D\u0435 \u0433\u0435\u043D\
-      \u0434\u0435\u0440\u043D\u0443\u044E \u043F\u0440\u0438\u0432\u044F\u0437\u043A\
-      \u0443"
-    type: Tweak
-  - message: "\u0423\u0431\u0440\u0430\u043D \u0431\u0430\u0441\u0431\u0443\u0441\u0442\
-      \u044F\u0449\u0438\u0439 \u0441\u043C\u0435\u0445 \u0441 \u0448\u0430\u043F\u043A\
-      \u0438 \u0421\u0430\u043D\u0442\u044B"
-    type: Tweak
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0441\u043F\u0435\
-      \u0446 \u043A\u0440\u0438\u043A\u0438 \u0438 \u043F\u0440\u0435\u0434\u0441\u043C\
-      \u0435\u0440\u0442\u043D\u044B\u0435 \u0432\u0437\u0434\u043E\u0445\u0438 \u043E\
-      \u0434\u0435\u0436\u0434\u0435 \u0443\u0447\u0435\u043D\u043E\u0433\u043E"
-    type: Add
-  - message: "\u0423\u043D\u0430\u0442\u0445\u0430\u043C \u0434\u043E\u0431\u0430\u0432\
-      \u043B\u0435\u043D\u0430 \u044D\u043C\u043E\u0446\u0438\u044F \u0440\u044B\u0447\
-      \u0430\u043D\u0438\u044F"
-    type: Add
-  - message: "\u0421\u043B\u0430\u0439\u043C\u043E\u043B\u044E\u0434\u0430\u043C \u0434\
-      \u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u044D\u043C\u043E\u0446\u0438\
-      \u044F \u0431\u0443\u0440\u043B\u0435\u043D\u0438\u044F"
-    type: Add
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u044D\u043C\u043E\
-      \u0446\u0438\u044F \u0448\u0438\u043F\u0435\u043D\u0438\u044F \u0430\u0440\u0430\
-      \u0445\u043D\u0438\u0434\u0430\u043C"
-    type: Add
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0441\u043F\u0435\u0446\
-      \ \u0441\u043C\u0435\u0445 \u0434\u043B\u044F \u0431\u0435\u0440\u0435\u0442\
-      \u0430 \u0413\u0412"
-    type: Add
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
-      \u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
-    type: Fix
-  id: 5668
-  time: '2024-01-21T02:45:39.0000000+00:00'
-  url: null
 - author: IProduceWidgets
   changes:
   - message: Uranium and AP rounds now also have identifiable projectiles
@@ -3087,17 +2973,6 @@
   id: 5669
   time: '2024-01-11T08:01:41.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23914
-- author: spo9k
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043D\u043E\u0432\
-      \u0430\u044F \u043A\u0430\u0440\u0442\u0430 The Hive"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u0430 \u043A\u0430\u0440\u0442\u0430\
-      \ Gate Stations"
-    type: Remove
-  id: 5669
-  time: '2024-01-21T13:23:13.0000000+00:00'
-  url: null
 - author: EmoGarbage404
   changes:
   - message: Doors are now visible on station maps.
@@ -3105,14 +2980,6 @@
   id: 5670
   time: '2024-01-11T13:14:20.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23639
-- author: TheArturZh
-  changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0428\u043B\u0451\u043F\
-      '\u041E'\u0412\u0435\u043D\u0434"
-    type: Add
-  id: 5670
-  time: '2024-01-21T14:29:58.0000000+00:00'
-  url: null
 - author: ZeroNationality
   changes:
   - message: Changed how puddles flow to finish flowing quicker
@@ -3120,33 +2987,6 @@
   id: 5671
   time: '2024-01-11T13:22:56.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23776
-- author: SkaldetSkaeg
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u0433\u0440\u043E\u043C\
-      \u043A\u043E\u0441\u0442\u044C \u0432 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\
-      \u0430\u0445 \u0443\u0447\u0435\u043D\u044B\u0445."
-    type: Tweak
-  - message: "\u0417\u0432\u0443\u043A\u0438 \u0443\u0447\u0435\u043D\u043E\u0433\u043E\
-      \ \u043E\u0441\u0442\u0430\u043B\u0438\u0441\u044C \u0442\u043E\u043B\u044C\u043A\
-      \u043E \u0443 \u0433\u0430\u043B\u0441\u0442\u0443\u043A\u0430 \u0443\u0447\u0435\
-      \u043D\u043E\u0433\u043E \u0438 \u043F\u0430\u0440\u0430\u0434\u043D\u043E\u0439\
-      \ \u0444\u043E\u0440\u043C\u044B \u0443\u0447\u0435\u043D\u043E\u0433\u043E"
-    type: Tweak
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
-      \u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
-    type: Fix
-  id: 5671
-  time: '2024-01-22T00:08:15.0000000+00:00'
-  url: null
 - author: EmoGarbage404
   changes:
   - message: Fixed rotting examine text appearing on revived players.
@@ -3154,14 +2994,6 @@
   id: 5672
   time: '2024-01-11T23:12:32.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23949
-- author: 21Melkuu
-  changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u0446\u0435\u043D\
-      \ \u0431\u0430\u0443\u043D\u0442\u0438 \u043A\u0430\u0440\u0433\u043E"
-    type: Tweak
-  id: 5672
-  time: '2024-01-22T00:07:52.0000000+00:00'
-  url: null
 - author: deltanedas
   changes:
   - message: New specialized burn medicines Pyrazine and Insuzine can be made, for
@@ -3870,163 +3702,105 @@
   id: 5763
   time: '2024-01-21T12:14:47.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24369
-- author: spo9k
+- author: icekot8
   changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
-      \u0430 The Hive"
+  - message: Increased the size of flatpacks made by the Flatpacker 1001.
     type: Tweak
   id: 5764
-  time: '2024-01-22T18:17:24.0000000+00:00'
-  url: null
-- author: TheArturZh
+  time: '2024-01-21T17:07:59.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24367
+- author: Nairodian
   changes:
-  - message: "\u041A\u043E\u043C\u0430\u043D\u0434\u0430 fixrotations \u0442\u0435\
-      \u043F\u0435\u0440\u044C \u0438\u0433\u043D\u043E\u0440\u0438\u0440\u0443\u0435\
-      \u0442 \u0432\u0441\u0435 \u0434\u0432\u0435\u0440\u0438"
-    type: Tweak
+  - message: All vent critter events now have a small delay and alert message before
+      they spawn.
+    type: Add
   id: 5765
-  time: '2024-01-23T06:52:07.0000000+00:00'
-  url: null
-- author: Kit0vras
+  time: '2024-01-22T01:33:38.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24383
+- author: Flareguy
   changes:
-  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
-      \u0442\u0430 Frankenstein."
+  - message: The Research Director's hardsuit now uses its older sprites.
     type: Tweak
   id: 5766
-  time: '2024-01-23T18:31:23.0000000+00:00'
-  url: null
-- author: Kit0vras
+  time: '2024-01-22T01:52:32.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24377
+- author: SonicHDC
   changes:
-  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
-      \u0442\u0430 NSS Nox."
-    type: Tweak
+  - message: Added reinforced diagonal!
+    type: Add
   id: 5767
-  time: '2024-01-23T18:32:03.0000000+00:00'
-  url: null
-- author: Nonne
+  time: '2024-01-22T14:53:19.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24393
+- author: Alekshhh
   changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E 11 \u043D\u043E\
-      \u0432\u044B\u0445 \u0433\u043E\u043B\u043E\u0441\u043E\u0432 \u0410\u043C\u0438\
-      \u0442 \u0422\u0430\u043A\u043A\u0430\u0440, \u042D\u043B\u0435\u0430\u0437\u0430\
-      \u0440 \u0424\u0438\u0433, \u042D\u0440\u043D\u0438 \u041B\u0430\u0440\u043A\
-      , \u0418\u0433\u043D\u0430\u0442\u0438\u044F \u0423\u0430\u0439\u043B\u0434\u0441\
-      \u043C\u0438\u0442, \u041B\u043E\u0434\u0433\u043E\u043A, \u0424\u0438\u043D\
-      \u0435\u0430\u0441 \u041D\u0430\u0439\u0434\u0436\u0435\u043B\u0443\u0441 \u0411\
-      \u043B\u044D\u043A, \u0420\u0430\u043D\u0440\u043E\u043A, \u0412\u0438\u043A\
-      \u0442\u043E\u0440 \u0420\u0443\u043A\u0432\u0443\u0434, \u0417\u0435\u043D\u043E\
-      \u0431\u0438\u044F \u041D\u043E\u0443\u043A \u0438 \u041C\u0430\u0442\u0438\u043B\
-      \u044C\u0434\u0430 \u0423\u0438\u0437\u043B\u0438."
+  - message: Hud eyepatches have been added to BarDrobes, MediDrobes and SecTechs.
+      They're just cooler looking huds.
     type: Add
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
-      \u0435\u043B\u044C\u0435!"
-    type: Add
-  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
-      \u0435!"
-    type: Remove
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
-      \u043B\u044C\u0435!"
-    type: Tweak
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
-      \u0441\u0435\u043B\u044C\u0435!"
-    type: Fix
   id: 5768
-  time: '2024-01-24T23:42:05.0000000+00:00'
-  url: null
-- author: spo9k
+  time: '2024-01-22T14:59:32.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24132
+- author: CrigCrag
   changes:
-  - message: "\u041D\u043E\u0432\u044B\u0435 \u0445\u0432\u043E\u0441\u0442\u044B\
-      \ \u0443 \u0424\u0435\u043B\u0438\u043D\u0438\u0434\u043E\u0432"
-    type: Add
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u0440\u0430\u0441\u0430\
-      \ \u0424\u0435\u043B\u0438\u043D\u0438\u0434\u043E\u0432"
-    type: Tweak
+  - message: Removed the revolutionaries gamemode pending a rework.
+    type: Remove
   id: 5769
-  time: '2024-01-25T13:40:01.0000000+00:00'
-  url: null
-- author: TheArturZh
+  time: '2024-01-23T02:11:09.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24420
+- author: themias
   changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
-      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043E\u0442\u043A\u0440\u044B\
-      \u0432\u0430\u0442\u044C UI \u043D\u0430 \u043A\u043B\u0430\u0432\u0438\u0448\
-      \u0443 E \u0437\u0430 \u0433\u043E\u0441\u0442\u0430"
+  - message: Added different footstep sounds for blood, soda and juice
     type: Add
-  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043E\u0442\
-      \u043A\u0440\u044B\u0442\u0438\u0435 UI \u0437\u0430 \u0433\u043E\u0441\u0442\
-      \u0430"
-    type: Fix
   id: 5770
-  time: '2024-01-25T21:12:17.0000000+00:00'
-  url: null
-- author: spo9k
+  time: '2024-01-23T04:18:33.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24406
+- author: TheShuEd
   changes:
-  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
-      \u0430 Avrite"
+  - message: 'Flesh and Rock anom reworked: It should be easier to maintain them now
+      (I guess)'
     type: Tweak
   id: 5771
-  time: '2024-01-26T06:31:51.0000000+00:00'
-  url: null
-- author: spo9k
+  time: '2024-01-23T12:32:05.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24381
+- author: metalgearsloth
   changes:
-  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
-      \u0439 \u0445\u0432\u043E\u0441\u0442 \u041B\u0438\u0441\u0438\u0439."
-    type: Add
+  - message: Fix thrusters.
+    type: Fix
   id: 5772
-  time: '2024-01-28T12:50:35.0000000+00:00'
-  url: null
-- author: 21Melkuu
+  time: '2024-01-23T12:49:19.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24446
+- author: '0x6273'
   changes:
-  - message: "\u041D\u043E\u0432\u043E\u0435 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\
-      \u0435 \u0432 \u04422 \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u043D\u043E\
-      \u0439 \u0432\u0435\u0442\u043A\u0435 - \u0442\u0435\u0440\u043C\u043E\u044D\
-      \u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0433\
-      \u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
-    type: Add
-  - message: "\u0423\u0434\u0430\u043B\u0435\u043D \u0422\u042D\u0413 \u0438\u0437\
-      \ \u043A\u0430\u0440\u0433\u043E"
-    type: Remove
-  - message: "\u0423\u0434\u0430\u043B\u0435\u043D\u044B \u0433\u0430\u0437\u043E\u0434\
-      \u043E\u0431\u044B\u0442\u0447\u0438\u043A\u0438 \u0434\u0438\u043E\u043A\u0441\
-      \u0438\u0434 \u0430\u0437\u043E\u0442\u0430 \u0438 \u0432\u043E\u0434\u044F\u043D\
-      \u043E\u0433\u043E \u043F\u0430\u0440\u0430"
-    type: Remove
-  - message: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0442\u043E\
-      \u043F\u043B\u0438\u0432\u0430 \u0434\u0430\u043C\u0430 1000 -> 500"
-    type: Tweak
-  - message: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043C\u043E\
-      \u043B\u0435\u0439 \u043F\u043B\u0430\u0437\u043C\u044B \u0432 \u0431\u0430\u043B\
-      \u043B\u043E\u043D\u0435 2,5 \u043C\u043E\u043B\u0435\u0439 -> 5 \u043C\u043E\
-      \u043B\u0435\u0439"
-    type: Tweak
-  - message: "\u0417\u0430\u043C\u0435\u043D\u0430 \u0433\u0430\u0437\u043E\u0434\u043E\
-      \u0431\u044B\u0442\u0447\u0438\u043A\u043E\u0432 \u0441 4500 \u043A\u043F\u0430\
-      \ \u043D\u0430 1000 \u043A\u043F\u0430 \u043D\u0430 \u043D\u0435\u043A\u043E\
-      \u0442\u043E\u0440\u044B\u0445 \u043A\u0430\u0440\u0442\u0430\u0445"
-    type: Tweak
-  - message: "\u0418\u0437\u043E\u043B\u044F\u0446\u0438\u043E\u043D\u043D\u044B\u0435\
-      \ \u043F\u0435\u0440\u0447\u0430\u0442\u043A\u0438 \u0432 \u0418\u043D\u0436\
-      \u0435\u041C\u0430\u0442\u0435 1 -> 2"
-    type: Tweak
-  - message: "\u0426\u0435\u043D\u0430 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\
-      \u0440\u0430 \u0442\u0435\u0441\u043B\u044B 4000 -> 8000"
-    type: Tweak
+  - message: Hotplates now work again
+    type: Fix
   id: 5773
-  time: '2024-01-28T17:52:02.0000000+00:00'
-  url: null
-- author: ZoNeSRuS
+  time: '2024-01-23T13:06:14.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24450
+- author: Boaz1111
   changes:
-  - message: "\u041A\u0430\u0440\u0442\u044B \u043A\u0430\u043F\u0438\u0442\u0430\u043D\
-      \u0430 \u0443\u0434\u0430\u043B\u0435\u043D\u044B \u0438\u0437 \u0448\u043A\u0430\
-      \u0444\u043E\u0432"
+  - message: Lizards can now properly eat fruit cakes and banana cream pie slices.
     type: Fix
   id: 5774
-  time: '2024-01-29T16:32:13.0000000+00:00'
-  url: null
-- author: MIXnikita
+  time: '2024-01-23T18:08:32.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24457
+- author: icekot8
   changes:
-  - message: "\u0417\u0430\u043C\u0435\u043D\u0435\u043D\u044B \u0437\u0432\u0443\u043A\
-      \u0438 \u0434\u043B\u044F \u043F\u0443\u0448\u0435\u043A \u0448\u0430\u0442\u0442\
-      \u043B\u043E\u0432"
-    type: Add
+  - message: The bounty of briefcases has been removed
+    type: Remove
   id: 5775
-  time: '2024-01-30T11:51:26.0000000+00:00'
-  url: null
+  time: '2024-01-23T18:26:28.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24392
+- author: Errant
+  changes:
+  - message: '"Not enough oxygen" hud alerts now indicate the proper gas for nitrogen
+      breathers.'
+    type: Fix
+  id: 5776
+  time: '2024-01-23T20:17:41.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24373
+- author: themias
+  changes:
+  - message: Cyborgs can no longer spawn with the Wheelchair Bound or Muted trait
+    type: Fix
+  id: 5777
+  time: '2024-01-23T20:18:01.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24459

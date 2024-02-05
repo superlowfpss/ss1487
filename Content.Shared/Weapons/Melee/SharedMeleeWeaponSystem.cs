@@ -515,13 +515,13 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
             if (meleeUid == user)
             {
-                AdminLogger.Add(LogType.MeleeHit, LogImpact.High,
-                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using their hands and dealt {damageResult.Total:damage} damage");
+                AdminLogger.Add(LogType.MeleeHit, LogImpact.High, // SS220 High-Attack-Logs
+                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using their hands and dealt {damageResult.GetTotal():damage} damage");
             }
             else
             {
-                AdminLogger.Add(LogType.MeleeHit, LogImpact.High,
-                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.Total:damage} damage");
+                AdminLogger.Add(LogType.MeleeHit, LogImpact.High, // SS220 High-Attack-Logs
+                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.GetTotal():damage} damage");
             }
 
             PlayHitSound(target.Value, user, GetHighestDamageSound(modifiedDamage, _protoManager), hitEvent.HitSoundOverride, component.HitSound);
@@ -542,7 +542,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             }
         }
 
-        if (damageResult?.Total > FixedPoint2.Zero)
+        if (damageResult?.GetTotal() > FixedPoint2.Zero)
         {
             DoDamageEffect(targets, user, targetXform);
         }
@@ -664,13 +664,13 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
                 if (meleeUid == user)
                 {
-                    AdminLogger.Add(LogType.MeleeHit, LogImpact.High,
+                    AdminLogger.Add(LogType.MeleeHit, LogImpact.High, // SS220 High-Attack-Logs
                         $"{ToPrettyString(user):actor} melee attacked (heavy) {ToPrettyString(entity):subject} using their hands and dealt {damageResult.GetTotal():damage} damage");
                 }
                 else
                 {
-                    AdminLogger.Add(LogType.MeleeHit, LogImpact.High,
-                        $"{ToPrettyString(user):actor} melee attacked (heavy) {ToPrettyString(entity):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.Total:damage} damage");
+                    AdminLogger.Add(LogType.MeleeHit, LogImpact.High, // SS220 High-Attack-Logs
+                        $"{ToPrettyString(user):actor} melee attacked (heavy) {ToPrettyString(entity):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.GetTotal():damage} damage");
                 }
             }
         }
