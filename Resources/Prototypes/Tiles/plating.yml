@@ -3,6 +3,7 @@
   name: tiles-plating
   sprite: /Textures/Tiles/plating.png
   baseTurf: Lattice
+  deconstructTools: [ PlatingCutting, Cutting ] #SS220 JOL TilePryingng
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
@@ -19,6 +20,7 @@
   - 1.0
   - 1.0
   baseTurf: Lattice
+  deconstructTools: [ PlatingCutting, Cutting ] #SS220 JOL TilePryingng
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
@@ -30,6 +32,7 @@
   name: tiles-plating
   sprite: /Textures/Tiles/plating_burnt.png
   baseTurf: Lattice
+  deconstructTools: [ PlatingCutting, Cutting ] #SS220 JOL TilePryingng
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
@@ -41,6 +44,7 @@
   name: tiles-asteroid-plating
   sprite: /Textures/Tiles/Asteroid/asteroid_plating.png
   baseTurf: Lattice
+  deconstructTools: [ PlatingCutting, Cutting ] #SS220 JOL TilePryingng
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
@@ -52,6 +56,7 @@
   name: tiles-snow-plating
   sprite: /Textures/Tiles/snow_plating.png #Not in the snow planet RSI because it doesn't have any metadata. Should probably be moved to its own folder later.
   baseTurf: Lattice
+  deconstructTools: [ PlatingCutting, Cutting ] #SS220 JOL TilePryingng
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
