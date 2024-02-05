@@ -15,14 +15,6 @@
     Coal: 1000
 
 - type: latheRecipe
-  id: SheetPlasteel10
-  result: SheetPlasteel
-  completetime: 2
-  materials:
-    Steel: 3000
-    Plasma: 1500
-
-- type: latheRecipe
   id: SheetGlass1
   result: SheetGlass1
   applyMaterialDiscount: false
@@ -85,8 +77,8 @@
   result: SheetPlasteel
   completetime: 5
   materials:
-    RawPlasma: 3000
-    RawIron: 6000 #Twice as durable as steel, Twice the material cost
+    RawPlasma: 1500 # SS220 Cargo reb
+    RawIron: 3000 # SS220 Cargo reb
     Coal: 1000
 
 - type: latheRecipe
