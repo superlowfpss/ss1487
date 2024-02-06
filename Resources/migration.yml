@@ -196,3 +196,6 @@ ClothingHeadHelmetVoidParamed: null
 
 # 2024-01-19
 DefaultStationBeaconTeslaEngine: null
+
+# 2024-02-06
+AsteroidRockCrab1: AsteroidRock # SS220 asteroid-migration
