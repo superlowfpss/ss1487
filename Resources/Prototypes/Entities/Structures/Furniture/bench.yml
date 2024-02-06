@@ -11,8 +11,9 @@
     sprite: Structures/Furniture/Bench/comf_bench.rsi
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      #color: "#767e82" # SS220 TauCeti bench colors
     - state: bench_solo_cover
+      color: "#e3ab4b" # SS220 TauCeti bench colors
   - type: Physics
     bodyType: Static
   - type: StaticPrice
@@ -27,7 +28,7 @@
   - type: Sprite
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      #color: "#767e82" # SS220 TauCeti bench colors
     - state: bench_solo_cover
       map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: RandomSprite
@@ -43,7 +44,7 @@
   - type: Sprite
     layers:
     - state: bench_solo_base
-      color: "#767e82"
+      #color: "#767e82" # SS220 TauCeti bench colors
     - state: bench_solo_cover
       color: "#8c4141"
   - type: Construction
