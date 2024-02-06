@@ -214,7 +214,7 @@
     - !type:InSpaceRule
     - !type:GridInRangeRule
       inverted: true
-      range: 3
+      range: 1 # SS220 space-ambience-distance
 
 # TODO
 - type: rules
