@@ -16,7 +16,7 @@
   rules:
     - Nukeops
     - Traitor
-    - Revolutionary
+    # - Revolutionary
     - Zombie
     - RampingStationEventScheduler
 
