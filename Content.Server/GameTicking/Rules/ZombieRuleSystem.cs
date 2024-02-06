@@ -276,11 +276,16 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
             if (player.AttachedEntity == null || !HasComp<HumanoidAppearanceComponent>(player.AttachedEntity) || HasComp<ZombieImmuneComponent>(player.AttachedEntity))
                 continue;
 
+            // SS220 No-Zombie-Roles begin
             // Role prevents being a zombie.
             if (!_jobs.CanBeZombie(player))
             {
                 continue;
             }
+            // SS220 No-Zombie-Roles end
+
+            if (HasComp<InitialInfectedExemptComponent>(player.AttachedEntity))
+                continue; // used (for example) on ERT
 
             playerList.Add(player);
 
