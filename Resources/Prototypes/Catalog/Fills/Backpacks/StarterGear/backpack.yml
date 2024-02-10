@@ -34,14 +34,12 @@
 
 - type: entity
   noSpawn: true
-  parent: ClothingBackpackSecurity
-  id: ClothingBackpackSecurityFilledDetective
+  parent: ClothingBackpack
+  id: ClothingBackpackFilledDetective
   components:
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
-      - id: Flash
-      - id: Flash
       - id: ForensicPad
       - id: ForensicScanner
       - id: FlashlightSeclite

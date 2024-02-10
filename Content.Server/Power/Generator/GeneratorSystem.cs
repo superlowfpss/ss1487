@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Server.Audio;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
@@ -92,28 +91,28 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
             return;
 
-        var totalAvailableReagents = solution.GetTotalPrototypeQuantity(entity.Comp.Reagents.Keys.Select(p => p.Id).ToArray()).Value;
+        var totalReagent = 0f;
+        foreach (var (reagentId, _) in entity.Comp.Reagents)
+        {
+            totalReagent += solution.GetTotalPrototypeQuantity(reagentId).Float();
+            totalReagent += entity.Comp.FractionalReagents.GetValueOrDefault(reagentId);
+        }
+
+        if (totalReagent == 0)
+            return;
 
         foreach (var (reagentId, multiplier) in entity.Comp.Reagents)
         {
-            var toRemove = 1;
-            if (totalAvailableReagents != 0)
-            {
-                var availableReagent = solution.GetTotalPrototypeQuantity(reagentId).Value;
-                var removalPercentage = availableReagent / totalAvailableReagents;
-                var fractionalReagent = entity.Comp.FractionalReagents.GetValueOrDefault(reagentId);
-                toRemove = RemoveFractionalFuel(
-                    ref fractionalReagent,
-                    args.FuelUsed * removalPercentage,
-                    multiplier * FixedPoint2.Epsilon.Float(),
-                    availableReagent);
+            var fractionalReagent = entity.Comp.FractionalReagents.GetValueOrDefault(reagentId);
+            var availableReagent = solution.GetTotalPrototypeQuantity(reagentId);
+            var availForRatio = fractionalReagent + availableReagent.Float();
+            var removalPercentage = availForRatio / totalReagent;
 
-                entity.Comp.FractionalReagents[reagentId] = fractionalReagent;
-            }
-            else
-            {
-                entity.Comp.FractionalReagents[reagentId] = 0;
-            }
+            var toRemove = RemoveFractionalFuel(
+                ref fractionalReagent,
+                args.FuelUsed * removalPercentage,
+                multiplier * FixedPoint2.Epsilon.Float(),
+                availableReagent.Value);
 
             _solutionContainer.RemoveReagent(entity.Comp.Solution.Value, reagentId, FixedPoint2.FromCents(toRemove));
         }
@@ -124,15 +123,12 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
             return;
 
-        var totalAvailableReagents = solution.GetTotalPrototypeQuantity(entity.Comp.Reagents.Keys.Select(p => p.Id).ToArray());
         var fuel = 0f;
         foreach (var (reagentId, multiplier) in entity.Comp.Reagents)
         {
-            var availableReagent = solution.GetTotalPrototypeQuantity(reagentId);
-            var percentage = availableReagent / totalAvailableReagents;
-            var fractionalReagent = (availableReagent * percentage).Float();
+            var reagent = solution.GetTotalPrototypeQuantity(reagentId).Float();
+            reagent += entity.Comp.FractionalReagents.GetValueOrDefault(reagentId) * FixedPoint2.Epsilon.Float();
 
-            var reagent = entity.Comp.FractionalReagents.GetValueOrDefault(reagentId) * FixedPoint2.Epsilon.Float() + fractionalReagent;
             fuel += reagent * multiplier;
         }
 
@@ -153,6 +149,10 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
     private int RemoveFractionalFuel(ref float fractional, float fuelUsed, float multiplier, int availableQuantity)
     {
+        // Just a sanity thing since I got worried this might be possible.
+        if (!float.IsFinite(fractional))
+            fractional = 0;
+
         fractional -= fuelUsed / multiplier;
         if (fractional >= 0)
             return 0;

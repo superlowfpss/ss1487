@@ -18,7 +18,6 @@ using Content.Shared.Standing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
-using Content.Shared.Vehicle.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
@@ -138,16 +137,6 @@ public abstract partial class SharedBuckleSystem
 
     private void OnBuckleStandAttempt(EntityUid uid, BuckleComponent component, StandAttemptEvent args)
     {
-        //Let entities stand back up while on vehicles so that they can be knocked down when slept/stunned
-        //This prevents an exploit that allowed people to become partially invulnerable to stuns
-        //while on vehicles
-
-        if (component.BuckledTo != null)
-        {
-            var buckle = component.BuckledTo;
-            if (TryComp<VehicleComponent>(buckle, out _))
-                return;
-        }
         if (component.Buckled)
             args.Cancel();
     }
@@ -163,8 +152,7 @@ public abstract partial class SharedBuckleSystem
         if (component.LifeStage > ComponentLifeStage.Running)
             return;
 
-        if (component.Buckled &&
-            !HasComp<VehicleComponent>(component.BuckledTo)) // buckle+vehicle shitcode
+        if (component.Buckled) // buckle shitcode
             args.Cancel();
     }
 
@@ -379,7 +367,7 @@ public abstract partial class SharedBuckleSystem
         if (TryComp<AppearanceComponent>(buckleUid, out var appearance))
             Appearance.SetData(buckleUid, BuckleVisuals.Buckled, true, appearance);
 
-        _rotationVisuals.SetHorizontalAngle(buckleUid,  strapComp.Rotation);
+        _rotationVisuals.SetHorizontalAngle(buckleUid, strapComp.Rotation);
 
         ReAttach(buckleUid, strapUid, buckleComp, strapComp);
         SetBuckledTo(buckleUid, strapUid, strapComp, buckleComp);
@@ -457,27 +445,6 @@ public abstract partial class SharedBuckleSystem
 
             if (HasComp<SleepingComponent>(buckleUid) && buckleUid == userUid)
                 return false;
-
-            if (TryComp<VehicleComponent>(strapUid, out var vehicle) &&
-                vehicle.Rider != userUid)
-            {
-                //SS220-Vehicle-doafter-fix begin
-                //So here if the one to unbuckle isn't one riding the vehicle,
-                //we are raising DoAfter event, so you need some time to
-                //unbuckle someone from a vehicle.
-                var doAfterEventArgs = new DoAfterArgs(EntityManager, userUid, buckleComp.VehicleUnbuckleTime, new UnbuckleDoAfterEvent(),
-                    vehicle.Rider, target: vehicle.Rider)
-                {
-                    BreakOnTargetMove = true,
-                    BreakOnUserMove = true,
-                    BreakOnDamage = true,
-                    NeedHand = true
-                };
-
-                _doAfter.TryStartDoAfter(doAfterEventArgs);
-                //SS220-Vehicle-doafter-fix end
-                return false;
-            }
 
             // If the strap is a vehicle and the rider is not the person unbuckling, return. Unless the rider is crit or dead.
             //if (TryComp<VehicleComponent>(strapUid, out var vehicle) && vehicle.Rider != userUid && !_mobState.IsIncapacitated(buckleUid))
