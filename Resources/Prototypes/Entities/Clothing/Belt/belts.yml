@@ -222,6 +222,7 @@
         - HolosignProjector
         - Plunger
         - LightReplacer
+        - JanicartKeys # SS220 Readd-Vehicles
       components:
         - LightReplacer
   - type: ItemMapper

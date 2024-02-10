@@ -14,6 +14,7 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Popups;
 using Content.Shared.Pulling.Components;
 using Content.Shared.SS220.Buckle;
+using Content.Shared.SS220.Vehicle.Components;
 using Content.Shared.Standing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Stunnable;
@@ -131,6 +132,19 @@ public abstract partial class SharedBuckleSystem
 
     private void OnBuckleDownAttempt(EntityUid uid, BuckleComponent component, DownAttemptEvent args)
     {
+        // SS220 Readd-Vehicles begin
+        //Let entities stand back up while on vehicles so that they can be knocked down when slept/stunned
+        //This prevents an exploit that allowed people to become partially invulnerable to stuns
+        //while on vehicles
+
+        if (component.BuckledTo != null)
+        {
+            var buckle = component.BuckledTo;
+            if (TryComp<VehicleComponent>(buckle, out _))
+                return;
+        }
+        // SS220 Readd-Vehicles end
+
         if (component.Buckled)
             args.Cancel();
     }
@@ -152,7 +166,8 @@ public abstract partial class SharedBuckleSystem
         if (component.LifeStage > ComponentLifeStage.Running)
             return;
 
-        if (component.Buckled) // buckle shitcode
+        if (component.Buckled &&
+            !HasComp<VehicleComponent>(component.BuckledTo)) // buckle+vehicle shitcode //SS220 Readd-Vehicles
             args.Cancel();
     }
 
@@ -445,6 +460,29 @@ public abstract partial class SharedBuckleSystem
 
             if (HasComp<SleepingComponent>(buckleUid) && buckleUid == userUid)
                 return false;
+
+            // SS220 Readd-Vehicles begin
+            if (TryComp<VehicleComponent>(strapUid, out var vehicle) &&
+                vehicle.Rider != userUid)
+            {
+                //SS220-Vehicle-doafter-fix begin
+                //So here if the one to unbuckle isn't one riding the vehicle,
+                //we are raising DoAfter event, so you need some time to
+                //unbuckle someone from a vehicle.
+                var doAfterEventArgs = new DoAfterArgs(EntityManager, userUid, buckleComp.VehicleUnbuckleTime, new UnbuckleDoAfterEvent(),
+                    vehicle.Rider, target: vehicle.Rider)
+                {
+                    BreakOnTargetMove = true,
+                    BreakOnUserMove = true,
+                    BreakOnDamage = true,
+                    NeedHand = true
+                };
+
+                _doAfter.TryStartDoAfter(doAfterEventArgs);
+                //SS220-Vehicle-doafter-fix end
+                return false;
+            }
+            // SS220 Readd-Vehicles end
 
             // If the strap is a vehicle and the rider is not the person unbuckling, return. Unless the rider is crit or dead.
             //if (TryComp<VehicleComponent>(strapUid, out var vehicle) && vehicle.Rider != userUid && !_mobState.IsIncapacitated(buckleUid))

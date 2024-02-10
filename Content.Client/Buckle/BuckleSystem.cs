@@ -2,6 +2,7 @@ using Content.Client.Rotation;
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Rotation;
+using Content.Shared.SS220.Vehicle.Components;
 using Robust.Client.GameObjects;
 
 namespace Content.Client.Buckle;
@@ -24,6 +25,11 @@ internal sealed class BuckleSystem : SharedBuckleSystem
 
         if (!TryComp<SpriteComponent>(uid, out var ownerSprite))
             return;
+
+        // SS220 Readd-Vehicles begin
+        if (HasComp<VehicleComponent>(component.LastEntityBuckledTo))
+            return;
+        // SS220 Readd-Vehicles end
 
         // Adjust draw depth when the chair faces north so that the seat back is drawn over the player.
         // Reset the draw depth when rotated in any other direction.
