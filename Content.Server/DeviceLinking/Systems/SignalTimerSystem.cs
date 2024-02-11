@@ -83,7 +83,7 @@ public sealed class SignalTimerSystem : EntitySystem
 
         if (TryComp<AppearanceComponent>(uid, out var appearance))
         {
-            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, new[] { signalTimer.Label }, appearance);
+            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, signalTimer.Label, appearance);
         }
 
         _audio.PlayPvs(signalTimer.DoneSound, uid);
@@ -158,7 +158,7 @@ public sealed class SignalTimerSystem : EntitySystem
         component.Label = args.Text[..Math.Min(5, args.Text.Length)];
 
         if (!HasComp<ActiveSignalTimerComponent>(uid))
-            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, new string?[] { component.Label });
+            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, component.Label);
     }
 
     //SS220-brig-timer-description begin
@@ -214,7 +214,7 @@ public sealed class SignalTimerSystem : EntitySystem
         if (appearance != null)
         {
             _appearanceSystem.SetData(uid, TextScreenVisuals.TargetTime, timer.TriggerTime, appearance);
-            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, new string?[] { }, appearance);
+            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, string.Empty, appearance);
         }
 
         _signalSystem.InvokePort(uid, component.StartPort);

@@ -137,6 +137,7 @@ public sealed class IdCardConsoleSystem : SharedIdCardConsoleSystem
                 PresetIdCardSystem.GetJobColor(_prototype, job),
                 job.RadioIsBold
             );
+            _idCard.TryChangeJobDepartment(targetId, job);
         }
 
         if (!newAccessList.TrueForAll(x => component.AccessLevels.Contains(x)))
