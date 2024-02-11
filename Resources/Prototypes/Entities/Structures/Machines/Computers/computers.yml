@@ -287,13 +287,13 @@
   name: criminal records computer
   description: This can be used to check criminal records. Only security can modify them.
   components:
-  - type: CriminalRecordsConsole
-  - type: UserInterface
-    interfaces:
-    - key: enum.CriminalRecordsConsoleKey.Key
-      type: CriminalRecordsConsoleBoundUserInterface
-  - type: ActivatableUI
-    key: enum.CriminalRecordsConsoleKey.Key
+  # - type: CriminalRecordsConsole #SS220 Criminal-Records (remove comp)
+  # - type: UserInterface
+  #   interfaces:
+  #   - key: enum.CriminalRecordsConsoleKey.Key
+  #     type: CriminalRecordsConsoleBoundUserInterface
+  # - type: ActivatableUI
+  #   key: enum.CriminalRecordsConsoleKey.Key
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -311,11 +311,11 @@
   #SS220 Criminal-Records begin
   - type: AccessReader
     access: [ [ "Brig" ] ] #So IAA can have access too
-  - type: CriminalRecordsConsole
+  - type: CriminalRecordsConsole220
   - type: UserInterface
     interfaces:
-      - key: enum.CriminalRecordsUiKey.Key
-        type: CriminalRecordsBoundUserInterface
+    - key: enum.CriminalRecordsUiKey.Key
+      type: CriminalRecordsBoundUserInterface
   - type: ActivatableUI
     key: enum.CriminalRecordsUiKey.Key
   - type: GuideHelp
@@ -324,11 +324,11 @@
   #SS220 Criminal-Records end
   - type: Computer
     board: CriminalRecordsComputerCircuitboard
-  - type: AccessReader
-    access: [["Security"]]
-  - type: GuideHelp
-    guides:
-    - CriminalRecords
+  # - type: AccessReader
+  #   access: [["Security"]]
+  # - type: GuideHelp
+  #   guides:
+  #   - CriminalRecords
 
 - type: entity
   parent: BaseComputer
@@ -338,7 +338,7 @@
   components:
   #SS220 Criminal-Records begin
   # - type: GeneralStationRecordConsole
-  - type: CriminalRecordsConsole
+  - type: CriminalRecordsConsole220
     isSecurity: false
   - type: UserInterface
     interfaces:
