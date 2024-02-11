@@ -200,6 +200,9 @@ DefaultStationBeaconTeslaEngine: null
 # 2024-02-06
 AsteroidRockCrab1: AsteroidRock # SS220 asteroid-migration
 
+# 2024-01-28
+FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
+
 # 2024-01-31
 HandheldCrewMonitorEmpty: null
 HandheldCrewMonitor: null
@@ -238,3 +241,7 @@ SyndiCrewMonitorEmpty: null
 # VehicleJanicart: null
 # VehicleJanicartDestroyed: null
 # SS220 Readd-Vehicles end
+
+# 2024-02-01
+YellowOxygenTank: OxygenTank
+YellowOxygenTankFilled: OxygenTankFilled
