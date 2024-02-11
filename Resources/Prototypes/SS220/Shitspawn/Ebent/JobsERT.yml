@@ -65,7 +65,7 @@
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
-    suitstorage: YellowOxygenTankFilled
+    suitstorage: OxygenTankFilled
     id: SpecOpsPDALeader
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltWebbingSpecOpsFilled
@@ -138,7 +138,7 @@
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
-    suitstorage: YellowOxygenTankFilled
+    suitstorage: OxygenTankFilled
     id: SpecOpsPDAEngineer
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltWebbingSpecOpsFilled
@@ -211,7 +211,7 @@
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
-    suitstorage: YellowOxygenTankFilled
+    suitstorage: OxygenTankFilled
     id: SpecOpsPDACorpsman
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltWebbingSpecOpsFilled
@@ -292,7 +292,7 @@
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
-    suitstorage: YellowOxygenTankFilled
+    suitstorage: OxygenTankFilled
     id: SpecOpsPDACMO
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltWebbingSpecOpsFilled
@@ -369,7 +369,7 @@
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
-    suitstorage: YellowOxygenTankFilled
+    suitstorage: OxygenTankFilled
     id: SpecOpsPDAFigher
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltWebbingSpecOpsFilled

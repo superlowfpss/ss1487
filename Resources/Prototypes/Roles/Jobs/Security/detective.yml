@@ -31,7 +31,6 @@
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity #ss-220-GlassesSecurity
     head: ClothingHeadHatFedoraBrown
-    outerClothing: ClothingOuterVestDetective
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled

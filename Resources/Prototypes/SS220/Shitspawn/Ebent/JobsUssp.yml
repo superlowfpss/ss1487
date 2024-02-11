@@ -61,7 +61,7 @@
     mask: ClothingMaskGasUssp
     gloves: ClothingHandsGlovesLeatherUSSPBlack
     outerClothing: ClothingOuterHardsuitUSSPCmd
-    suitstorage: YellowOxygenTankFilled
+    suitstorage: OxygenTankFilled
     id: UsspPDALeader
     ears: ClothingHeadsetUSSP
     belt: ClothingBeltUsspWebbingFilled

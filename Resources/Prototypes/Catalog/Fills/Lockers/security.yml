@@ -67,7 +67,7 @@
       - id: ClothingOuterHardsuitSecurity
       - id: HandheldGPSBasic
       - id: PilotBriefing
-      - id: YellowOxygenTankFilled
+      - id: OxygenTankFilled
       - id: NitrogenTankFilled
 
 - type: entity
