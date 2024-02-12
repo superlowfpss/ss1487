@@ -28,7 +28,7 @@ namespace Content.Server.Cargo.Commands
                 PrintCargoStationsInfo(shell);
                 return;
             }
-            if (args.Length == 4)
+            if (args.Length == 3)
             {
                 bool bSet = false;
 
