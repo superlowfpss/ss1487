@@ -7,6 +7,7 @@ using Robust.Shared.Console;
 using Content.Server.Cargo.Systems;
 using Content.Server.Cargo.Components;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Content.Server.Cargo.Commands
 {
@@ -22,11 +23,16 @@ namespace Content.Server.Cargo.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length == 2)
+            if (args.Length == 1 && args[0] == "getall")
+            {
+                PrintCargoStationsInfo(shell);
+                return;
+            }
+            if (args.Length == 3)
             {
                 bool bSet = false;
 
-                if (int.TryParse(args[1], out var toAdd))
+                if (int.TryParse(args[2], out var toAdd))
                 {
                     switch (args[0])
                     {
@@ -42,12 +48,21 @@ namespace Content.Server.Cargo.Commands
                             goto invalidArgs;
                     }
 
-                    ProccessMoney(shell, toAdd, bSet);
+                    ProccessMoney(shell, toAdd, bSet, args[1]);
                     return;
                 }
             }
         invalidArgs:
             shell.WriteLine("Expected invalid arguments!");
+        }
+        private void PrintCargoStationsInfo(IConsoleShell shell)
+        {
+            var bankQuery = _entityManager.EntityQueryEnumerator<StationBankAccountComponent>();
+
+            while (bankQuery.MoveNext(out var uid, out var bankComp))
+            {
+                shell.WriteLine($"BankEntity: {uid.Id}, Values: {bankComp.Balance}");
+            }
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
@@ -56,9 +71,12 @@ namespace Content.Server.Cargo.Commands
             switch (args.Length)
             {
                 case 1:
-                    res = CompletionResult.FromHint("set || add || rem");
+                    res = CompletionResult.FromHint("set || add || rem || getall");
                     break;
                 case 2:
+                    res = CompletionResult.FromHint("EntityUid");
+                    break;
+                case 3:
                     res = CompletionResult.FromHint("amount");
                     break;
             }
@@ -66,21 +84,23 @@ namespace Content.Server.Cargo.Commands
             return res;
         }
 
-        private void ProccessMoney(IConsoleShell shell, int money, bool bSet)
+        private void ProccessMoney(IConsoleShell shell, int money, bool bSet, string station)
         {
-            var cargoSystem = _entitySystemManager.GetEntitySystem<CargoSystem>();
-            var bankQuery = _entityManager.EntityQueryEnumerator<StationBankAccountComponent>();
+            if (EntityUid.TryParse(station, out var bankEnt) && _entityManager.TryGetComponent<StationBankAccountComponent>(bankEnt, out var bankComponent))
+            {
+                var cargoSystem = _entitySystemManager.GetEntitySystem<CargoSystem>();
 
-            bankQuery.MoveNext(out var owner, out var bankComponent);
-            if (!_entityManager.EntityExists(owner) || bankComponent is null)
+
+                var currentMoney = bankComponent.Balance;
+
+                cargoSystem.UpdateBankAccount(bankEnt, bankComponent, -currentMoney);
+                cargoSystem.UpdateBankAccount(bankEnt, bankComponent, bSet ? money : currentMoney + money);
+
+                shell.WriteLine($"Successfully changed EntityUid {station} cargo's money to {bankComponent.Balance}");
+                
                 return;
-
-            var currentMoney = bankComponent.Balance;
-
-            cargoSystem.UpdateBankAccount(owner, bankComponent, -currentMoney);
-            cargoSystem.UpdateBankAccount(owner, bankComponent, bSet ? money : currentMoney + money);
-
-            shell.WriteLine($"Successfully changed cargo's money to {bankComponent.Balance}");
+            }
+            shell.WriteError("Expected invalid EntityUid!");
         }
     }
 }
