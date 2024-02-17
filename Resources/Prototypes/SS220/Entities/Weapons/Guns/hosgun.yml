@@ -54,7 +54,7 @@
       visible: false
       shader: unshaded
     - state: lock-closed
-      map: ["enum.StorageVisualLayers.Lock"]
+      map: ["enum.LockVisualLayers.Lock"]
       shader: unshaded
   - type: Appearance
   - type: EngraveNameOnOpen
