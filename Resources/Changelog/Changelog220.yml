@@ -241,3 +241,11 @@
   id: 19
   time: '2024-02-19T18:29:17.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/759
+- author: Meower
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0446\u0432\u0435\u0442\
+      \u0430 \u0442\u0438\u0440\u043E\u0432 \u0448\u043B\u0451\u043F."
+    type: Tweak
+  id: 20
+  time: '2024-02-20T11:43:33.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/765
