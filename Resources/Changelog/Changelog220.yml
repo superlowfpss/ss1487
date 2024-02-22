@@ -360,3 +360,13 @@
   id: 26
   time: '2024-02-21T18:28:00.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/766
+- author: SkaldetSkaeg
+  changes:
+  - message: "\u0414\u0430\u0431\u043B\u0443 \u0442\u0435\u043F\u0435\u0440\u044C\
+      \ \u043D\u0435\u043B\u044C\u0437\u044F \u0430\u043A\u0442\u0438\u0432\u0438\u0440\
+      \u043E\u0432\u0430\u0442\u044C \u0432 \u043E\u0434\u043D\u043E\u0439 \u0440\u0443\
+      \u043A\u0435."
+    type: Fix
+  id: 27
+  time: '2024-02-22T06:34:45.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/769
