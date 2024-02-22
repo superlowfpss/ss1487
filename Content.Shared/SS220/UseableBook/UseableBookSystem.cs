@@ -30,7 +30,10 @@ public sealed class UseableBookSystem : EntitySystem
         bool bCan = false;
 
         if (comp.CanUseOneTime && comp.Used)
+        {
             reason = Loc.GetString("useable-book-used-onetime"); // данную книгу можно было изучить только один раз
+            goto retn;
+        }
         if (comp.CustomCanRead is not null)
         {
             var customCanRead = comp.CustomCanRead;
@@ -49,8 +52,7 @@ public sealed class UseableBookSystem : EntitySystem
         }
         if (comp.LeftUses > 0)
             bCan = true;
-
-        if (!bCan)
+        else
             reason = Loc.GetString("useable-book-used"); // потрачены все использования
 
         retn:

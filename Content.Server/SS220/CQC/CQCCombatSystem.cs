@@ -29,7 +29,7 @@ public sealed class CQCCombatSystem : CQCCombatSharedSystem
     [Dependency] private readonly DamageableSystem _damage = default!;
     [Dependency] private readonly HandsSystem _hands = default!;
     private const string StatusEffectKey = "ForcedSleep"; // Same one used by N2O and other sleep chems.
-    private const double SleepCooldown = 120;
+    private const double SleepCooldown = 30;
     private const double BlowbackParalyze = 4;
     public override void Initialize()
     {

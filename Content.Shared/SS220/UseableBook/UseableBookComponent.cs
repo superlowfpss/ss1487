@@ -10,7 +10,7 @@ public sealed partial class UseableBookComponent : Component
 {
     [DataField()]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int LeftUses { get; set; } = 0;
+    public int LeftUses { get; set; } = 5;
     [DataField()]
     [ViewVariables(VVAccess.ReadWrite)]
     public bool CanUseOneTime = false;

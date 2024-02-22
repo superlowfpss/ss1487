@@ -13,8 +13,7 @@
     - Book
   - type: UseableBook
     readTime: 3
-    leftUses: 1
-    canUseOneTime: false
+    canUseOneTime: true
     customCanRead: !type:CQCCanReadBook
     componentsOnRead:
     - type: CQCCombat
@@ -39,9 +38,8 @@
     tags:
     - Book
   - type: UseableBook
-    readTime: 3
-    leftUses: 1
-    canUseOneTime: false
+    readTime: 60
+    canUseOneTime: true
     customCanRead: !type:CQCCanReadBook
     componentsOnRead:
     - type: CQCCombat
