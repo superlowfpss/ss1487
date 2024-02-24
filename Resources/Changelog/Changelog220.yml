@@ -448,3 +448,11 @@
   id: 32
   time: '2024-02-23T11:02:34.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/772
+- author: Kit0vras
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
+      \u0442\u0430 NSS Nox."
+    type: Tweak
+  id: 33
+  time: '2024-02-24T23:37:03.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/752
