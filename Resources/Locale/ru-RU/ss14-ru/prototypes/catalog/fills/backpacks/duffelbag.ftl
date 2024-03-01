@@ -70,3 +70,5 @@ ent-ClothingBackpackDuffelSyndicateMedicalBundleFilled = { ent-ClothingBackpackD
 ent-ClothingBackpackDuffelSyndicateOperativeLone = { ent-ClothingBackpackDuffelSyndicate }
     .suffix = набор "C-20r", Заполненный, С-20, С20
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
+ent-ClothingBackpackDuffelSyndicateDecoyKitFilled = набор обманок
+    .desc = Содержит отвлекающие устройства, как звуковые, так и визуальные. Скоро появятся и обонятельные.
