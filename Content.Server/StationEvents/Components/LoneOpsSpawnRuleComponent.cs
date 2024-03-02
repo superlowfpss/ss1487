@@ -26,6 +26,6 @@ public sealed partial class LoneOpsSpawnRuleComponent : Component
     //Waiting 20 minutes on a crapmed shuttle would make you go insane
     // so i cut it down to 10
     [DataField("warArriveDelay")]
-    public TimeSpan? WarArriveDelay = TimeSpan.FromMinutes(10);
+    public TimeSpan WarArriveDelay = TimeSpan.FromMinutes(10);
     // SS220 Lone-Nukie-Declare-War end
 }

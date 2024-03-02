@@ -29,6 +29,9 @@
       "name": "stamp-deny"
     },
     {
+      "name": "stamp-detective"
+    },
+    {
       "name": "stamp-hop"
     },
     {
@@ -60,9 +63,6 @@
     },
     {
       "name": "stamp-iaa"
-    },
-    {
-      "name": "stamp-detective"
     }
   ]
 }

@@ -4,6 +4,16 @@
   id: BoxSurvival
   description: It's a box with basic internals inside.
   components:
+  # SS220 Bigger-survival-box begin
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,3
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,3
+  # SS220 Bigger-survival-box end
   - type: StorageFill
     contents:
       - id: ClothingMaskBreath
@@ -11,7 +21,7 @@
       - id: EmergencyMedipen
       - id: SpaceMedipen # SS220 Revert deleted Medipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:

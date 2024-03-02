@@ -1333,16 +1333,21 @@
   parent: VendingMachine
   name: vending machine
   abstract: true
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wallmount
   components:
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures: {}
   - type: Sprite
     drawdepth: WallMountedItems
     snapCardinals: false
+  - type: Rotatable
   - type: WallMount
-    arc: 180
-  - type: Fixtures
-    fixtures: {}
-  - type: Physics
-    canCollide: false
+    arc: 175
   - type: Transform
     noRot: false
 
