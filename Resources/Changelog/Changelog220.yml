@@ -550,3 +550,14 @@
   id: 42
   time: '2024-03-04T16:31:22.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/774
+- author: Dexler
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0430\u0434\u043C\u0438\u043D\
+      -\u0433\u043E\u0441\u0442\u0430\u043C \u0441\u043A\u0440\u044B\u0432\u0430\u0442\
+      \u044C \u0432\u0441\u0451 \u0442\u0435\u043B\u043E, \u043A\u0440\u043E\u043C\
+      \u0435 \u0448\u043B\u044F\u043F\u044B."
+    type: Add
+  id: 43
+  time: '2024-03-04T16:48:25.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/777
