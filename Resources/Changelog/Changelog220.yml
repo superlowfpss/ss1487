@@ -561,3 +561,12 @@
   id: 43
   time: '2024-03-04T16:48:25.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/777
+- author: Kit0vras
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u0441\u043F\u0440\u0430\u0439\
+      \u0442 \u043E\u0440\u0443\u0436\u0435\u0439\u043D\u043E\u0433\u043E \u0441\u0435\
+      \u0439\u0444\u0430."
+    type: Tweak
+  id: 44
+  time: '2024-03-04T18:00:30.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/781
