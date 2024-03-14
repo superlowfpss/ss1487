@@ -10,6 +10,6 @@ ent-ReinforcementRadioSyndicateMonkey = { ent-ReinforcementRadioSyndicate }
 ent-ReinforcementRadioSyndicateMonkeyNukeops = { ent-ReinforcementRadioSyndicateMonkey }
     .suffix = Ядерные оперативники
     .desc = { ent-ReinforcementRadioSyndicateMonkey.desc }
-ent-ReinforcementRadioSyndicateCyborgAssault = syndicate assault cyborg reinforcement radio
+ent-ReinforcementRadioSyndicateCyborgAssault = радио подкрепления штурмового киборга Синдиката
     .desc = Призовите хорошо вооружённого штурмового киборга, немедленно!
     .suffix = Ядерные оперативники
