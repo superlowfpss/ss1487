@@ -17,6 +17,7 @@ using Robust.Shared.Random;
 using System.Linq;
 using Content.Shared.Chat;
 using Robust.Shared.Enums;
+using Content.Server.Administration.Managers;
 
 namespace Content.Server.Antag;
 
@@ -27,6 +28,7 @@ public sealed class AntagSelectionSystem : GameRuleSystem<GameRuleComponent>
     [Dependency] private readonly JobSystem _jobs = default!;
     [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
+    [Dependency] private readonly IBanManager _banManager = default!; // SS220 Antag ban fix
 
     #region Eligible Player Selection
     /// <summary>
@@ -161,6 +163,13 @@ public sealed class AntagSelectionSystem : GameRuleSystem<GameRuleComponent>
         if (session.Status == SessionStatus.Disconnected ||
             session.Status == SessionStatus.Zombie)
             return false;
+
+        // SS220 Antag ban fix begin
+        if (_banManager.GetRoleBans(session.UserId) is { } roleBans && roleBans.Contains(antagPrototype.Id))
+        {
+            return false;
+        }
+        // SS220 Antag ban fix end
 
         //Check the player has this antag preference selected
         //Unless we are ignoring preferences, in which case add them anyway

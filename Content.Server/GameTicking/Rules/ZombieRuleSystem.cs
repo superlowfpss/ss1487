@@ -1,5 +1,6 @@
 using Content.Server.Actions;
 using Content.Server.Antag;
+using Content.Server.Administration.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Popups;
@@ -43,6 +44,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly AntagSelectionSystem _antagSelection = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly IBanManager _banManager = default!; // SS220 Antag ban fix
 
     public override void Initialize()
     {
