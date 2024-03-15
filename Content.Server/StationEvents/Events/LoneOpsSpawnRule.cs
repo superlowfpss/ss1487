@@ -41,6 +41,7 @@ public sealed class LoneOpsSpawnRule : StationEventSystem<LoneOpsSpawnRuleCompon
         nukeopsComp.WarTCAmountPerNukie = component.WarTCAmount; // SS220 Lone-Nukie-Declare-War
         nukeopsComp.WarNukieArriveDelay = component.WarArriveDelay;
         nukeopsComp.RoundEndBehavior = RoundEndBehavior.Nothing;
+        nukeopsComp.WarDeclarationMinOps = 0; // SS220 Lone-Nukie-Declare-War
         GameTicker.StartGameRule(nukeopsEntity);
     }
 

@@ -356,8 +356,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
     private void OnShuttleFTLAttempt(ref ConsoleFTLAttemptEvent ev)
     {
-        var query = QueryActiveRules();
-        while (query.MoveNext(out _, out _, out var nukeops, out _))
+        var query = EntityQueryEnumerator<GameRuleComponent, NukeopsRuleComponent>(); // SS220 Lone-Ops-War
+        while (query.MoveNext(out _, out _, out var nukeops))
         {
             if (ev.Uid != nukeops.NukieShuttle)
                 continue;
@@ -381,13 +381,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
     private void OnShuttleCallAttempt(ref CommunicationConsoleCallShuttleAttemptEvent ev)
     {
-        // SS220 Lone-Ops-War begin
-
-        // SS220 Lone-Ops-War end
-
-
-        var query = QueryActiveRules();
-        while (query.MoveNext(out _, out _, out var nukeops, out _))
+        var query = EntityQueryEnumerator<GameRuleComponent, NukeopsRuleComponent>(); // SS220 Lone-Ops-War
+        while (query.MoveNext(out _, out _, out var nukeops))
         {
             // Can't call while war nukies are preparing to arrive
             if (nukeops is { WarDeclaredTime: not null })
@@ -422,13 +417,19 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         // SS220 Lone-Ops-War end
 
         // TODO: this is VERY awful for multi-nukies
-        var query = QueryActiveRules();
-        while (query.MoveNext(out _, out _, out var nukeops, out _))
+        var query = EntityQueryEnumerator<NukeopsRuleComponent>();
+        while (query.MoveNext(out var uid, out var nukeops)) // SS220 Lone-Ops-War
         {
+            // SS220 Lone-Ops-War begin
+            if (!opsRuleDict.TryGetValue(nukeops, out var loneops) && !HasComp<ActiveGameRuleComponent>(uid))
+                continue;
+            // SS220 Lone-Ops-War end
+
             if (nukeops.WarDeclaredTime != null)
                 continue;
 
-            if (Transform(ev.DeclaratorEntity).MapID != nukeops.NukiePlanet)
+            if (Transform(ev.DeclaratorEntity).MapID != nukeops.NukiePlanet
+            && (loneops == null || Transform(ev.DeclaratorEntity).MapID != loneops.ShuttleOriginMap)) // SS220 Lone-Ops-War
                 continue;
 
             var newStatus = GetWarCondition(nukeops, ev.Status);
@@ -438,8 +439,6 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
                 nukeops.WarDeclaredTime = Timing.CurTime;
                 var timeRemain = nukeops.WarNukieArriveDelay + Timing.CurTime;
                 ev.DeclaratorEntity.Comp.ShuttleDisabledTime = timeRemain;
-
-                opsRuleDict.TryGetValue(nukeops, out var loneops); // SS220 Lone-Ops-War
 
                 DistributeExtraTc(nukeops, loneops); // SS220 Lone-Ops-War
             }
@@ -476,14 +475,13 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             if (!(_tag.HasTag(uid, NukeOpsUplinkTagPrototype) || _tag.HasTag(uid, LoneOpsUplinkTagPrototype))) // SS220 Lone-Ops-War
                 continue;
 
-            if (!nukieRule.NukieOutpost.HasValue)
-                continue;
-
+            // SS220 Lone-Ops-War begin
             var isLoneopsStartMap = false;
             if (loneOpsRule != null)
                 isLoneopsStartMap = Transform(uid).MapID == loneOpsRule.ShuttleOriginMap;
+            // SS220 Lone-Ops-War end
 
-            if (Transform(uid).MapID != Transform(nukieRule.NukieOutpost.Value).MapID && // Will receive bonus TC only on their start outpost
+            if ((!nukieRule.NukieOutpost.HasValue || Transform(uid).MapID != Transform(nukieRule.NukieOutpost.Value).MapID) && // Will receive bonus TC only on their start outpost
                 !isLoneopsStartMap) // SS220 Lone-Ops-War
                 continue;
 
