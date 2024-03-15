@@ -363,7 +363,7 @@
   components:
     - type: Storage
       grid:
-      - 0,0,7,6
+      - 0,0,8,6 # SS220 Bigger-Ert-Backpacks
     - type: StorageFill
       contents:
         - id: BoxSurvivalEngineering
