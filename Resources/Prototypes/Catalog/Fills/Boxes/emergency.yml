@@ -41,7 +41,7 @@
       - id: EmergencyMedipen
       - id: SpaceMedipen # SS220 Revert deleted Medipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -83,7 +83,7 @@
       - id: EmergencyMedipen
       - id: SpaceMedipen # SS220 Revert deleted Medipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -104,7 +104,7 @@
       - id: EmergencyMedipen
       - id: SpaceMedipen # SS220 Revert deleted Medipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -131,7 +131,7 @@
       - id: EmergencyMedipen
       - id: SpaceMedipen # SS220 Revert deleted Medipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
   - type: Tag
     tags:
@@ -152,6 +152,7 @@
       - id: Flare
       - id: FoodTinMRE
       - id: DrinkWaterBottleFull
+      - id: FoodSnackNutribrick
   - type: Storage
     maxItemSize: Small
     grid:

@@ -29,6 +29,26 @@
   group: market
 
 - type: cargoProduct
+  id: MaterialBrass
+  icon:
+    sprite: Objects/Materials/Sheets/metal.rsi
+    state: brass_3
+  product: CrateMaterialBrass
+  cost: 2500
+  category: Materials
+  group: market
+
+- type: cargoProduct
+  id: MaterialPlasteel
+  icon:
+    sprite: Objects/Materials/Sheets/metal.rsi
+    state: plasteel_3
+  product: CrateMaterialPlasteel
+  cost: 3000
+  category: Materials
+  group: market
+
+- type: cargoProduct
   id: MaterialTextiles
   icon:
     sprite: Objects/Materials/materials.rsi
