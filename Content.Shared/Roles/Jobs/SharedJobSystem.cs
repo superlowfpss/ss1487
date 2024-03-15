@@ -156,18 +156,4 @@ public abstract class SharedJobSystem : EntitySystem
 
         return prototype.CanBeAntag;
     }
-
-    // SS220 No-Zombie-Roles begin
-    public bool CanBeZombie(EntityUid mob)
-    {
-        var mindId = _mind.GetMind(mob);
-        if (!mindId.HasValue)
-            return false;
-
-        if (!MindTryGetJob(mindId.Value, out _, out var prototype))
-            return true;
-
-        return prototype.CanBeZombie;
-    }
-    // SS220 No-Zombie-Roles end
 }

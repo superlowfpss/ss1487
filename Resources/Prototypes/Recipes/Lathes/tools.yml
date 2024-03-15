@@ -259,17 +259,6 @@
 
 #SS220 Craftable-Welding-Mask begin
 - type: latheRecipe
-  id: ClothingHeadHatWelding
-  icon:
-    sprite: Clothing/Head/Welding/welding.rsi
-    state: icon
-  result: ClothingHeadHatWelding
-  completetime: 3
-  materials:
-    Steel: 500
-    Glass: 200
-
-- type: latheRecipe
   id: ClothingEyesGlassesMeson
   icon:
     sprite: Clothing/Eyes/Glasses/meson.rsi

@@ -84,7 +84,6 @@
     idleState: icon
     runningState: building
     staticRecipes:
-      - ClothingHeadHatWelding #SS220 Craftable-Welding-Mask
       - ClothingEyesGlassesMeson #SS220 Craftable-Welding-Mask
       - Wirecutter
       - Igniter
@@ -164,6 +163,7 @@
       - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
+      - ClothingHeadHatWelding
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
