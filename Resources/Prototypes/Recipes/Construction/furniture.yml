@@ -59,8 +59,8 @@
   category: construction-category-furniture
   description: You sit in this. Either by will or force.
   icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: brass_chair
+    sprite: Corvax/Structures/Furniture/chairs.rsi # Corvax-Resprite
+    state: brass # Corvax-Resprite
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -717,7 +717,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   id: CurtainsBlack
   name: black curtains
@@ -733,7 +733,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked  
+    - !type:TileNotBlocked
 
 - type: construction
   id: CurtainsBlue
@@ -750,8 +750,8 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked  
-    
+    - !type:TileNotBlocked
+
 - type: construction
   id: CurtainsCyan
   name: cyan curtains
@@ -768,7 +768,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   id: CurtainsGreen
   name: green curtains
@@ -785,7 +785,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   id: CurtainsOrange
   name: orange curtains
@@ -802,7 +802,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   id: CurtainsPink
   name: pink curtains
@@ -819,7 +819,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   id: CurtainsPurple
   name: purple curtains
@@ -836,7 +836,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   id: CurtainsRed
   name: red curtains
@@ -852,7 +852,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked    
+    - !type:TileNotBlocked
 
 - type: construction
   id: CurtainsWhite

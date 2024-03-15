@@ -143,7 +143,8 @@
   parent: StoolBase
   components:
   - type: Sprite
-    state: brass_chair
+    sprite: Corvax/Structures/Furniture/chairs.rsi # Corvax-Resprite
+    state: brass # Corvax-Resprite
   - type: Construction
     graph: Seat
     node: chairBrass
