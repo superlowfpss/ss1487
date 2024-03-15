@@ -241,9 +241,9 @@
       - FloorBrassFilled
   - type: Stack
     stackType: FloorTileBrassFilled
-  - type: Construction
-    graph: TilesBrass
-    node: filledPlate
+  # - type: Construction
+  #   graph: TilesBrass
+  #   node: filledPlate
 
 - type: entity
   name: smooth brass plate
@@ -260,9 +260,9 @@
       - FloorBrassReebe
   - type: Stack
     stackType: FloorTileBrassReebe
-  - type: Construction
-    graph: TilesBrass
-    node: reebe
+  # - type: Construction
+  #   graph: TilesBrass
+  #   node: reebe
 
 - type: entity
   name: dirty tile
