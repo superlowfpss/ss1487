@@ -84,7 +84,7 @@
   cost:
     Telecrystal: 16
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
   conditions:
     - !type:BuyerWhitelistCondition
       blacklist:
