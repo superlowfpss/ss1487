@@ -207,10 +207,6 @@ DefaultStationBeaconTeslaEngine: null
 
 # 2024-02-06
 AsteroidRockCrab1: AsteroidRock # SS220 asteroid-migration
-# 2024-01-27 (Reverted on 2024-03-10)
-# ClothingBackpackSecurityFilledDetective: ClothingBackpackFilledDetective
-# ClothingBackpackDuffelSecurityFilledDetective: ClothingBackpackDuffelFilledDetective
-# ClothingBackpackSatchelSecurityFilledDetective: ClothingBackpackSatchelFilledDetective
 
 # 2024-01-28
 FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
@@ -284,8 +280,3 @@ AirlockExternalEasyPryLocked: AirlockExternalLocked
 AirlockExternalGlassEasyPryLocked: AirlockExternalGlassLocked
 AirlockGlassShuttleEasyPryLocked: AirlockExternalGlassShuttleLocked
 AirlockShuttleEasyPryLocked: AirlockExternalShuttleLocked
-
-#2024-03-10
-ClothingBackpackFilledDetective: ClothingBackpackSecurityFilledDetective
-ClothingBackpackDuffelFilledDetective: ClothingBackpackDuffelSecurityFilledDetective
-ClothingBackpackSatchelFilledDetective: ClothingBackpackSatchelSecurityFilledDetective
