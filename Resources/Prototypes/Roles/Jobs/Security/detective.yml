@@ -6,28 +6,30 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 72000 # SS220-RoleTime
+    time: 54000 # 15 hours
   startingGear: DetectiveGear
   icon: "JobIconDetective"
-  supervisors: job-supervisors-hop
-  canBeAntag: true
+  supervisors: job-supervisors-hos
+  canBeAntag: false
   access:
+  - Security
   - Brig
   - Maintenance
   - Service
   - Detective
-  extendedAccess:
-  - Security
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: DetectiveGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDetective
-    outerClothing: ClothingOuterVestDetective
     back: ClothingBackpackSecurityFilledDetective
     shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSecurity #ss-220-GlassesSecurity
+    eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatFedoraBrown
+    outerClothing: ClothingOuterVestDetective
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
