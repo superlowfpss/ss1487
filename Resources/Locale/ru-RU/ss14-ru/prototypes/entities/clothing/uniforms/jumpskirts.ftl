@@ -106,9 +106,10 @@ ent-ClothingUniformJumpskirtCentcomFormalDress = торжественное пл
     .desc = Платье для особых случаев.
 ent-ClothingUniformJumpskirtHosFormal = торжественное платье главы службы безопасности
     .desc = Платье для особых случаев.
+# Corvax-HiddenDesc-Start
 ent-ClothingUniformJumpskirtOperative = юбка-комбинезон оперативника
-    .suffix = юбка-комбинезон оперативников Синдиката
-    .desc =  { ent-ClothingUniformJumpsuitOperative.desc }
+    .desc = Униформа для проведения тактических операций в глубоком космосе.
+# Corvax-HiddenDesc-End
 ent-ClothingUniformJumpskirtTacticool = тактическая юбка-комбинезон
     .desc = Униформа для оперативных LARPеров, выполняющих тактические кражи изолированных перчаток в глубоком космосе.
 ent-ClothingUniformJumpskirtAtmos = юбка-комбинезон атмосферного техника
