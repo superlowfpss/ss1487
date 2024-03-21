@@ -906,3 +906,13 @@
   id: 64
   time: '2024-03-18T19:05:29.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/820
+- author: SkaldetSkaeg
+  changes:
+  - message: "\u0423 \u0448\u0430\u0445\u0442\u0435\u0440\u0441\u043A\u043E\u0433\u043E\
+      \ \u0431\u043E\u0440\u0433\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0440\
+      \u0430\u0446\u0438\u044F \u0441 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\
+      \u0435\u043D\u0438\u0435\u043C \u0447\u0430\u0441\u0442\u043E\u0442."
+    type: Tweak
+  id: 65
+  time: '2024-03-21T08:54:43.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/828
