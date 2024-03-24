@@ -1,11 +1,12 @@
 - type: gameMap
-  id: ss220_NukieOutpost
+  id: SS220_syndicate
   mapName: Nukie Outpost
   mapPath: /Maps/NukeOps/ss220_Nuke_outpost_noshuttle.yml
   minPlayers: 0
   stations:
     SyndicateOutpost:
-      stationProto: StandardNukieOutpost
+      stationProto: StandardSS220_syndicate
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Nukie Outpost"
+          mapNameTemplate: "SI-NO220 Outer Heaven "
+
