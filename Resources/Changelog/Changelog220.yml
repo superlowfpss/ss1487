@@ -1030,3 +1030,34 @@
   id: 73
   time: '2024-03-28T04:50:38.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/834
+- author: Ady4
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0441\u043E\u0437\u0434\
+      \u0430\u043D\u0438\u0435 \u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\
+      \u0447\u0438\u043A\u0430 \u0431\u0438\u043E\u043C\u0430\u0441\u0441\u044B: \u0442\
+      \u0435\u043F\u0435\u0440\u044C \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\
+      \u044F 2 \u0441\u043A\u0430\u043B\u044C\u043F\u0435\u043B\u044F \u0432\u043C\
+      \u0435\u0441\u0442\u043E 2 \u043D\u043E\u0436\u0435\u0439."
+    type: Tweak
+  id: 74
+  time: '2024-03-28T04:59:22.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/840
+- author: ZoNeSRuS
+  changes:
+  - message: "\u0421\u0442\u0430\u043C\u0438\u043D\u0430 \u0443\u0440\u043E\u043D\
+      \ \u0420\u043E\u043A\u0441\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\
+      \u0435 \u043F\u0440\u043E\u0431\u0438\u0432\u0430\u0435\u0442 \u0441\u043A\u0430\
+      \u0444\u0430\u043D\u0434\u0440\u044B."
+    type: Fix
+  id: 75
+  time: '2024-03-28T04:58:43.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/842
+- author: SkaldetSkaeg
+  changes:
+  - message: "\u0421\u0435\u0433\u0432\u0435\u0439 \u0441\u0438\u043D\u0434\u0438\u043A\
+      \u0430\u0442\u0430 \u043F\u0435\u0440\u0435\u043D\u0435\u0441\u0435\u043D \u0432\
+      \ \u0432\u043A\u043B\u0430\u0434\u043A\u0443 Deception"
+    type: Tweak
+  id: 76
+  time: '2024-03-28T04:58:13.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/844
