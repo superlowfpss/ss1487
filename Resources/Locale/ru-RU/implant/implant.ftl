@@ -31,5 +31,5 @@ use-emp-implant-action-description = Вызывает небольшой ЭМИ-
 use-dna-scrambler-implant-action-name = Перемешать ДНК
 use-dna-scrambler-implant-action-description = Меняет имя и внешность случайным образом.
 scramble-implant-activated-popup = Вы превратились в { $identity }
-deathrattle-implant-dead-message = Зафиксирована смерть { $user } по координатам { $position }.
-deathrattle-implant-critical-message = Жизненные показатели { $user } критические, требуется немедленная помощь по координатам { $position }.
+deathrattle-implant-dead-message = Зафиксирована смерть { $user } { $position }.
+deathrattle-implant-critical-message = Жизненные показатели { $user } критические, требуется немедленная помощь { $position }.
