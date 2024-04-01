@@ -1131,3 +1131,18 @@
   id: 81
   time: '2024-04-01T10:32:47.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/862
+- author: SkaldetSkaeg
+  changes:
+  - message: "\u0410\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\
+      \u044B\u0439 \u043F\u0438\u0440\u043E\u0433 \u0431\u0435\u0437 \u0442\u0430\u0440\
+      \u0435\u043B\u043A\u0438."
+    type: Add
+  - message: "\u0411\u0421\u043F\u0438\u0440\u043E\u0433\u043E\u043C\u0435\u0442 \u0431\
+      \u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0441\u0440\u0435\u0442 \u0431\u0435\
+      \u0441\u043A\u043E\u043D\u0435\u0447\u043D\u044B\u043C\u0438 \u043F\u0438\u0440\
+      \u043E\u0433\u0430\u043C\u0438 \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u0437\
+      \u0430\u0440\u044F\u0434\u043A\u0435."
+    type: Fix
+  id: 82
+  time: '2024-04-01T10:34:51.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/856
