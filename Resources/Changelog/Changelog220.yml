@@ -1236,3 +1236,11 @@
   id: 90
   time: '2024-04-01T17:30:14.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/861
+- author: Werzet
+  changes:
+  - message: "\u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u0435 \u0440\
+      \u043E\u043B\u0435\u0439 \u043F\u043E \u0440\u0430\u0441\u0441\u0430\u043C"
+    type: Remove
+  id: 91
+  time: '2024-04-02T12:08:10.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/871
