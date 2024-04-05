@@ -173,7 +173,7 @@
         damage:
           types:
             Asphyxiation: 1
-            Burn: 2
+            Heat: 2
             Poison: 1
       - !type:HealthChange
         damage:

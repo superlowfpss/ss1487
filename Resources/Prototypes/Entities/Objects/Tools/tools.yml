@@ -115,6 +115,8 @@
     damage:
       types:
         Blunt: 4.5
+    soundHit:
+      collection: MetalThud
   - type: Tool
     qualities:
       - Anchoring
@@ -152,6 +154,8 @@
     damage:
       types:
         Blunt: 8
+    soundHit:
+      collection: MetalThud
   - type: Tool
     qualities:
       - Prying
@@ -493,6 +497,8 @@
     damage:
       types:
         Blunt: 14
+    soundHit:
+      collection: MetalThud
   - type: Item
     size: Normal
     sprite: Objects/Tools/shovel.rsi
@@ -522,7 +528,7 @@
     slots:
     - Belt
   - type: MeleeWeapon
-    soundHit: !type:SoundCollectionSpecifier
+    soundHit: !type:SoundCollectionSpecifier # SS220 Sounds
       collection: BatonHit
     wideAnimationRotation: -135
     damage:
