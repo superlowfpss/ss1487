@@ -128,6 +128,9 @@
           prob: 0.10
         - id: Soap
           prob: 0.44
+        - id: null
+          prob: 0.67
+          orGroup: carp
         - id: PlushieCarp
           prob: 0.2
           orGroup: carp
@@ -240,6 +243,9 @@
           prob: 0.10
         - id: Soap
           prob: 0.44
+        - id: null
+          prob: 0.67
+          orGroup: carp
         - id: PlushieCarp
           prob: 0.2
           orGroup: carp
