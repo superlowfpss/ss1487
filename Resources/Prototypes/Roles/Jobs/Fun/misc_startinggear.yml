@@ -114,24 +114,6 @@
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
 
-#Syndicate Operative Outfit - Lone (SS220 Lone-Nukie-Declare-War)
-- type: startingGear
-  id: SyndicateOperativeGearLone
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitOperative
-    back: ClothingBackpackDuffelSyndicateOperativeLone
-    mask: ClothingMaskGasSyndicate
-    eyes: ClothingEyesHudSyndicate
-    ears: ClothingHeadsetAltSyndicate
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndie
-    shoes: ClothingShoesBootsCombatFilled
-    id: SyndiPDA
-    pocket1: DoubleEmergencyOxygenTankFilled
-    pocket2: LoneOpsUplinkRadio40TC
-    belt: ClothingBeltMilitaryWebbing
-  innerClothingSkirt: ClothingUniformJumpskirtOperative
-
 #Nuclear Operative Commander Gear
 - type: startingGear
   id: SyndicateCommanderGearFull
@@ -174,6 +156,26 @@
   innerClothingSkirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperativeMedic
   duffelbag: ClothingBackpackDuffelSyndicateOperativeMedic
+
+#Syndicate Lone Operative Outfit - Full Kit
+- type: startingGear
+  id: SyndicateLoneOperativeGearFull
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackDuffelSyndicateOperativeLone # SS220 Lone Ops Loadout
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitSyndie
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiPDA
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: LoneOpsUplinkRadio40TC # SS220 LoneOps Uplink
+    belt: ClothingBeltMilitaryWebbing
+  innerClothingSkirt: ClothingUniformJumpskirtOperative
+  satchel: ClothingBackpackDuffelSyndicateOperative
+  duffelbag: ClothingBackpackDuffelSyndicateOperative
 
 # Syndicate Footsoldier Gear
 - type: startingGear

@@ -83,6 +83,9 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/taser.rsi
     quickEquip: false
+    slots:
+    - Belt
+    - suitStorage
 
 - type: entity
   id: BaseWeaponPowerCellSmall

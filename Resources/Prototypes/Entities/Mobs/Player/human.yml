@@ -47,7 +47,7 @@
     - type: NukeOperative
     - type: LoneNukeOperative # SS220 Lone-Nukie-Declare-War
     - type: Loadout
-      prototypes: [SyndicateOperativeGearLone] # SS220 Lone-Nukie-Declare-War
+      prototypes: [SyndicateLoneOperativeGearFull]
     - type: RandomMetadata
       nameSegments:
       - SyndicateNamesPrefix
