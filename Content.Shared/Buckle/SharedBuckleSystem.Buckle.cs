@@ -464,8 +464,7 @@ public abstract partial class SharedBuckleSystem
                 var doAfterEventArgs = new DoAfterArgs(EntityManager, userUid, buckleComp.VehicleUnbuckleTime, new UnbuckleDoAfterEvent(),
                     vehicle.Rider, target: vehicle.Rider)
                 {
-                    BreakOnTargetMove = true,
-                    BreakOnUserMove = true,
+                    BreakOnMove = true,
                     BreakOnDamage = true,
                     NeedHand = true
                 };

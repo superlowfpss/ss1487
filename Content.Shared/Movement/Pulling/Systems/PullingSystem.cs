@@ -13,6 +13,7 @@ using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Pulling.Events;
+using Content.Shared.SS220.Cart.Components;
 using Content.Shared.Throwing;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
@@ -62,12 +63,28 @@ public sealed class PullingSystem : EntitySystem
         SubscribeLocalEvent<PullerComponent, EntityUnpausedEvent>(OnPullerUnpaused);
         SubscribeLocalEvent<PullerComponent, VirtualItemDeletedEvent>(OnVirtualItemDeleted);
         SubscribeLocalEvent<PullerComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
+        SubscribeLocalEvent<PullerComponent, ComponentStartup>(OnPullerStartup);
 
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.MovePulledObject, new PointerInputCmdHandler(OnRequestMovePulledObject))
             .Bind(ContentKeyFunctions.ReleasePulledObject, InputCmdHandler.FromDelegate(OnReleasePulledObject, handle: false))
             .Register<PullingSystem>();
     }
+
+    //SS220-Cart-system begin
+    private void OnPullerStartup(Entity<PullerComponent> entity, ref ComponentStartup args)
+    {
+        // Soooooooooo this is fucking dumb
+        // but I WILL NOT rewrite the whole component to be
+        // networked for the space wizards to do it themselves
+        // right after me, so this will work for now and I don't really care
+        // COPIUM
+        if (!HasComp<CartPullerComponent>(entity))
+            return;
+
+        entity.Comp.NeedsHands = false;
+    }
+    //SS220-Cart-system end
 
     private void OnPullerContainerInsert(Entity<PullerComponent> ent, ref EntGotInsertedIntoContainerMessage args)
     {
