@@ -50,13 +50,10 @@ namespace Content.Server.VendingMachines
         [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
-        private ISawmill _sawmill = default!;
-
         public override void Initialize()
         {
             base.Initialize();
 
-            _sawmill = Logger.GetSawmill("vending");
             SubscribeLocalEvent<VendingMachineComponent, MapInitEvent>(OnComponentMapInit);
             SubscribeLocalEvent<VendingMachineComponent, PowerChangedEvent>(OnPowerChanged);
             SubscribeLocalEvent<VendingMachineComponent, BreakageEventArgs>(OnBreak);
@@ -96,7 +93,7 @@ namespace Content.Server.VendingMachines
             {
                 if (!PrototypeManager.TryIndex<EntityPrototype>(entry.ID, out var proto))
                 {
-                    _sawmill.Error($"Unable to find entity prototype {entry.ID} on {ToPrettyString(uid)} vending.");
+                    Log.Error($"Unable to find entity prototype {entry.ID} on {ToPrettyString(uid)} vending.");
                     continue;
                 }
 
@@ -205,7 +202,7 @@ namespace Content.Server.VendingMachines
 
             if (!TryComp<VendingMachineRestockComponent>(args.Args.Used, out var restockComponent))
             {
-                _sawmill.Error($"{ToPrettyString(args.Args.User)} tried to restock {ToPrettyString(uid)} with {ToPrettyString(args.Args.Used.Value)} which did not have a VendingMachineRestockComponent.");
+                Log.Error($"{ToPrettyString(args.Args.User)} tried to restock {ToPrettyString(uid)} with {ToPrettyString(args.Args.Used.Value)} which did not have a VendingMachineRestockComponent.");
                 return;
             }
 

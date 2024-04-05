@@ -976,7 +976,7 @@
   productEntity: ReinforcementRadioSyndicateMonkey
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 8
+    Telecrystal: 6
   categories:
   - UplinkAllies
   conditions:
@@ -993,7 +993,7 @@
   productEntity: ReinforcementRadioSyndicateMonkeyNukeops
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 8
+    Telecrystal: 6
   categories:
   - UplinkAllies
   conditions:

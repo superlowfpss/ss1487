@@ -1067,6 +1067,9 @@
       materialRequirements:
         Glass: 2
         Cable: 2
+    - type: Tag
+      tags:
+      - MicrowaveMachineBoard
 
 - type: entity
   id: FatExtractorMachineCircuitboard
@@ -1366,4 +1369,3 @@
     materialRequirements:
       Steel: 5
       CableHV: 2
-
