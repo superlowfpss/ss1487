@@ -87,7 +87,7 @@
 - type: emote
   id: Honk
   category: Vocal
-  chatMessages: [хонкает] # Corvax-Localization
+  chatMessages: [издаёт хонк.] # Corvax-Localization
   chatTriggers:
     - honk
     - honk.
@@ -101,6 +101,11 @@
     - honking
     - honking.
     - honking!
+    # Corvax-Localization-Start
+    - хонк
+    - хонк.
+    - хонк!
+    # Corvax-Localization-End
 
 - type: emote
   id: Sigh
@@ -487,7 +492,7 @@
 - type: emote
   id: Buzz
   category: Vocal
-  chatMessages: [buzz!]
+  chatMessages: [жужжит!] # Corvax-Localization
   chatTriggers:
     - buzzing
     - buzzing!
@@ -534,7 +539,7 @@
 - type: emote
   id: Beep
   category: Vocal
-  chatMessages: [beeps.]
+  chatMessages: [делает бип.] # Corvax-Localization
   chatTriggers:
     - beep
     - beep!
@@ -548,11 +553,16 @@
     - beeping
     - beeping.
     - beeping!
+    # Corvax-Localization-Start
+    - бип
+    - бип.
+    - бип!
+    # Corvax-Localization-End
 
 - type: emote
   id: Chime
   category: Vocal
-  chatMessages: [chimes.]
+  chatMessages: [издаёт трель.] # Corvax-Localization
   chatTriggers:
     - chime
     - chime.
@@ -566,11 +576,16 @@
     - chiming
     - chiming,
     - chiming!
+    # Corvax-Localization-Start
+    - дзынь
+    - дзынь.
+    - дзынь!
+    # Corvax-Localization-End
 
 - type: emote
   id: Buzz-Two
   category: Vocal
-  chatMessages: [buzzesTwice.]
+  chatMessages: [издаёт бип-буп.] # Corvax-Localization
   chatTriggers:
     - buzztwice
     - buzztwice.
@@ -602,11 +617,31 @@
     - buzzed twice
     - buzzed twice.
     - buzzed twice!
+    # Corvax-Localization-Start
+    - бипбуп
+    - бипбуп.
+    - бипбуп!
+    - бип буп
+    - бип буп.
+    - бип буп!
+    - бип-буп
+    - бип-буп.
+    - бип-буп!
+    - бипбип
+    - бипбип.
+    - бипбип!
+    - бип бип
+    - бип бип.
+    - бип бип!
+    - бип-бип
+    - бип-бип.
+    - бип-бип!
+    # Corvax-Localization-End
 
 - type: emote
   id: Ping
   category: Vocal
-  chatMessages: [pings.]
+  chatMessages: [издаёт пинг.] # Corvax-Localization
   chatTriggers:
     - ping
     - ping.
@@ -620,3 +655,8 @@
     - pinging
     - pinging.
     - pinging!
+    # Corvax-Localization-Start
+    - пинг
+    - пинг.
+    - пинг!
+    # Corvax-Localization-End
