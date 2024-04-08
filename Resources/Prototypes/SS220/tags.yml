@@ -24,6 +24,9 @@
 # ss220 shlepi
 - type: Tag
   id: ElWyccoAxe
+ 
+- type: Tag
+  id: Meatwheat
 
 # ss220 detective-camera
 - type: Tag
