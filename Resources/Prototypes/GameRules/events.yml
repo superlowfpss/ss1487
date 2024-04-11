@@ -479,7 +479,7 @@
     minimumPlayers: 20
   - type: ImmovableRodRule
     rodPrototypes:
-    - id: ImmovableRodKeepTilesStill
+    - id: ImmovableRod # SS220 palka-ebalka
       prob: 0.95
       orGroup: rodProto
     - id: ImmovableRodMop
