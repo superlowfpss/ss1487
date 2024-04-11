@@ -99,7 +99,7 @@
         /// <summary>
         /// Allows you to remain hidden from adminwho except to other admins with this flag.
         /// </summary>
-        Stealth = 1 << 16,
+        Stealth = 1 << 17, // SS220 Enum-bit-shift PepeHands
 
         /// <summary>
         ///     Dangerous host permissions like scsi.
