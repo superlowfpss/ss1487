@@ -13,6 +13,12 @@
 - type: Tag
   id: ReactionCleanable
 
+- type: Tag
+  id: GrenadeDusterArta
+
+- type: Tag
+  id: MagazineGrenadeArta
+
 # READD-VEHICLES
 - type: Tag
   id: JanicartKeys
