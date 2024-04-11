@@ -265,7 +265,6 @@
   - type: Tag
     tags:
     - Fruit
-    - banana #SS220 fulls_day
     - Banana
 
 - type: entity
