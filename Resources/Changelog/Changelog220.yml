@@ -1482,3 +1482,21 @@
   id: 112
   time: '2024-04-14T15:28:04.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/907
+- author: ZoNeSRuS
+  changes:
+  - message: "\u0411\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\u043B\u044C\u0437\u044F\
+      \ \u043A\u0440\u0438\u0447\u0430\u0442\u044C \u0432\u043E \u0432\u0440\u0435\
+      \u043C\u044F \u0441\u043D\u0430."
+    type: Fix
+  id: 113
+  time: '2024-04-14T15:49:33.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/908
+- author: ZoNeSRuS
+  changes:
+  - message: "\u0413\u0438\u043F\u043F\u043E \u0440\u0443\u0447\u043A\u0430 \u0438\
+      \ \u043D\u043E\u043A\u0442\u044E\u0440\u0438\u043D \u0443\u0441\u0438\u043B\u0435\
+      \u043D\u044B."
+    type: Tweak
+  id: 114
+  time: '2024-04-14T15:50:05.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/909
