@@ -225,6 +225,7 @@
         - JanicartKeys # SS220 Readd-Vehicles
       components:
         - LightReplacer
+        - SmokeOnTrigger
     maxItemSize: Large
   - type: ItemMapper
     mapLayers:
