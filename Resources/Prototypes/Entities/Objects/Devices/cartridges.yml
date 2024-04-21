@@ -89,7 +89,7 @@
       programName: messenger-program-name
       icon:
         sprite:  Objects/Misc/books.rsi
-        state: book6
+        state: book_icon
     - type: MessengerClientCartridge
     - type: StationLimitedNetwork
     - type: DeviceNetwork
