@@ -125,6 +125,7 @@
   - type: Tag
     tags:
     - CannotSuicide
+    - DoorBumpOpener
   - type: ReplacementAccent #SS220 No talking dragons
     accent: genericAggressive
 
