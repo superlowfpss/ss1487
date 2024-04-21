@@ -2,12 +2,11 @@ using System.Linq;
 using Content.Server.Administration.Logs;
 using System.Numerics;
 using Content.Server.Advertise;
+using Content.Server.Advertise.Components;
 using Content.Server.Cargo.Systems;
-using Content.Server.Chat.Systems;
 using Content.Server.Emp;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
-using Content.Server.UserInterface;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Actions;
@@ -31,7 +30,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using Robust.Shared.Utility;
+using Content.Server.Advertise.EntitySystems;
 
 namespace Content.Server.VendingMachines
 {
@@ -49,6 +48,7 @@ namespace Content.Server.VendingMachines
         [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
         [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
+        [Dependency] private readonly SpeakOnUIClosedSystem _speakOnUIClosed = default!;
 
         public override void Initialize()
         {
@@ -68,7 +68,6 @@ namespace Content.Server.VendingMachines
             Subs.BuiEvents<VendingMachineComponent>(VendingMachineUiKey.Key, subs =>
             {
                 subs.Event<BoundUIOpenedEvent>(OnBoundUIOpened);
-                subs.Event<BoundUIClosedEvent>(OnBoundUIClosed);
                 subs.Event<VendingMachineEjectMessage>(OnInventoryEjectMessage);
             });
 
@@ -124,16 +123,6 @@ namespace Content.Server.VendingMachines
         private void OnBoundUIOpened(EntityUid uid, VendingMachineComponent component, BoundUIOpenedEvent args)
         {
             UpdateVendingMachineInterfaceState(uid, component);
-        }
-
-        private void OnBoundUIClosed(EntityUid uid, VendingMachineComponent component, BoundUIClosedEvent args)
-        {
-            // Only vendors that advertise will send message after dispensing
-            if (component.ShouldSayThankYou && TryComp<AdvertiseComponent>(uid, out var advertise))
-            {
-                _advertise.SayThankYou(uid, advertise);
-                component.ShouldSayThankYou = false;
-            }
         }
 
         private void UpdateVendingMachineInterfaceState(EntityUid uid, VendingMachineComponent component)
@@ -373,7 +362,10 @@ namespace Content.Server.VendingMachines
             vendComponent.Ejecting = true;
             GetItemToEject(ref vendComponent, entry);
             vendComponent.ThrowNextItem = throwItem;
-            vendComponent.ShouldSayThankYou = true;
+
+            if (TryComp(uid, out SpeakOnUIClosedComponent? speakComponent))
+                _speakOnUIClosed.TrySetFlag((uid, speakComponent));
+
             entry.Amount--;
             UpdateVendingMachineInterfaceState(uid, vendComponent);
             TryUpdateVisualState(uid, vendComponent);

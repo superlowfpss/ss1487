@@ -313,7 +313,7 @@ namespace Content.Client.LateJoin
                                 if (matchingJobButton.Amount != updatedJobValue)
                                 {
                                     matchingJobButton.RefreshLabel(updatedJobValue);
-                                    matchingJobButton.Disabled = matchingJobButton.Amount == 0;
+                                    matchingJobButton.Disabled |= matchingJobButton.Amount == 0;
                                 }
                             }
                         }
