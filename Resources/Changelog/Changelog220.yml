@@ -1611,3 +1611,11 @@
   id: 122
   time: '2024-04-21T22:46:35.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/927
+- author: Vnoeg
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043A\u0430\u0440\
+      \u0442\u0430 NSS Axioma."
+    type: Tweak
+  id: 123
+  time: '2024-04-21T22:48:02.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/926
