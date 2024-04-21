@@ -102,7 +102,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 1
 
 - type: entity
   id: BaseBulletRubber
@@ -291,7 +291,7 @@
     damage:
       types:
         Heat: 1
-        Stamina: 5
+        Stamina: 1 # SS220 Stamina-Damage-Type
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -639,7 +639,7 @@
         shader: unshaded
   - type: AnomalousParticle
     particleType: Sigma
-    
+
 - type: entity
   parent: AnomalousParticleSigma
   id: AnomalousParticleSigmaStrong
@@ -648,7 +648,7 @@
   components:
   - type: AnomalousParticle
     particleType: Sigma
-    
+
 # Launcher projectiles (grenade / rocket)
 - type: entity
   id: BulletRocket
