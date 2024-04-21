@@ -42,6 +42,7 @@ public sealed class SignalTimerSystem : EntitySystem
 
     private void OnInit(EntityUid uid, SignalTimerComponent component, ComponentInit args)
     {
+        _appearanceSystem.SetData(uid, TextScreenVisuals.DefaultText, component.Label);
         _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, component.Label);
         _signalSystem.EnsureSinkPorts(uid, component.Trigger);
     }
@@ -80,11 +81,6 @@ public sealed class SignalTimerSystem : EntitySystem
     public void Trigger(EntityUid uid, SignalTimerComponent signalTimer)
     {
         RemComp<ActiveSignalTimerComponent>(uid);
-
-        if (TryComp<AppearanceComponent>(uid, out var appearance))
-        {
-            _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, signalTimer.Label, appearance);
-        }
 
         _audio.PlayPvs(signalTimer.DoneSound, uid);
         _signalSystem.InvokePort(uid, signalTimer.TriggerPort);
@@ -155,10 +151,15 @@ public sealed class SignalTimerSystem : EntitySystem
         if (!IsMessageValid(uid, args))
             return;
 
-        component.Label = args.Text[..Math.Min(5, args.Text.Length)];
+        component.Label = args.Text[..Math.Min(component.MaxLength, args.Text.Length)];
 
         if (!HasComp<ActiveSignalTimerComponent>(uid))
+        {
+            // could maybe move the defaulttext update out of this block,
+            // if you delved deep into appearance update batching
+            _appearanceSystem.SetData(uid, TextScreenVisuals.DefaultText, component.Label);
             _appearanceSystem.SetData(uid, TextScreenVisuals.ScreenText, component.Label);
+        }
     }
 
     //SS220-brig-timer-description begin
@@ -194,7 +195,15 @@ public sealed class SignalTimerSystem : EntitySystem
     {
         if (!IsMessageValid(uid, args))
             return;
-        OnStartTimer(uid, component);
+
+        // feedback received: pressing the timer button while a timer is running should cancel the timer.
+        if (HasComp<ActiveSignalTimerComponent>(uid))
+        {
+            _appearanceSystem.SetData(uid, TextScreenVisuals.TargetTime, _gameTiming.CurTime);
+            Trigger(uid, component);
+        }
+        else
+            OnStartTimer(uid, component);
     }
 
     private void OnSignalReceived(EntityUid uid, SignalTimerComponent component, ref SignalReceivedEvent args)
