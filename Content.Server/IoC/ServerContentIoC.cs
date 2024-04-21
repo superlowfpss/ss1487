@@ -71,6 +71,7 @@ namespace Content.Server.IoC
             IoCManager.Register<ServerControlController>();
             IoCManager.Register<DiscordWebhook>();
             IoCManager.Register<ServerDbEntryManager>();
+            IoCManager.Register<ServerApi>();
         }
     }
 }
