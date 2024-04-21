@@ -95,8 +95,10 @@
       map: [ "enum.DisposalUnitVisualLayers.Unanchored" ]
     - state: disposal-rnd
       map: [ "enum.DisposalUnitVisualLayers.Base" ]
+    - state: disposal-charging
+      map: [ "enum.DisposalUnitVisualLayers.BaseCharging" ]
     - state: disposal-flush-rnd
-      map: [ "enum.DisposalUnitVisualLayers.BaseFlush" ]
+      map: [ "enum.DisposalUnitVisualLayers.OverlayFlush" ]
     - state: dispover-charge
       map: [ "enum.DisposalUnitVisualLayers.OverlayCharging" ]
     - state: dispover-ready
