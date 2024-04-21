@@ -1,32 +1,4 @@
 ﻿Entries:
-- author: themias
-  changes:
-  - message: Stun batons now toggle off after being drained by an EMP.
-    type: Fix
-  id: 5833
-  time: '2024-01-30T23:04:26.0000000+00:00'
-  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24706
-- author: Tayrtahn
-  changes:
-  - message: Fixed weird rotation while strapped to a bed.
-    type: Fix
-  id: 5834
-  time: '2024-01-30T23:23:31.0000000+00:00'
-  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24746
-- author: themias
-  changes:
-  - message: Some glasses and masks can be worn together to hide your identity.
-    type: Tweak
-  id: 5835
-  time: '2024-01-31T03:49:19.0000000+00:00'
-  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24741
-- author: mirrorcult
-  changes:
-  - message: Throwing recoil reduced further
-    type: Tweak
-  id: 5836
-  time: '2024-01-31T05:00:41.0000000+00:00'
-  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/24759
 - author: mirrorcult
   changes:
   - message: Various aspects of the station will now be varied automatically at the
@@ -3814,8 +3786,8 @@
   url: https://github.com/space-wizards/space-station-14/pull/26752
 - author: Jark255
   changes:
-  - message: Door electronics now require network configurators to change the access
-      of them, rather by hand.
+  - message: Door electronics now require network configurators to change their access
+      settings, rather than doing so by hand.
     type: Fix
   id: 6331
   time: '2024-04-11T12:21:15.0000000+00:00'
@@ -3828,3 +3800,31 @@
   id: 6332
   time: '2024-04-11T20:48:46.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/26813
+- author: Vermidia
+  changes:
+  - message: Salt and Pepper shakers look like shakers.
+    type: Fix
+  id: 6333
+  time: '2024-04-12T06:44:47.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26899
+- author: liltenhead
+  changes:
+  - message: Reagent slimes are no longer ghost roles.
+    type: Remove
+  id: 6334
+  time: '2024-04-12T06:50:46.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26840
+- author: TokenStyle
+  changes:
+  - message: Notice board can be crafted
+    type: Add
+  id: 6335
+  time: '2024-04-12T06:58:02.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26847
+- author: deltanedas
+  changes:
+  - message: Sterile Swabs now come in dispensers making them easier to use.
+    type: Tweak
+  id: 6336
+  time: '2024-04-12T07:15:04.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/24986

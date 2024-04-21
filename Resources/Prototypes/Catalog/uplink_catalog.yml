@@ -128,6 +128,8 @@
       blacklist:
         components:
           - SurplusBundle
+        tags:
+          - NukeOpsUplink
 
 - type: listing
   id: UplinkEshield
@@ -1348,9 +1350,9 @@
   conditions:
     - !type:BuyerWhitelistCondition
 # SS220-uplink-fix begin
-#   whitelist: 
-#      tags: 
-#       - NukeOpsUplink 
+#   whitelist:
+#      tags:
+#       - NukeOpsUplink
 #       - LoneOpsUplink
 # SS220-uplink-fix end
       blacklist:
