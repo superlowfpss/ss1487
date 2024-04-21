@@ -87,7 +87,7 @@
       500: Dead
   - type: Metabolizer
     solutionOnBody: false
-    updateFrequency: 0.25
+    updateInterval: 0.25
     metabolizerTypes: [ Dragon ]
     groups:
     - id: Medicine
@@ -134,8 +134,6 @@
   id: MobDragon
   components:
   - type: Dragon
-    spawnsLeft: 2
-    spawnsProto: MobCarpDragon
     spawnRiftAction: ActionSpawnRift
   - type: GenericAntag
     rule: Dragon
