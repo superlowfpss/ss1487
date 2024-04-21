@@ -26,7 +26,7 @@
     outerClothing: ClothingOuterVestDetective
     back: ClothingBackpackSecurityFilledDetective
     shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSecurity #ss-220-GlassesSecurity
+    eyes: ClothingEyesGlassesSecurity
     head: ClothingHeadHatFedoraBrown
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
