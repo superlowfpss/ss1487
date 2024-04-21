@@ -70,7 +70,7 @@
   noSpawn: true
   components:
   - type: GameRule
-    minPlayers: 35
+    minPlayers: 20
   - type: NukeopsRule
     faction: Syndicate
 
