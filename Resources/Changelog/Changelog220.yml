@@ -1647,3 +1647,11 @@
   id: 124
   time: '2024-04-21T22:49:35.0000000+00:00'
   url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/916
+- author: TheArturZh
+  changes:
+  - message: "DOS \u043F\u043E\u0444\u0438\u043A\u0448\u0435\u043D, \u043C\u043E\u0436\
+      \u0435\u0442 \u0431\u044B\u0442\u044C."
+    type: Fix
+  id: 125
+  time: '2024-04-22T01:50:51.0000000+00:00'
+  url: https://api.github.com/repos/SerbiaStrong-220/space-station-14/pulls/928
