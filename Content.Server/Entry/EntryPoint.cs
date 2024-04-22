@@ -35,6 +35,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.SS220.BackEndApi;
+using Content.Server.SS220.EnginePatches;
 
 namespace Content.Server.Entry
 {
@@ -58,6 +59,8 @@ namespace Content.Server.Entry
             var cfg = IoCManager.Resolve<IConfigurationManager>();
             var res = IoCManager.Resolve<IResourceManager>();
             var logManager = IoCManager.Resolve<ILogManager>();
+
+            Patcher.Patch(logManager); // SS220 Harmony-Patching
 
             LoadConfigPresets(cfg, res, logManager.GetSawmill("configpreset"));
 
