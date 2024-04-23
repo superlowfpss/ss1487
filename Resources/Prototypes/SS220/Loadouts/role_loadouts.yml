@@ -16,3 +16,11 @@
   - SecurityShoes
   - SecurityPDA
   - Trinkets
+
+- type: roleLoadout
+  id: JobIAA
+  groups:
+  - LawyerNeck
+  - LawyerJumpsuit
+  - IAABackpack
+  - Trinkets
