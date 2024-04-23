@@ -110,20 +110,6 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: ClothingHandsGlovesIhscombat
-  name: IHS combat gloves
-  description: These tactical gloves are somewhat fire and impact resistant.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/ihscombat.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/ihscombat.rsi
-  - type: Fiber
-    fiberMaterial: fibers-durathread
-  - type: FingerprintMask
-
-- type: entity
-  parent: ClothingHandsBase
   id: ClothingHandsGlovesHop
   name: papercut-proof gloves
   description: Perfect for dealing with paperwork and matters with bureaucracy.
