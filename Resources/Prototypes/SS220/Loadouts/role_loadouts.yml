@@ -1,0 +1,18 @@
+# Command
+- type: roleLoadout
+  id: JobBlueshield
+  groups:
+  - CommonBackpack
+  - Trinkets
+
+# Security
+- type: roleLoadout
+  id: JobSecurityPilot
+  groups:
+  - SecurityHead
+  - SecurityJumpsuit
+  - SecurityPilotBackpack
+  - SecurityOuterClothing
+  - SecurityShoes
+  - SecurityPDA
+  - Trinkets

@@ -1,0 +1,8 @@
+# Security
+- type: loadoutGroup
+  id: SecurityPilotBackpack
+  name: loadout-group-security-backpack
+  loadouts:
+  - SecurityPilotBackpack
+  - SecurityPilotSatchel
+  - SecurityPilotDuffel
