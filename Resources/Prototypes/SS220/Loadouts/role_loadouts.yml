@@ -1,6 +1,6 @@
 # Command
 - type: roleLoadout
-  id: JobBlueshield
+  id: JobBlueShield
   groups:
   - CommonBackpack
   - Trinkets
