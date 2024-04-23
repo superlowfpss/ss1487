@@ -876,7 +876,7 @@
       - ClothingUniformJumpsuitCaptain
       - ClothingUniformJumpskirtCaptain
       - ClothingUniformJumpsuitCapFormal
-      - ClothingUniformJumpskirtCapFormalDress
+#      - ClothingUniformJumpskirtCapFormalDress #SS220-FormalDress
       - ClothingUniformJumpsuitCargo
       - ClothingUniformJumpskirtCargo
       - ClothingUniformJumpsuitSalvageSpecialist
@@ -909,7 +909,7 @@
       - ClothingUniformJumpsuitHoS
       - ClothingUniformJumpskirtHoS
       - ClothingUniformJumpsuitHosFormal
-      - ClothingUniformJumpskirtHosFormal
+#      - ClothingUniformJumpskirtHosFormal #SS220-FormalDress
       - ClothingUniformJumpsuitHoSAlt
       - ClothingUniformJumpskirtHoSAlt
       - ClothingUniformJumpsuitHoSBlue
