@@ -54,6 +54,9 @@
   - type: RandomWalk
     minSpeed: 0
     maxSpeed: 0
+  - type: WarpPoint #ss-220 addAdminTools
+    follow: true
+    location: anomaly
 
 - type: entity
   id: AnomalyPyroclastic
