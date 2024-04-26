@@ -160,6 +160,7 @@
         - WelderIndustrial
         - SheetPlasteel10
         - ClothingMaskGasExplorer
+        - LotteryCash #SS220 Lottery
       rareChance: 0.08
       prototypes:
         - FlashlightLantern
