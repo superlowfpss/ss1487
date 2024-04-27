@@ -44,7 +44,7 @@ public sealed class CriminalRecordSystem : EntitySystem
         var scannerOn = false;
         if (_inventory.TryGetSlotEntity(args.Examiner, "eyes", out var ent))
         {
-            if (HasComp<ShowSecurityIconsComponent>(ent))
+            if (HasComp<ShowCriminalRecordIconsComponent>(ent))
             {
                 scannerOn = true;
             }
