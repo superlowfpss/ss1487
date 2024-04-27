@@ -954,6 +954,7 @@
   loadouts:
   - DetectiveArmorVest
   - DetectiveCoat
+  - ClothingOuterCoatDetectiveDark # Corvax-Resprite-Detective
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
