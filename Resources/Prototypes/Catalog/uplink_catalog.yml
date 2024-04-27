@@ -105,8 +105,8 @@
 #          - LoneOpsUplink
 # SS220-uplink-fix end
       blacklist:
-      components:
-      - SurplusBundle
+        components:
+        - SurplusBundle
 
 - type: listing
   id: UplinkDisposableTurret

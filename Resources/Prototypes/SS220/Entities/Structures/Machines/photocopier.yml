@@ -29,7 +29,6 @@
   - type: Climbable
   - type: ApcPowerReceiver
     powerLoad: 200
-    priority: Low
   - type: ShapeCollisionTracker
     enabled: true
     shape:

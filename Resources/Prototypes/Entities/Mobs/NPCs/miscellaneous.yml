@@ -173,16 +173,4 @@
   - type: NoSlip
   - type: Puller
     needsHands: false
-  - type: SolutionContainerManager
-    solutions:
-      udder:
-        maxVol: 150
-        reagents:
-        - ReagentId: JuiceTomato
-          Quantity: 30
-  - type: Udder
-    reagentId: JuiceTomato
-    targetSolution: udder
-    quantity: 25
-    updateRate: 30
   #SS220 Old-Tomato-Killer-Balance end
