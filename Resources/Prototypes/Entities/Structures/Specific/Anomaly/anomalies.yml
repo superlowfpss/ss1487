@@ -58,6 +58,9 @@
   - type: SecretDataAnomaly
     randomStartSecretMin: 0
     randomStartSecretMax: 2
+  - type: WarpPoint #ss-220 addAdminTools
+    follow: true
+    location: anomaly
 
 - type: entity
   id: AnomalyPyroclastic
