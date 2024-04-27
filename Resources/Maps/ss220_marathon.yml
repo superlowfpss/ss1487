@@ -53517,7 +53517,6 @@ entities:
     - type: Transform
       pos: -20.467558,30.671013
       parent: 30
-    - type: ShowSecurityIcons
   - uid: 15265
     components:
     - type: Transform
