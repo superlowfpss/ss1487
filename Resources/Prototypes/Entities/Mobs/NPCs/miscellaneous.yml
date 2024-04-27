@@ -90,6 +90,9 @@
     whitelist:
       components:
       - HumanoidAppearance
+  - type: Damageable #SS220 Old-Tomato-Killer-Balance
+    damageContainer: Biological
+    damageModifierSet: TomatoKiller
   - type: Sprite
     sprite: Mobs/Demons/tomatokiller.rsi 
     noRot: true
@@ -98,7 +101,7 @@
         state: alive
   - type: Bloodstream
     bloodReagent: JuiceTomato
-    bloodMaxVolume: 50
+    bloodMaxVolume: 90 #SS220 Old-Tomato-Killer-Balance
     chemicalMaxVolume: 30
   - type: DamageStateVisuals
     states:
@@ -121,7 +124,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      24: Dead
+      110: Dead #SS220 Old-Tomato-Killer-Balance
   - type: Fixtures
     fixtures:
       fix1:
@@ -133,19 +136,24 @@
           - MobMask
         layer:
           - MobLayer
-  - type: MeleeWeapon
+  - type: MeleeWeapon #SS220 Old-Tomato-Killer-Balance
     hidden: true
+    angle: 0
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
     damage:
-      groups:
-        Brute: 4
+      types:
+        Piercing: 9
+        Radiation: 4
+        Structural: 5
     animation: WeaponArcBite
   - type: Climbing
   - type: NameIdentifier
     group: GenericNumber
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      150: 0.7 #SS220 Old-Tomato-Killer-Balance
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Effects/Footsteps/slime1.ogg
@@ -161,3 +169,21 @@
   - type: Appearance
   - type: Produce
     seedId: killerTomato
+  #SS220 Old-Tomato-Killer-Balance begin
+  - type: IgnoreKudzu
+  - type: NoSlip
+  - type: Puller
+    needsHands: false
+  - type: SolutionContainerManager
+    solutions:
+      udder:
+        maxVol: 150
+        reagents:
+        - ReagentId: JuiceTomato
+          Quantity: 30
+  - type: Udder
+    reagentId: JuiceTomato
+    targetSolution: udder
+    quantity: 25
+    updateRate: 30
+  #SS220 Old-Tomato-Killer-Balance end

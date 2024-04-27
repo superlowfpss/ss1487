@@ -239,10 +239,10 @@ public partial class SeedData
     public float BioluminescentRadius = 2f;
 
     [DataField("kudzuPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))] public string KudzuPrototype = "WeakKudzu";
-    [DataField("tomatokillerPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))] public string TomatoKillerPrototype = "TomatoKiller";
+    [DataField("tomatokillerPrototype")] public EntProtoId TomatoKillerPrototype = "MobTomatoKiller"; // SS220 Tomato-Killer
 
     [DataField("turnIntoKudzu")] public bool TurnIntoKudzu;
-    [DataField("turnIntoTomatoKiller")] public bool TurnIntoTomatoKiller;
+    [DataField("turnIntoTomatoKiller")] public bool TurnIntoTomatoKiller; // SS220 Tomato-Killer
     [DataField("splatPrototype")] public string? SplatPrototype { get; set; }
 
     #endregion
