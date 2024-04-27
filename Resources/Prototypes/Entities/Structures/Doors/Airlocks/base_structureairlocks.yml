@@ -144,7 +144,7 @@
     group: Standard
     department: Civilian
   - type: StaticPrice
-    price: 150
+    price: 180 # SS220 Zones-Cargo-reb-test-fix
   - type: LightningTarget
     priority: 1
   - type: Tag
