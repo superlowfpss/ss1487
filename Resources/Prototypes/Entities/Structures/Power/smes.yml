@@ -95,7 +95,7 @@
       key: enum.SmesUiKey.Key
     - type: UserInterface #SS220 smes-ui-fix
       interfaces:
-        - key: enum.SmesUiKey.Key
+        enum.SmesUiKey.Key:
           type: SmesBoundUserInterface
 
 # SMES' in use
