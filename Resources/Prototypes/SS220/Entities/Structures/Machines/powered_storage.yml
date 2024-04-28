@@ -35,8 +35,8 @@
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-    - key: enum.SmartFridgeUiKey.Key
-      type: SmartFridgeBoundUserInterface
+      enum.SmartFridgeUiKey.Key:
+        type: SmartFridgeBoundUserInterface
   - type: Anchorable
   - type: DoAfter
   - type: Electrified

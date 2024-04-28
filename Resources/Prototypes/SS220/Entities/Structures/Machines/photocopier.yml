@@ -58,9 +58,9 @@
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-      - key: enum.PhotocopierUiKey.Key
+      enum.PhotocopierUiKey.Key:
         type: PhotocopierBoundUi
-      - key: enum.WiresUiKey.Key
+      enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ItemSlots
   - type: ContainerContainer
