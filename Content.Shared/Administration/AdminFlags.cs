@@ -89,7 +89,10 @@
         /// </summary>
         EditNotes = 1 << 14,
 
-        AdminChat = 1 << 15, // SS220 AdminChat for mentors
+        ///<summary>
+		/// Allows you to use Admin chat
+		///</summary>
+        Adminchat = 1 << 15, // SS220 AdminChat for mentors
 
         /// <summary>
         ///     Lets you Massban, on SS14.Admin
