@@ -655,10 +655,6 @@
       - Stunbaton
       - ForensicPad
       - RiotShield
-      - ShellShotgun
-      - ShellShotgunBeanbag
-      - ShellShotgunSlug
-      - ShellShotgunFlare
       - BoxShotgunSlug
       - BoxLethalshot
       - BoxShotgunFlare
@@ -702,7 +698,7 @@
       - MagazinePistolUranium
       - MagazineRifleUranium
       - MagazineShotgunBeanbag
-      - ShellTranquilizer
+      # - ShellTranquilizer
       - ExplosivePayload
       - FlashPayload
       - HoloprojectorSecurity
