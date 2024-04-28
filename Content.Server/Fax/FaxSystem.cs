@@ -293,7 +293,7 @@ public sealed class FaxSystem : EntitySystem
 
     private void OnSendButtonPressed(EntityUid uid, FaxMachineComponent component, FaxSendMessage args)
     {
-        Send(uid, component, args.Session.AttachedEntity);
+        Send(uid, component, args.Actor);
     }
 
     private void OnRefreshButtonPressed(EntityUid uid, FaxMachineComponent component, FaxRefreshMessage args)
@@ -330,7 +330,7 @@ public sealed class FaxSystem : EntitySystem
                       component.SendTimeoutRemaining <= 0 &&
                       component.InsertingTimeRemaining <= 0;
         var state = new FaxUiState(component.FaxName, component.KnownFaxes, canSend, isPaperInserted, component.DestinationFaxAddress);
-        _userInterface.TrySetUiState(uid, FaxUiKey.Key, state);
+        _userInterface.SetUiState(uid, FaxUiKey.Key, state);
     }
 
     /// <summary>
