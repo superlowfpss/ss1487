@@ -468,6 +468,7 @@
   - type: NukeopsRule
     roundEndBehavior: Nothing
     warTcAmountPerNukie: 100 # SS220 Lone-Ops-War
+    warNukieArriveDelay: 600 # SS220 Lone-Ops-War
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointLoneNukeOperative
