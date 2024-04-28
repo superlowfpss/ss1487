@@ -110,8 +110,8 @@
   - type: DisposalUnit
   - type: UserInterface
     interfaces:
-    - key: enum.DisposalUnitUiKey.Key
-      type: DisposalUnitBoundUserInterface
+      enum.DisposalUnitUiKey.Key:
+        type: DisposalUnitBoundUserInterface
 
 - type: entity
   id: MailingUnit

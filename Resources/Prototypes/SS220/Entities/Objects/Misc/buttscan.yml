@@ -21,8 +21,8 @@
     closeOnHandDeselect: false
   - type: UserInterface
     interfaces:
-    - key: enum.PaperUiKey.Key
-      type: ButtScanBoundUserInterface
+      enum.PaperUiKey.Key:
+        type: ButtScanBoundUserInterface
   - type: Paper
     writable: false
   - type: Appearance
