@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Server.Administration.Managers;
-using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.Forensics;
 using Content.Server.GameTicking;
@@ -32,6 +31,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
+using Content.Server.GameTicking.Components;
 
 namespace Content.Server.Administration.Systems
 {
