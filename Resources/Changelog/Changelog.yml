@@ -1,30 +1,4 @@
 ﻿Entries:
-- author: Tayrtahn
-  changes:
-  - message: Drink bottles can now be opened and closed from the verbs menu, and some
-      have been given tamper-evident seals.
-    type: Add
-  id: 5934
-  time: '2024-02-13T22:08:07.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/24780
-- author: TheShuEd
-  changes:
-  - message: Darkness is coming. A new shadow anomaly added.
-    type: Add
-  id: 5935
-  time: '2024-02-13T22:12:32.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/24629
-- author: jamessimo
-  changes:
-  - message: Microwave UI enhancements
-    type: Tweak
-  - message: Microwaves now tell you how much time is left when cooking
-    type: Tweak
-  - message: Microwaves UI now uses prediction for user inputs.
-    type: Fix
-  id: 5936
-  time: '2024-02-13T22:16:00.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/24547
 - author: TheShuEd
   changes:
   - message: Remote signallers are now limited to a 15-tile radius
@@ -3850,3 +3824,30 @@
   id: 6433
   time: '2024-04-24T21:27:34.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/27226
+- author: Beck Thompson
+  changes:
+  - message: Radio jammer now has 3 selectable power operating levels and a battery
+      level led indicator!
+    type: Tweak
+  id: 6434
+  time: '2024-04-25T02:19:17.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/25912
+- author: cooldolphin
+  changes:
+  - message: Three variants of glasses are now available in the loadout menu.
+    type: Add
+  id: 6435
+  time: '2024-04-25T23:18:39.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/27286
+- author: EmoGarbage404
+  changes:
+  - message: Traitors now have the correct number of objectives.
+    type: Fix
+  - message: Declaring war now gives TC again.
+    type: Fix
+  - message: Latejoining antagonists will now properly exclude command and security
+      staff.
+    type: Fix
+  id: 6436
+  time: '2024-04-26T00:25:57.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/27319
