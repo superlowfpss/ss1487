@@ -85,7 +85,9 @@
   armorCoefficientPrice: 1
   armorFlatPrice: 1
 
+# SS220 Stamina-Damage
 - type: damageType
   id: Stamina
+  name: damage-type-stamina
   armorCoefficientPrice: 2
   armorFlatPrice: 10
