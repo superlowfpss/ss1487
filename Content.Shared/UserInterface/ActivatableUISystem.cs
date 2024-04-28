@@ -153,7 +153,7 @@ public sealed partial class ActivatableUISystem : EntitySystem
 
     private bool InteractUI(EntityUid user, EntityUid uiEntity, ActivatableUIComponent aui)
     {
-        if (!_uiSystem.HasUi(uiEntity, aui.Key))
+        if (aui.Key == null || !_uiSystem.HasUi(uiEntity, aui.Key))
             return false;
 
         if (_uiSystem.IsUiOpen(uiEntity, aui.Key, user))
@@ -223,7 +223,7 @@ public sealed partial class ActivatableUISystem : EntitySystem
 
     public void CloseAll(EntityUid uid, ActivatableUIComponent? aui = null)
     {
-        if (!Resolve(uid, ref aui, false))
+        if (!Resolve(uid, ref aui, false) || aui.Key == null)
             return;
 
         _uiSystem.CloseUi(uid, aui.Key);

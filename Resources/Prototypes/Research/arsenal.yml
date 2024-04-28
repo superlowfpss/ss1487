@@ -57,8 +57,9 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  # - ShellTranquilizer
-  - BoxBeanbag
+  - MagazineShotgunBeanbag
+  # - ShellTranquilizer 
+  - BoxBeanbag 
   - WeaponDisabler
 
 - type: technology
@@ -189,6 +190,7 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - WeaponEnergyCrossbow #SS220 Energy crossbow
+  - PortableRecharger
 
 - type: technology
   id: ExperimentalBatteryAmmo
