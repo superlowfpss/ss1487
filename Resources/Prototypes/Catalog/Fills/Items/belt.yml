@@ -186,7 +186,8 @@
   - type: StorageFill
     contents:
         - id: WeaponRevolverInspector
-        - id: SpeedLoaderMagnum
+        - id: SpeedLoaderMagnumRubber # SS220 Bring-Rubber-Back
+          amount: 2
 
 - type: entity
   id: ClothingBeltChefFilled
