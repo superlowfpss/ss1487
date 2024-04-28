@@ -383,10 +383,10 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             if (!(_tag.HasTag(uid, NukeOpsUplinkTagPrototype) || _tag.HasTag(uid, LoneOpsUplinkTagPrototype))) // SS220 Lone-Ops-War
                 continue;
 
-            if (GetOutpost(nukieRule.Owner) is not { } outpost)
-                continue;
-
             // SS220 Lone-Ops-War begin
+            // if (GetOutpost(nukieRule.Owner) is not { } outpost)
+            //     continue;
+
             MapId? startMap = null;
             if (TryComp<LoadMapRuleComponent>(nukieRule.Owner, out var loadMap))
                 startMap = loadMap.Map;
