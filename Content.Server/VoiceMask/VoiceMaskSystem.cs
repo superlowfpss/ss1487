@@ -8,7 +8,6 @@ using Content.Shared.Preferences;
 using Content.Shared.Speech;
 using Content.Shared.VoiceMask;
 using Robust.Server.GameObjects;
-using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.VoiceMask;
