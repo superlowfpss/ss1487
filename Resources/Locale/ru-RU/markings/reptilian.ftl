@@ -69,3 +69,6 @@ marking-LizardChestUnderbelly-body_underbelly = Унатх, грудь (Подб
 marking-LizardChestUnderbelly = Унатх, грудь (Подбрюшье)
 marking-LizardChestBackspikes-body_backspikes = Унатх, грудь, шипы на спине (Четыре)
 marking-LizardChestBackspikes = Унатх, грудь, шипы на спине (Четыре)
+marking-LizardSnoutSplotch = Унатх, морда лица (Пятно)
+marking-LizardSnoutSplotch-snout_splotch_primary = Морда
+marking-LizardSnoutSplotch-snout_splotch_secondary = Нос

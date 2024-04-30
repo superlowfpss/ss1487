@@ -36,7 +36,7 @@ reagent-effect-guidebook-foam-area-reaction-effect =
         [1] Создаёт
        *[other] создают
     } большое количество пены
-reagent-effect-guidebook-foam-area-reaction-effect =
+reagent-effect-guidebook-smoke-area-reaction-effect =
     { $chance ->
         [1] Создаёт
        *[other] создают
@@ -311,7 +311,7 @@ reagent-effect-guidebook-innoculate-zombie-infection =
         [1] Лечит
        *[other] лечат
     } зомби-вирус и обеспечивает иммунитет к нему в будущем
-reagent-effect-guidebook-reduce-rotting = 
+reagent-effect-guidebook-reduce-rotting =
     { $chance ->
         [1] Regenerates
         *[other] regenerate
