@@ -315,6 +315,7 @@
   - type: ItemBorgModule
     items:
     - AdvMopItem
+    - TrashBagAdvanced # VladIsLove for SS220
     - HoloprojectorBorg
     - SprayBottleSpaceCleaner
     - Dropper

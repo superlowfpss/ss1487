@@ -284,6 +284,7 @@
       - PillCanister
       - ChemistryEmptyBottle01
       - AdvMopItem
+      - TrashBagAdvanced #SS220 Borg Modules
       - WeaponSprayNozzle
       - ClothingBackpackWaterTank
       - MegaSprayBottle
@@ -566,6 +567,7 @@
     - BorgModuleAdvancedCleaning
     - BorgModuleMining
     - BorgModuleGrapplingGun
+    - BorgModuleProtoKineticAccelerator #SS220 Borg Modules
     - BorgModuleAdvancedTool
     - BorgModuleGPS
     - BorgModuleRCD
