@@ -145,7 +145,6 @@
     Weh:
       collection: Weh
 
-  #ss-220 female-reptilian
 - type: emoteSounds
   id: FemaleReptilian
   params:
@@ -181,25 +180,6 @@
     Growl:
       collection: LizardGrowl
     #SS220 emote sounds end
-    Weh:
-      collection: Weh
-
-
-- type: emoteSounds
-  id: FemaleReptilian
-  params:
-    variation: 0.125
-  sounds:
-    Scream:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
-    Laugh:
-      path: /Audio/Animals/lizard_happy.ogg
-    Honk:
-      collection: BikeHorn
-    Whistle:
-      collection: Whistles
-    Crying:
-      collection: FemaleCry
     Weh:
       collection: Weh
 

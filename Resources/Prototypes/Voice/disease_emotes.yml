@@ -75,6 +75,7 @@
 # SS220 emotes begin
 - type: emote
   id: Gasp
+  name: chat-emote-name-gasp
   category: Vocal
   chatMessages: ["chat-emote-msg-gasp"]
   chatTriggers:
@@ -84,6 +85,7 @@
 
 - type: emote
   id: CritGasp
+  name: chat-emote-name-critgasp
   category: Vocal
   chatMessages: ["chat-emote-msg-critgasp"]
 # SS220 emotes end

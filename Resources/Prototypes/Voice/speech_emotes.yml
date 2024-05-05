@@ -518,7 +518,8 @@
 # SS220 Fard emote :DD
 - type: emote
   id: Fart
-  chatMessages: ["пердит!"]
+  name: chat-emote-name-fart
+  chatMessages: ["chat-emote-msg-fart"]
   chatTriggers:
   - fart
   - farted
@@ -563,7 +564,8 @@
 #SS220 giggle
 - type: emote
   id: Giggle
-  chatMessages: ["хихикает"]
+  name: chat-emote-name-giggle
+  chatMessages: ["chat-emote-msg-giggle"]
   chatTriggers:
   - хихикает
   - хихикает.
@@ -580,8 +582,9 @@
 #SS220 Hiss for felinids and lizards
 - type: emote
   id: Hiss
+  name: chat-emote-name-hiss
   category: Vocal
-  chatMessages: ["шипит!"]
+  chatMessages: ["chat-emote-msg-hiss"]
   chatTriggers:
   - шипение
   - шипят

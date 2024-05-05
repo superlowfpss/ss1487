@@ -120,7 +120,7 @@ public sealed partial class ActivatableUISystem : EntitySystem
         if (!component.RequiredItems?.IsValid(args.Using ?? default, EntityManager) ?? false)
             return false;
 
-        if (component.RequireHands)
+        if (component.RequireHands && !HasComp<GhostComponent>(args.User))
         {
             if (args.Hands == null)
                 return false;
@@ -210,7 +210,7 @@ public sealed partial class ActivatableUISystem : EntitySystem
         if (!_blockerSystem.CanInteract(user, uiEntity) && (!aui.AllowSpectator || !HasComp<GhostComponent>(user)))
             return false;
 
-        if (aui.RequireHands && !HasComp<HandsComponent>(user)) //SS220-Ghosts-paper-reading
+        if (aui.RequireHands && !HasComp<GhostComponent>(user)) //SS220-Ghosts-paper-reading
         {
             if (!TryComp(user, out HandsComponent? hands))
                 return false;
