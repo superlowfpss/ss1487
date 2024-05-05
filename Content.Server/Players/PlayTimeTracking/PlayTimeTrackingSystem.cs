@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
 using Content.Server.Afk.Events;
@@ -33,6 +34,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly MindSystem _minds = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
+    [Dependency] private readonly IAdminManager _adminManager = default!;
 
     private const string AGhostPrototypeID = "AdminObserver"; //SS220-aghost-playtime
 
@@ -52,6 +54,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         SubscribeLocalEvent<UnAFKEvent>(OnUnAFK);
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<PlayerJoinedLobbyEvent>(OnPlayerJoinedLobby);
+        _adminManager.OnPermsChanged += AdminPermsChanged;
     }
 
     private void AdminManager_OnPermsChanged(Administration.AdminPermsChangedEventArgs obj)
@@ -65,6 +68,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         base.Shutdown();
 
         _tracking.CalcTrackers -= CalcTrackers;
+        _adminManager.OnPermsChanged -= AdminPermsChanged;
     }
 
     private bool IsBypassingChecks(ICommonSession player)
@@ -159,6 +163,11 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     private void OnAFK(ref AFKEvent ev)
     {
         _tracking.QueueRefreshTrackers(ev.Session);
+    }
+
+    private void AdminPermsChanged(AdminPermsChangedEventArgs admin)
+    {
+        _tracking.QueueRefreshTrackers(admin.Player);
     }
 
     private void OnPlayerAttached(PlayerAttachedEvent ev)
