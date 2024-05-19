@@ -389,7 +389,7 @@
     id: ChefPDA
     back: ClothingBackpackSatchel
     ears: ClothingHeadsetService
-    belt: ClothingBeltChef
+    belt: ClothingBeltChefApronWhite # SS220 Chef-Resprite
 
 #CMO Disaster Victim
 - type: startingGear

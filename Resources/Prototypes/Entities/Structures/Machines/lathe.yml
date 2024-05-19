@@ -364,7 +364,7 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      - ShellTranquilizer
+      #- ShellTranquilizer # SS220 No-Tranquilizer
       - SpeedLoaderMagnumIncendiary
       - SpeedLoaderMagnumUranium
       - TelescopicShield
@@ -785,7 +785,7 @@
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
-      # - ShellTranquilizer
+      # - ShellTranquilizer # SS220 No-Tranquilizer
       - ShuttleGunDusterCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunPerforatorCircuitboard
@@ -854,7 +854,7 @@
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
-        # - ShellTranquilizer
+        # - ShellTranquilizer # SS220 No-Tranquilizer
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
     - type: MaterialStorage
