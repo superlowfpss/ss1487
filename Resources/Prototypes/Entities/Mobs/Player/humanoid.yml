@@ -648,7 +648,7 @@
         settings: short
     - type: GhostTakeoverAvailable
     - type: Loadout
-      roleLoadout: [ JobCargoTechnician ]
+      prototypes: [ LostCargoTechGearSuit, LostCargoTechGearCoat ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -703,7 +703,7 @@
         settings: short
     - type: GhostTakeoverAvailable
     - type: Loadout
-      roleLoadout: [ JobClown ]
+      prototypes: [ ClownTroupe ]
     - type: RandomMetadata
       nameSegments:
       - names_clown
@@ -761,7 +761,7 @@
         settings: short
     - type: GhostTakeoverAvailable
     - type: Loadout
-      roleLoadout: [ JobChef ]
+      prototypes: [ TravelingChef ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -824,7 +824,7 @@
         settings: default
     - type: GhostTakeoverAvailable
     - type: Loadout
-      roleLoadout: [ JobResearchDirector ]
+      prototypes: [ DisasterVictimRD, DisasterVictimRDAlt ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -842,7 +842,7 @@
         settings: default
     - type: GhostTakeoverAvailable
     - type: Loadout
-      roleLoadout: [ JobChiefMedicalOfficer ]
+      prototypes: [ DisasterVictimCMO, DisasterVictimCMOAlt ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -860,7 +860,7 @@
         settings: default
     - type: GhostTakeoverAvailable
     - type: Loadout
-      roleLoadout: [ JobCaptain ]
+      prototypes: [ DisasterVictimCaptain, DisasterVictimCaptainAlt ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -907,7 +907,7 @@
         settings: short
     - type: GhostTakeoverAvailable
     - type: Loadout
-      prototypes: [ SyndicateOperativeGearCivilian ]
+      prototypes: [ SyndicateOperativeGearDisasterVictim ]
     - type: RandomMetadata
       nameSegments:
       - names_first
