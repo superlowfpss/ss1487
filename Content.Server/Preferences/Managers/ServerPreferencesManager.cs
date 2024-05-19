@@ -31,7 +31,6 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly IServerDbManager _db = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IDependencyCollection _dependencies = default!;
-        [Dependency] private readonly IPrototypeManager _protos = default!;
         [Dependency] private readonly SponsorsManager _sponsors = default!;
         [Dependency] private readonly IEntitySystemManager _iEntitySystemManager = default!;
         [Dependency] private readonly ISharedPlayerManager _iSharedPlayerManager = default!;

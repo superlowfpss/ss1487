@@ -35,7 +35,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Network;
 using Content.Server.Popups;
 using Content.Shared.Verbs;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Collections;
 
 namespace Content.Server.Ghost.Roles
