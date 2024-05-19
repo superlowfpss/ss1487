@@ -430,7 +430,7 @@
     minimumPlayers: 20
     duration: 1
   - type: LoadMapRule
-    mapPath: /Maps/SS220/Shuttles/ss220-nukelone.yml # SS220 Lone-Ops-Shuttle
+    preloadedGrid: ShuttleStriker
   - type: NukeopsRule
     roundEndBehavior: Nothing
     warTcAmountPerNukie: 100 # SS220 Lone-Ops-War

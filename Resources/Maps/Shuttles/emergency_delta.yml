@@ -67,7 +67,12 @@ entities:
     - gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
       type: Gravity
-    - chunkCollection:
+    - type: DeviceNetwork
+      configurators: []
+      deviceLists: []
+      transmitFrequencyId: ShuttleTimer
+    - type: DecalGrid
+      chunkCollection:
         version: 2
         nodes:
         - node:

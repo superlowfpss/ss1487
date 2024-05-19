@@ -239,7 +239,6 @@ SyndiCrewMonitorEmpty: null
 # CrateFunATV: null
 # CrateFunSyndicateSegway: null
 # MobTaxiBot: null
-# MobSupplyBot: null
 # SpawnVehicleMotobike: null
 # SpawnVehicleATV: null
 # SpawnVehicleSecway: null
@@ -247,6 +246,8 @@ SyndiCrewMonitorEmpty: null
 # VehicleJanicart: null
 # VehicleJanicartDestroyed: null
 # SS220 Readd-Vehicles end
+
+# MobSupplyBot: null
 
 # 2024-02-01
 YellowOxygenTank: OxygenTank
