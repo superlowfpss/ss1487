@@ -926,6 +926,7 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - MedAutoinjector #ss220 Autoinjecors update
+      - WhiteCane
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
