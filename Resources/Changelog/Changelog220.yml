@@ -2126,3 +2126,11 @@
   id: 165
   time: '2024-06-08T13:39:22.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1097
+- author: MiraHell
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0433\u043E\
+      \u0440\u0435\u043D\u0438\u0435"
+    type: Fix
+  id: 166
+  time: '2024-06-08T13:55:23.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1078
