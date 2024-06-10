@@ -2202,3 +2202,12 @@
   id: 170
   time: '2024-06-09T15:01:03.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1103
+- author: NightmareStalker
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0442\u0435\u043C\u043D\
+      \u044B\u0439 \u041A\u041F\u041A \u0421\u0442\u0430\u0440\u0448\u0435\u0433\u043E\
+      \ \u0418\u043D\u0436\u0435\u043D\u0435\u0440\u0430."
+    type: Add
+  id: 171
+  time: '2024-06-10T15:06:06.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1080
