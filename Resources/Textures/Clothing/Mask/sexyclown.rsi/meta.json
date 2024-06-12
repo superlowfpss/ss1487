@@ -18,8 +18,12 @@
       "name": "equipped-MASK-reptilian",
       "directions": 4
     },
-    {
+      {
       "name": "equipped-MASK-vox",
+      "directions": 4
+    },
+    {
+      "name": "equipped-MASK-Vulpkanin",
       "directions": 4
     }
   ]
