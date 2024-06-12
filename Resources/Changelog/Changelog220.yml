@@ -2267,3 +2267,12 @@
   id: 176
   time: '2024-06-11T23:46:16.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1107
+- author: MiraHell
+  changes:
+  - message: "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0431\u0435\u0437\
+      \ \u0440\u0443\u043A \u043D\u0435 \u043C\u043E\u0433\u0443\u0442 \u043A\u0440\
+      \u0443\u0442\u0438\u0442\u044C \u043E\u0431\u044A\u0435\u043A\u0442\u044B"
+    type: Tweak
+  id: 177
+  time: '2024-06-12T13:10:22.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1108
