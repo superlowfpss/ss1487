@@ -172,6 +172,7 @@
   id: JobSalvageSpecialist
   groups:
   - SalvageSpecialistBackpack
+  - SalvageSpecialistJumpsuit #SS220-MoreTurtleneck
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Glasses
@@ -403,6 +404,7 @@
   id: JobPsychologist
   groups:
   - MedicalBackpack
+  - PsychologistJumpsuit #SS220-MoreTurtleneck
   - Glasses
   - Trinkets
 

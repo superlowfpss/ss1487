@@ -28,6 +28,15 @@
   - ChefBeltApronRed
   - ChefBeltApronSenior
 
+# Medical
+- type: loadoutGroup
+  id: PsychologistJumpsuit
+  name: loadout-group-psychologist-jumpsuit
+  loadouts:
+  - PsychologistJumpsuit
+  - PsychologistJumpsuitTurtleneck
+  - PsychologistJumpskirtTurtleneck
+
 #Command
 
 - type: loadoutGroup
