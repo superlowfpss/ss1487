@@ -2482,3 +2482,11 @@
   id: 193
   time: '2024-06-14T22:28:15.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1145
+- author: pocchitsu
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D \u043C\u0435\u0441\
+      \u0441\u0435\u043D\u0434\u0436\u0435\u0440 \u0432 \u041A\u041F\u041A."
+    type: Fix
+  id: 194
+  time: '2024-06-14T22:52:52.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1146
