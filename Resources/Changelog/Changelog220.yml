@@ -2528,3 +2528,13 @@
   id: 198
   time: '2024-06-16T20:32:06.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1158
+- author: Dexler
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0434\u0436\u043E\u0431\
+      \u0431\u0430\u043D \u0444\u0435\u043B\u0438\u043D\u0438\u0434\u0430\u043C \u043D\
+      \u0430 \u0432\u0441\u0435 \u0440\u043E\u043B\u0438 \u043A\u043E\u043C\u0430\u043D\
+      \u0434\u043E\u0432\u0430\u043D\u0438\u044F \u0438 \u0421\u0411."
+    type: Add
+  id: 199
+  time: '2024-06-16T21:23:05.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1159
