@@ -386,6 +386,75 @@ public sealed class FaxSystem : EntitySystem
     }
 
     /// <summary>
+    ///     Makes fax print from a file from the computer. A timeout is set after copying,
+    ///     which is shared by the send button.
+    /// </summary>
+    public void PrintFile(EntityUid uid, FaxMachineComponent component, FaxFileMessage args)
+    {
+        string prototype;
+        if (args.OfficePaper)
+            prototype = OfficePaperPrototypeId;
+        else
+            prototype = DefaultPaperPrototypeId;
+
+        var name = Loc.GetString("fax-machine-printed-paper-name");
+
+        var printout = new FaxPrintout(args.Content, name, args.Label, prototype);
+        component.PrintingQueue.Enqueue(printout);
+        component.SendTimeoutRemaining += component.SendTimeout;
+
+        UpdateUserInterface(uid, component);
+
+        // Unfortunately, since a paper entity does not yet exist, we have to emulate what LabelSystem will do.
+        var nameWithLabel = (args.Label is { } label) ? $"{name} ({label})" : name;
+        _adminLogger.Add(LogType.Action, LogImpact.Low,
+            $"{ToPrettyString(args.Actor):actor} " +
+            $"added print job to \"{component.FaxName}\" {ToPrettyString(uid):tool} " +
+            $"of {nameWithLabel}: {args.Content}");
+    }
+
+    /// <summary>
+    ///     Copies the paper in the fax. A timeout is set after copying,
+    ///     which is shared by the send button.
+    /// </summary>
+    public void Copy(EntityUid uid, FaxMachineComponent? component, FaxCopyMessage args)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        var sendEntity = component.PaperSlot.Item;
+        if (sendEntity == null)
+            return;
+
+        if (!TryComp(sendEntity, out MetaDataComponent? metadata) ||
+            !TryComp<PaperComponent>(sendEntity, out var paper))
+            return;
+
+        TryComp<LabelComponent>(sendEntity, out var labelComponent);
+
+        // TODO: See comment in 'Send()' about not being able to copy whole entities
+        var printout = new FaxPrintout(paper.Content,
+                                       labelComponent?.OriginalName ?? metadata.EntityName,
+                                       labelComponent?.CurrentLabel,
+                                       metadata.EntityPrototype?.ID ?? DefaultPaperPrototypeId,
+                                       paper.StampState,
+                                       paper.StampedBy);
+
+        component.PrintingQueue.Enqueue(printout);
+        component.SendTimeoutRemaining += component.SendTimeout;
+
+        // Don't play component.SendSound - it clashes with the printing sound, which
+        // will start immediately.
+
+        UpdateUserInterface(uid, component);
+
+        _adminLogger.Add(LogType.Action, LogImpact.Low,
+            $"{ToPrettyString(args.Actor):actor} " +
+            $"added copy job to \"{component.FaxName}\" {ToPrettyString(uid):tool} " +
+            $"of {ToPrettyString(sendEntity):subject}: {printout.Content}");
+    }
+
+    /// <summary>
     ///     Sends message to addressee if paper is set and a known fax is selected
     ///     A timeout is set after sending
     /// </summary>
@@ -402,6 +471,9 @@ public sealed class FaxSystem : EntitySystem
 
         if (!component.KnownFaxes.TryGetValue(component.DestinationFaxAddress, out var faxName))
             return;
+
+        if (!TryComp(sendEntity, out MetaDataComponent? metadata) ||
+           !TryComp<PaperComponent>(sendEntity, out var paper))
 
         if (!_photocopierSystem.TryGetPhotocopyableMetaData(sendEntity, out var metaData))
             return;

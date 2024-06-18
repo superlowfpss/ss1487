@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using Content.Client.Administration.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
+using Content.Shared.Players.JobWhitelist;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles;
 using Robust.Client;
@@ -30,6 +31,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();
+    private readonly List<string> _jobWhitelists = new();
 
     private ISawmill _sawmill = default!;
 
@@ -42,6 +44,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         // Yeah the client manager handles role bans and playtime but the server ones are separate DEAL.
         _net.RegisterNetMessage<MsgRoleBans>(RxRoleBans);
         _net.RegisterNetMessage<MsgPlayTime>(RxPlayTime);
+        _net.RegisterNetMessage<MsgJobWhitelist>(RxJobWhitelist);
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
     }
@@ -85,6 +88,13 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         Updated?.Invoke();
     }
 
+    private void RxJobWhitelist(MsgJobWhitelist message)
+    {
+        _jobWhitelists.Clear();
+        _jobWhitelists.AddRange(message.Whitelist);
+        Updated?.Invoke();
+    }
+
     //SS220-Client-admin-check-for-jobs
     private bool IsBypassedChecks()
     {
@@ -100,6 +110,9 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
             reason = FormattedMessage.FromUnformatted(Loc.GetString("role-ban"));
             return false;
         }
+
+        if (!CheckWhitelist(job, out reason))
+            return false;
 
         var player = _playerManager.LocalSession;
         if (player == null)
@@ -140,11 +153,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
             if (JobRequirements.TryRequirementsSpeciesMet(job, species, profile.Sex, out var reason, _prototypeManager)) //ss220-arahFix
                 return true;
 
-            reasons.Add(reason.ToMarkup());
-            return false;
-        }
-
-        return true;
+        return CheckRoleTime(job.Requirements, out reason);
     }
 
     // for compatible things like xaml for ghost roles
@@ -180,6 +189,21 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         }
 
         return reasons.Count == 0; //SS220 Species-Job-Requirement
+    }
+
+    public bool CheckWhitelist(JobPrototype job, [NotNullWhen(false)] out FormattedMessage? reason)
+    {
+        reason = default;
+        if (!_cfg.GetCVar(CCVars.GameRoleWhitelist))
+            return true;
+
+        if (job.Whitelisted && !_jobWhitelists.Contains(job.ID))
+        {
+            reason = FormattedMessage.FromUnformatted(Loc.GetString("role-not-whitelisted"));
+            return false;
+        }
+
+        return true;
     }
 
     public TimeSpan FetchOverallPlaytime()

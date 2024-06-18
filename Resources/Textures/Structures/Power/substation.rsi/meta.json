@@ -24,7 +24,13 @@
       "name": "full"
     },
     {
-      "name": "charging"
+      "name": "charging",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
     },
     {
         "name": "dead"
