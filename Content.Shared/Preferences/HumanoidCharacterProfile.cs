@@ -150,8 +150,8 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
-            Dictionary<string, RoleLoadout> loadouts),
-            bool teleportAfkToCryoStorage = true /* SS220 Cryo-Teleport */)
+            Dictionary<string, RoleLoadout> loadouts,
+            bool teleportAfkToCryoStorage = true) //SS220 Cryo-Teleport
         {
             Name = name;
             FlavorText = flavortext;
