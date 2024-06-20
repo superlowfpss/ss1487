@@ -2612,3 +2612,13 @@
   id: 205
   time: '2024-06-20T19:11:11.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1201
+- author: d1nazewwr
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0432\u0430\u0440\
+      \u0438\u043D\u0430\u043D\u0442\u044B \u043F\u0440\u043E\u0442\u0438\u0432\u043E\
+      \u0433\u0430\u0437\u043E\u0432 \u0434\u043B\u044F \u0413\u0430\u043C\u043B\u0435\
+      \u0442\u0430 \u0438 \u0432\u043E\u043A\u0441\u043E\u0432."
+    type: Add
+  id: 206
+  time: '2024-06-20T19:18:05.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1203
