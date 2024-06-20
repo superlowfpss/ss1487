@@ -2579,3 +2579,13 @@
   id: 203
   time: '2024-06-19T13:49:29.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1196
+- author: AlwyAnri
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043D\u0430\
+      \u043B\u0438\u0447\u0438\u0435 \u044D\u043D\u0435\u0440\u0433\u043E\u0430\u0440\
+      \u0431\u043E\u043B\u0435\u0442\u0430 \u0432 \u0430\u043F\u043B\u0438\u043D\u043A\
+      \u0435!"
+    type: Fix
+  id: 204
+  time: '2024-06-20T19:09:28.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1195
