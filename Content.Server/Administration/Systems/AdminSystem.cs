@@ -30,7 +30,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
-using Content.Server.GameTicking.Components;
+using Content.Shared.GameTicking.Components;
 
 namespace Content.Server.Administration.Systems
 {

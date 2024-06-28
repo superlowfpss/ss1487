@@ -39,8 +39,6 @@ namespace Content.Server.Damage.Systems
 
             if (hitEv.Handled)
                 return;
-
-            var dmg = _damageable.TryChangeDamage(args.Target, component.Damage, component.IgnoreResistances, origin: args.Component.Thrower);
             // SS220-Stunbaton-rework end
 
             if (!TerminatingOrDeleted(args.Target))

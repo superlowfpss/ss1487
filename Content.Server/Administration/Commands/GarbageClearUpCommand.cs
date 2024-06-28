@@ -11,6 +11,7 @@ namespace Content.Server.Administration.Commands
     public sealed partial class GarbageClearUpCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entMan = default!;
+        [Dependency] private readonly TagSystem _tag = default!;
 
         //SS220-clearupgarbage
         public string Command => "clearupgarbage";
@@ -25,7 +26,7 @@ namespace Content.Server.Administration.Commands
             {
                 if (!_entMan.TryGetComponent<TagComponent>(ent, out var component))
                     continue;
-                if (!component.Tags.Contains("Trash") || _containerSystem.IsEntityOrParentInContainer(ent))
+                if (!_tag.HasTag(ent, "Trash") || _containerSystem.IsEntityOrParentInContainer(ent))
                     continue;
 
                 _entMan.DeleteEntity(ent);

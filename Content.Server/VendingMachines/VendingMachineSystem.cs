@@ -32,6 +32,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Content.Server.Advertise.EntitySystems;
+using Content.Shared.Whitelist;
 
 namespace Content.Server.VendingMachines
 {
@@ -50,6 +51,7 @@ namespace Content.Server.VendingMachines
         [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
         [Dependency] private readonly SpeakOnUIClosedSystem _speakOnUIClosed = default!;
+        [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
 
         private const float WallVendEjectDistanceFromWall = 1f;
 
@@ -319,7 +321,7 @@ namespace Content.Server.VendingMachines
             if (vendComponent.Inventory.ContainsKey(itemCode))
                 return true;
 
-            return vendComponent.Whitelist != null && vendComponent.Whitelist.IsValid(item);
+            return vendComponent.Whitelist != null && _whitelist.IsValid(vendComponent.Whitelist, item);
         }
 
         private bool TryGetItemCode(EntityUid entityUid, out string code)

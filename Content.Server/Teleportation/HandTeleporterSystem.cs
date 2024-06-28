@@ -168,6 +168,5 @@ public sealed class HandTeleporterSystem : EntitySystem
 
         if (instability)
             _popup.PopupEntity(Loc.GetString("handheld-teleporter-instability-fizzle"), uid, user, PopupType.MediumCaution);
-        }
     }
 }

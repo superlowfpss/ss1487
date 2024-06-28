@@ -164,7 +164,7 @@ public sealed class ReflectSystem : EntitySystem
         if (!_random.Prob(GetReflectChance(reflector)))
             return false;
 
-        var rotation = _random.NextAngle(-reflect.SpreadProjectile / 2, reflect.SpreadProjectile / 2).Opposite(); // ss220 FixESword
+        var rotation = _random.NextAngle(-reflector.Comp.SpreadProjectile / 2, reflector.Comp.SpreadProjectile / 2).Opposite(); // ss220 FixESword
         var existingVelocity = _physics.GetMapLinearVelocity(projectile, component: physics);
         var relativeVelocity = existingVelocity - _physics.GetMapLinearVelocity(user);
         var newVelocity = rotation.RotateVec(relativeVelocity);

@@ -37,6 +37,7 @@ namespace Content.Server.Preferences.Managers
         private readonly Dictionary<NetUserId, PlayerPrefData> _cachedPlayerPrefs =
             new();
 
+        private ISawmill _sawmill = default!;
         // private int MaxCharacterSlots => _cfg.GetCVar(CCVars.GameMaxCharacterSlots); // Corvax-Sponsors
 
         public void Init()
@@ -102,6 +103,7 @@ namespace Content.Server.Preferences.Managers
             if (slot < 0 || slot >= GetMaxUserCharacterSlots(userId)) // Corvax-Sponsors
             {
                 return;
+            }
 
             var curPrefs = prefsData.Prefs!;
             var session = _playerManager.GetSessionById(userId);
@@ -128,7 +130,6 @@ namespace Content.Server.Preferences.Managers
                     }
                 }
                 profile = human;
-                message.Profile = human;
             }
             //ss-220 arahFixend
 
@@ -142,7 +143,7 @@ namespace Content.Server.Preferences.Managers
 
             prefsData.Prefs = new PlayerPreferences(profiles, slot, curPrefs.AdminOOCColor);
 
-            if (ShouldStorePrefs(session.Channel.AuthType))
+            if (session != null && ShouldStorePrefs(session.Channel.AuthType))
                 await _db.SaveCharacterSlotAsync(userId, profile, slot);
         }
 

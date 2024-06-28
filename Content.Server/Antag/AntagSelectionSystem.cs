@@ -28,6 +28,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Content.Server.SS220.MindSlave;
 
 namespace Content.Server.Antag;
 
@@ -45,6 +46,7 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private readonly MindSlaveSystem _mindSlave = default!;
 
     // arbitrary random number to give late joining some mild interest.
     public const float LateJoinRandomChance = 0.5f;
@@ -467,6 +469,16 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
             return;
 
         args.Minds = ent.Comp.SelectedMinds;
+
+        //SS22-mindslave-begin
+        //such a hack, and I'm lazy to do a shit about this
+        if (_mindSlave.EnslavedMinds.Count > 0)
+        {
+            foreach (var slave in _mindSlave.EnslavedMinds)
+                args.Minds.Add((slave.Key, Name(slave.Key)));
+        }
+        //SS22-mindslave-end
+
         args.AgentName = Loc.GetString(name);
     }
 }

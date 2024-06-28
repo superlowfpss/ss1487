@@ -133,7 +133,9 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         ReasonList reasons = new();
 
         var bCheckSpecies = CheckSpeciesRestrict(job, profile, reasons);
-        var bCheckRoleTime = CheckRoleTime(job.Requirements, reasons);
+        var bCheckRoleTime = CheckRoleTime(job, out var roleTimeReason);
+        if (roleTimeReason is not null)
+            reasons.Add(roleTimeReason.ToMarkup());
 
         if (bCheckSpecies && bCheckRoleTime)
         {
@@ -153,7 +155,11 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
             if (JobRequirements.TryRequirementsSpeciesMet(job, species, profile.Sex, out var reason, _prototypeManager)) //ss220-arahFix
                 return true;
 
-        return CheckRoleTime(job.Requirements, out reason);
+            reasons.Add(reason.ToMarkup());
+            return false;
+        }
+
+        return true;
     }
 
     // for compatible things like xaml for ghost roles
@@ -170,6 +176,12 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         return true;
     }
     //SS220 Species-Job-Requirement end
+
+    public bool CheckRoleTime(JobPrototype job, [NotNullWhen(false)] out FormattedMessage? reason)
+    {
+        var reqs = _entManager.System<SharedRoleSystem>().GetJobRequirement(job);
+        return CheckRoleTime(reqs, out reason);
+    }
 
     public bool CheckRoleTime(HashSet<JobRequirement>? requirements, ReasonList reasons)
     {

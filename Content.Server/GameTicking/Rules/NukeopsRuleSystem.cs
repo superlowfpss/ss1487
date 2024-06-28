@@ -27,6 +27,8 @@ using Robust.Shared.Utility;
 using Content.Server.StationEvents.Components;
 using System.Linq;
 using Content.Shared.Store.Components;
+using Robust.Shared.Prototypes;
+using Content.Server.Maps;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -39,6 +41,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
     [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
     [Dependency] private readonly StoreSystem _store = default!;
     [Dependency] private readonly TagSystem _tag = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
 
     [ValidatePrototypeId<CurrencyPrototype>]
     private const string TelecrystalCurrencyPrototype = "Telecrystal";
@@ -378,14 +381,18 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             // if (GetOutpost(nukieRule.Owner) is not { } outpost)
             //     continue;
 
-            MapId? startMap = null;
+            ProtoId<GameMapPrototype>? startMapProto = null;
             if (TryComp<LoadMapRuleComponent>(nukieRule.Owner, out var loadMap))
-                startMap = loadMap.Map;
-            // SS220 Lone-Ops-War end
+                startMapProto = loadMap.GameMap;
 
-            // SS220 Lone-Ops-War
-            if (Transform(uid).MapID != startMap) // Will receive bonus TC only on their start outpost
+            var mapProto = string.Empty;
+            var mapUid = Transform(uid).MapUid;
+            if (mapUid != null)
+                mapProto = MetaData(mapUid.Value).EntityPrototype?.ID;
+
+            if (mapProto != startMapProto.ToString()) // Will receive bonus TC only on their start outpost
                 continue;
+            // SS220 Lone-Ops-War end
 
             _store.TryAddCurrency(new () { { TelecrystalCurrencyPrototype, nukieRule.Comp.WarTcAmountPerNukie } }, uid, component);
 

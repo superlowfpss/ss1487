@@ -16,7 +16,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using System.Linq;
 using System.Text;
-using Content.Server.GameTicking.Components;
+using Content.Shared.GameTicking.Components;
 using Content.Server.SS220.MindSlave;
 
 namespace Content.Server.GameTicking.Rules;
@@ -32,7 +32,6 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobs = default!;
     [Dependency] private readonly ObjectivesSystem _objectives = default!;
-    [Dependency] private readonly MindSlaveSystem _mindSlave = default!;
 
     public override void Initialize()
     {
@@ -66,24 +65,6 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
             component.Codewords[i] = _random.PickAndTake(codewordPool);
         }
     }
-
-    //SS220-mindslave begin
-    public void AddToTraitorList(EntityUid mind, EntityUid gameRuleEntity, TraitorRuleComponent? component = null)
-    {
-        if (!Resolve(gameRuleEntity, ref component))
-            return;
-
-        component.TraitorMinds.Add(mind);
-    }
-
-    public void RemoveFromTraitorList(EntityUid mind, EntityUid gameRuleEntity, TraitorRuleComponent? component = null)
-    {
-        if (!Resolve(gameRuleEntity, ref component))
-            return;
-
-        component.TraitorMinds.Remove(mind);
-    }
-    //SS220-mindslave end
 
     public bool MakeTraitor(EntityUid traitor, TraitorRuleComponent component, bool giveUplink = true, bool giveObjectives = true)
     {
@@ -131,12 +112,6 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
         _npcFaction.AddFaction(traitor, component.SyndicateFaction);
 
         return true;
-    }
-
-    private void OnObjectivesTextGetInfo(EntityUid uid, TraitorRuleComponent comp, ref ObjectivesTextGetInfoEvent args)
-    {
-        args.Minds = _antag.GetAntagMindEntityUids(uid);
-        args.AgentName = Loc.GetString("traitor-round-end-agent-name");
     }
 
     private void OnObjectivesTextPrepend(EntityUid uid, TraitorRuleComponent comp, ref ObjectivesTextPrependEvent args)
