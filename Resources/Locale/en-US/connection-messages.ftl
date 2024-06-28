@@ -46,5 +46,4 @@ baby-jail-account-denied-reason = This server is a newbie server, intended for n
 baby-jail-account-reason-account = Your Space Station 14 account is too old. It must be younger than {$minutes} minutes
 baby-jail-account-reason-overall = Your overall playtime on the server must be younger than {$minutes} $minutes
 
-panic-bunker-account-reason-overall = Your overall playtime on the server must be greater than {$hours} hours
 kick-afk = You were kicked for AFK
