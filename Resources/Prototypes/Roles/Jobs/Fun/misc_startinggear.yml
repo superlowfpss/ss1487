@@ -154,9 +154,11 @@
     outerClothing: ClothingOuterArmorBasic
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    back: ClothingBackpackFilled
     shoes: ClothingShoesBootsCombat
     id: SyndiPDA
+  storage:
+    back:
+    - BoxSurvival
 
 # Syndicate Footsoldier Gear - No Headset
 - type: startingGear
@@ -250,10 +252,12 @@
     #SS220 deathmatch loadout begin
     gloves: ClothingHandsGlovesCombat
     id: CaptainPDA
-    back: ClothingBackpackFilled
     #SS220 deathmatch loadout end
   inhand:
     - WeaponMeleeToolboxRobust
+  storage: #SS220 deathmatch loadout
+    back:
+    - BoxSurvival
 
 #Brigmedic
 

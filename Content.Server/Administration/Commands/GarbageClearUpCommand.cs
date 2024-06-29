@@ -11,7 +11,6 @@ namespace Content.Server.Administration.Commands
     public sealed partial class GarbageClearUpCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entMan = default!;
-        [Dependency] private readonly TagSystem _tag = default!;
 
         //SS220-clearupgarbage
         public string Command => "clearupgarbage";
@@ -21,6 +20,8 @@ namespace Content.Server.Administration.Commands
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
             var _containerSystem = _entMan.System<SharedContainerSystem>();
+            var _tag = _entMan.System<TagSystem>();
+
             int processed = 0;
             foreach (var ent in _entMan.GetEntities())
             {

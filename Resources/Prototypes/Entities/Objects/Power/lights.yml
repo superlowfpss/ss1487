@@ -394,7 +394,7 @@
   - type: Construction
     graph: YellowLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalYellow
@@ -414,7 +414,7 @@
   - type: Construction
     graph: PurpleLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPurple
