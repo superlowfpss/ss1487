@@ -505,23 +505,24 @@
     - отдала честь!
     # Corvax-Localization-End
 
-- type: emote
-  id: Gasp
-  name: chat-emote-name-gasp
-  whitelist:
-    components:
-    - Respirator
-  chatMessages: ["chat-emote-msg-gasp"]
-  chatTriggers:
-   - gasp
-   - gasp.
-   - gasp!
-   - gasps
-   - gasps.
-   - gasps!
-   - gasped
-   - gasped.
-   - gasped!
+#- type: emote SS220-gasp-emote begin
+#  id: Gasp
+#  name: chat-emote-name-gasp
+#  whitelist:
+#    components:
+#    - Respirator
+#  chatMessages: ["chat-emote-msg-gasp"]
+#  chatTriggers:
+#   - gasp
+#   - gasp.
+#   - gasp!
+#   - gasps
+#   - gasps.
+#   - gasps!
+#   - gasped
+#   - gasped.
+#   - gasped!
+# SS220-gasp-emote end
 
 - type: emote
   id: DefaultDeathgasp

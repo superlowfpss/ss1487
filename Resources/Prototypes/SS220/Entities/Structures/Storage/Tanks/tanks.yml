@@ -47,8 +47,6 @@
   - type: ReagentTank
     tankType: Fuel
   - type: DamageOnToolInteract
-    tools:
-    - Welding
     weldingDamage:
       types:
         Heat: 10
