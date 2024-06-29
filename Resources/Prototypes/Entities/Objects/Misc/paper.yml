@@ -428,7 +428,7 @@
   components:
   - type: Sprite
     layers:
-    - state: folder-centcom
+    - state: folder-centcomm
     - state: folder-base
 
 - type: entity
