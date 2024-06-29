@@ -3,11 +3,6 @@
   id: SecurityPilotBackpack
   equipment: SecurityPilotBackpack
 
-- type: startingGear
-  id: SecurityPilotBackpack
-  equipment:
-    back: ClothingBackpackSecurityPilotFilled
-
 - type: loadout
   id: SecurityPilotSatchel
   equipment: SecurityPilotSatchel
@@ -20,8 +15,3 @@
 - type: loadout
   id: SecurityPilotDuffel
   equipment: SecurityPilotDuffel
-
-- type: startingGear
-  id: SecurityPilotDuffel
-  equipment:
-    back: ClothingBackpackDuffelSecurityPilotFilled

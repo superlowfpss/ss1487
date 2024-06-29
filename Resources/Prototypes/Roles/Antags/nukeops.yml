@@ -99,4 +99,4 @@
   id: SyndicateLoneOperativeGearFull
   parent: SyndicateOperativeGearFull
   equipment:
-    pocket2: BaseUplinkRadio60TC
+    pocket2: BaseUplinkRadio40TC

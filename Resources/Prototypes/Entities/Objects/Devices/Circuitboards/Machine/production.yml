@@ -566,7 +566,7 @@
         Scalpel: #SS220 Edit biomasscraft
           amount: 2
           defaultPrototype: Scalpel #SS220 Edit biomasscraft
-          examineName: Scalpel #SS220 Edit biomasscraft
+          examineName: ent-Scalpel #SS220 Edit biomasscraft
 
 - type: entity
   id: HydroponicsTrayMachineCircuitboard
@@ -1236,7 +1236,7 @@
   components:
     - type: MachineBoard
       prototype: PDANanotrasenMessengerServer
-      materialRequirements:
+      stackRequirements:
         Steel: 1
         Cable: 2
 

@@ -339,7 +339,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
-      - BoxShellTranquilizer
+      # - BoxShellTranquilizer
       - ExplosivePayload
       - GrenadeBlast
       - GrenadeEMP
@@ -763,7 +763,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
-      - BoxShellTranquilizer
+      # - BoxShellTranquilizer
       - ExplosivePayload
       - FlashPayload
       - GrenadeBlast
@@ -847,7 +847,7 @@
         - BoxLethalshot
         - BoxShotgunFlare
         - BoxShotgunSlug
-        - BoxShellTranquilizer
+       #  - BoxShellTranquilizer
         - MagazineBoxLightRifle
         - MagazineBoxMagnum
         - MagazineBoxPistol
