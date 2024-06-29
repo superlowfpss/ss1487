@@ -100,8 +100,6 @@
   - type: Sprite
     layers:
     - state: ussp_med
-  - type: StaticPrice
-    price: 10
 
 - type: entity
   parent: UsspMedicalPDA
