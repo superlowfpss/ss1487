@@ -300,22 +300,6 @@
     damageCoefficient: 0  #ss-220 armReb
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitWizard
-  name: wizard hardsuit helmet
-  description: A bizarre gem-encrusted helmet that radiates magical energies.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/wizard.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hardsuits/wizard.rsi
-  - type: PointLight
-    color: "#ffadfb"
-  - type: PressureProtection
-    highPressureMultiplier: 0.60
-    lowPressureMultiplier: 1000
-
-- type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitLing
   noSpawn: true
