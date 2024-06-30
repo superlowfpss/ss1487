@@ -3,7 +3,7 @@
   id: GameRuleMeteorScheduler
   components:
   - type: GameRule
-    minPlayers: 25
+    minPlayers: 0 #SS220-extended
   - type: MeteorScheduler
 
 - type: weightedRandomEntity
