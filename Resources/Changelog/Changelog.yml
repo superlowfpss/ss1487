@@ -1,44 +1,4 @@
 ﻿Entries:
-- author: RiceMar
-  changes:
-  - message: Added milk cartons to the BoozeOMat vendor. Got milk?
-    type: Add
-  id: 6277
-  time: '2024-04-01T00:07:30.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/26635
-- author: nikthechampiongr
-  changes:
-  - message: Radio jammers now actually block suit sensors.
-    type: Fix
-  id: 6278
-  time: '2024-04-01T02:13:52.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/26632
-- author: Flareguy
-  changes:
-  - message: All wheeled objects now have lower friction. Portable items, like fuel
-      canisters & portable scrubbers, should now be easier to carry around.
-    type: Tweak
-  - message: High-capacity reagent tanks are now much heavier.
-    type: Tweak
-  id: 6279
-  time: '2024-04-01T03:23:59.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/26601
-- author: Tayrtahn
-  changes:
-  - message: spears, darts, and hypodarts can inject targets again.
-    type: Fix
-  - message: arrows can no longer inject targets they don't actually hit.
-    type: Fix
-  id: 6280
-  time: '2024-04-01T03:39:35.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/26268
-- author: SoulFN
-  changes:
-  - message: Changed textures of the assault borg modules
-    type: Tweak
-  id: 6281
-  time: '2024-04-01T04:21:12.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/26502
 - author: Keer-Sar
   changes:
   - message: Cyborgs now have audio for some emotes.
@@ -3850,3 +3810,38 @@
   id: 6776
   time: '2024-06-19T02:04:04.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/29082
+- author: Beck Thompson, UbaserB
+  changes:
+  - message: Added some happier messages for the medibot!
+    type: Add
+  id: 6777
+  time: '2024-06-19T02:28:30.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29147
+- author: HolySSSS
+  changes:
+  - message: Short Raffle is now much shorter.
+    type: Tweak
+  id: 6778
+  time: '2024-06-19T02:41:42.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/28685
+- author: Truoizys
+  changes:
+  - message: PDA cartridges can no longer be installed more than once.
+    type: Fix
+  id: 6779
+  time: '2024-06-19T13:21:06.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29187
+- author: Just_Art
+  changes:
+  - message: Musician's jumpskirt added to loadouts.
+    type: Add
+  id: 6780
+  time: '2024-06-19T14:06:03.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29203
+- author: Flareguy
+  changes:
+  - message: Made the HOS's cap look significantly better.
+    type: Tweak
+  id: 6781
+  time: '2024-06-19T14:49:19.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29208
