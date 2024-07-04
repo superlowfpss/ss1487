@@ -2927,3 +2927,12 @@
   id: 231
   time: '2024-07-04T18:12:37.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1266
+- author: kirus59
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043D\u0430\
+      \u0437\u0432\u0430\u043D\u0438\u0435 \u0434\u043E\u043B\u0436\u043D\u043E\u0441\
+      \u0442\u0438 \u0410\u0433\u0435\u043D\u0442\u0430 \u0420\u0425\u0411\u0417\u0417"
+    type: Fix
+  id: 232
+  time: '2024-07-04T18:16:30.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1278
