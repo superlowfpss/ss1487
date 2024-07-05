@@ -12,3 +12,5 @@ ent-ClothingHeadHatTruckerBrown = коричневая кепка дальноб
     .desc = В прошлом Чака, эта шляпа теперь ваша.
 ent-ClothingHeadHatTruckerWhite = белая кепка дальнобойщика
     .desc = В прошлом Чака, эта шляпа теперь ваша.
+ent-ClothingHeadPilotCapCap = фуражка пилота
+    .desc = Поймайте высоту!
