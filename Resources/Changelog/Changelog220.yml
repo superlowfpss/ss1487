@@ -3100,3 +3100,13 @@
   id: 246
   time: '2024-07-06T17:37:22.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1280
+- author: MalutkaGnomeev
+  changes:
+  - message: "\u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0435\u043D\u044B \u0441\u0442\
+      \u0430\u0440\u044B\u0435 \u043A\u0440\u043E\u0432\u0430\u0442\u0438, \u043A\u043E\
+      \u043B\u043B\u0438\u0437\u0438\u0438 \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\
+      \u0442\u0432\u0443\u0435\u0442!"
+    type: Fix
+  id: 247
+  time: '2024-07-06T17:48:39.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1289
