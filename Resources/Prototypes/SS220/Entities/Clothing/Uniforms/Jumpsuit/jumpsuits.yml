@@ -116,3 +116,17 @@
     sprite: SS220/Clothing/Uniforms/Jumpsuit/cargonovich.rsi
   - type: Clothing
     sprite: SS220/Clothing/Uniforms/Jumpsuit/cargonovich.rsi
+
+
+# Syndicate
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSyndicateDiplomatist
+  name: syndicate diplomatist uniforms
+  description: The uniform of a crime syndicate diplomat, nothing unusual.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Uniforms/Jumpsuit/syndicate_diplomatist.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Uniforms/Jumpsuit/syndicate_diplomatist.rsi
