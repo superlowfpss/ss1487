@@ -3059,3 +3059,11 @@
   id: 243
   time: '2024-07-05T20:58:08.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1267
+- author: Werzet
+  changes:
+  - message: "\u041D\u0435 \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A\
+      \u0430\u043B\u0441\u044F \u0440\u0430\u0443\u043D\u0434."
+    type: Fix
+  id: 244
+  time: '2024-07-06T13:14:31.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1295
