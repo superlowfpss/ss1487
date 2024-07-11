@@ -3356,3 +3356,13 @@
   id: 266
   time: '2024-07-11T19:11:19.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1337
+- author: gogenych
+  changes:
+  - message: "\u041A\u041F\u041A \u043A\u043B\u043E\u0443\u043D\u0430 \u0431\u043E\
+      \u043B\u044C\u0448\u0435 \u043D\u0435 \u043A\u0430\u0442\u0430\u043F\u0443\u043B\
+      \u044C\u0442\u0438\u0440\u0443\u0435\u0442 \u043D\u0430 \u043F\u043E\u043B \u044D\
+      \u043A\u0440\u0430\u043D\u0430"
+    type: Fix
+  id: 267
+  time: '2024-07-11T19:12:40.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1342
