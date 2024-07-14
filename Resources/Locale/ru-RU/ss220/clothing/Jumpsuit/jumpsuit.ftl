@@ -24,4 +24,6 @@ ent-ClothingUniformJumpsuitFeldsher = униформа фельдшера
     .desc = Только не обижайтесь, вы фельдшер или настоящий врач?
 ent-ClothingUniformJumpsuitMilitaryFeldsher = униформа военного фельдшера
     .desc = Это отнюдь не красная окраска..
+ent-ClothingUniformJumpsuitTrustedLawyer = костюм доверенного юриста NanoTrasen
+    .desc = Шикарный костюм для тех, кто следит за безупречным исполнением законов компании. Говорят, что вы способны навязать свои требования даже самому Богу.
 
