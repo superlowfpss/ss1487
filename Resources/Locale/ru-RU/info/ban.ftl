@@ -13,6 +13,9 @@ cmd-ban-hint-duration-2 = 1 день
 cmd-ban-hint-duration-3 = 3 дня
 cmd-ban-hint-duration-4 = 1 неделя
 cmd-ban-hint-duration-5 = 2 недели
+cmd-ban-hint-post-ban = [discord уведомление]
+cmd-ban-hint-post-ban-true = отправить
+cmd-ban-hint-post-ban-false = не отправлять 
 # ban panel
 cmd-banpanel-desc = Открыть панель банов
 cmd-banpanel-help = Использование: banpanel [имя или guid игрока]
