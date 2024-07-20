@@ -2259,17 +2259,19 @@ entities:
       - 503
       - 618
       - 604
-- proto: AirlockCommandGlass
+- proto: AirlockCommandGlassLocked
   entities:
-  - uid: 1099
-    components:
-    - type: Transform
-      pos: 0.5,6.5
-      parent: 1
   - uid: 1100
     components:
     - type: Transform
+      rot: 3.141592653589793 rad
       pos: 0.5,8.5
+      parent: 1
+  - uid: 1143
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,6.5
       parent: 1
 - proto: AirlockEngineeringLocked
   entities:
@@ -3121,6 +3123,11 @@ entities:
     components:
     - type: Transform
       pos: 8.5,-11.5
+      parent: 1
+  - uid: 1144
+    components:
+    - type: Transform
+      pos: -6.5,6.5
       parent: 1
 - proto: CableApcStack
   entities:
