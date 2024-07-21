@@ -351,7 +351,7 @@ namespace Content.Shared.CCVar
         /// <summary>
         /// Whether the baby jail is currently enabled.
         /// </summary>
-        public static readonly CVarDef<bool> BabyJailEnabled  =
+        public static readonly CVarDef<bool> BabyJailEnabled =
             CVarDef.Create("game.baby_jail.enabled", false, CVar.NOTIFY | CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
