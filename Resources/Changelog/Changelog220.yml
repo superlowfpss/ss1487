@@ -3775,3 +3775,23 @@
   id: 297
   time: '2024-07-21T16:17:51.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1229
+- author: Kemran
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u043A\u043E\u043B\u0438\
+      \u0447\u0435\u0441\u0442\u0432\u043E \u0447\u0430\u0441\u043E\u0432, \u043D\u0443\
+      \u0436\u043D\u043E\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\
+      \u0438\u044F \u0443\u043D\u0438\u0444\u043E\u0440\u043C\u044B \u041D\u0422\u0420\
+      \u0430."
+    type: Tweak
+  id: 298
+  time: '2024-07-21T16:28:51.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1409
+- author: ReeZii
+  changes:
+  - message: "\u041E\u0442\u0441\u0442\u0451\u0433\u0438\u0432\u0430\u043D\u0438\u0435\
+      \ \u0442\u0440\u0443\u043F\u043E\u0432 \u0438\u0437 \u0442\u0440\u0430\u043D\
+      \u0441\u043F\u043E\u0440\u0442\u0430!"
+    type: Fix
+  id: 299
+  time: '2024-07-21T16:29:22.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1410
