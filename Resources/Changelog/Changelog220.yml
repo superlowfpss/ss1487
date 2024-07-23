@@ -3929,3 +3929,24 @@
   id: 313
   time: '2024-07-23T10:31:21.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1438
+- author: TTTomaTTT
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0437\u044B\u0431\
+      \u0443\u0447\u0438\u0435 \u043F\u0435\u0441\u043A\u0438 \u0432 \u0434\u0432\u0443\
+      \u0445 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u0430"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\u0441\
+      \u0435\u043B\u044C\u0435!"
+    type: Add
+  - message: "\u0423\u0431\u0440\u0430\u043D\u043E \u0432\u0435\u0441\u0435\u043B\u044C\
+      \u0435!"
+    type: Remove
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0435\u0441\u0435\
+      \u043B\u044C\u0435!"
+    type: Tweak
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u0435\
+      \u0441\u0435\u043B\u044C\u0435!"
+    type: Fix
+  id: 314
+  time: '2024-07-23T11:48:08.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1385
