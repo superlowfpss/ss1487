@@ -100,5 +100,13 @@ public enum LogType
     SecutiyRecords = 90, // SS220 Criminal-Records
     AtmosTemperatureChanged = 91,
     DeviceNetwork = 92,
-    StoreRefund = 93
+    StoreRefund = 93,
+
+    /// <summary>
+    /// User was rate-limited for some spam action.
+    /// </summary>
+    /// <remarks>
+    /// This is a default value used by <c>PlayerRateLimitManager</c>, though users can use different log types.
+    /// </remarks>
+    RateLimited = 94,
 }

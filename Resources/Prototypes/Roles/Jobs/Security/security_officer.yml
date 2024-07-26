@@ -30,6 +30,5 @@
     pocket1: WeaponPistolMk58Nonlethal # SS220 Bring-Rubber-Back
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash
     - MagazinePistol

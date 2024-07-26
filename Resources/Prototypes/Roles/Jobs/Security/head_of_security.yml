@@ -44,6 +44,5 @@
     pocket2: MagazinePistol
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash
     - MagazinePistol

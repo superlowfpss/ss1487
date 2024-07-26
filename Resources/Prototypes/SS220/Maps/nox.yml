@@ -11,9 +11,6 @@
       components:
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/SS220/Shuttles/emergency/emergency_nox.yml
-        - type: StationRandomTransform
-          enableStationRotation: false
-          maxStationOffset: null
         - type: StationNameSetup
           mapNameTemplate: '{0} Nox {1}'
           nameGenerator:
