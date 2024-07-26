@@ -200,6 +200,8 @@
   minLimit: 0
   loadouts:
   - BartenderHead
+  - BartenderHeadWhite  #SS220-BartenderResprited-Begin
+  - BartenderHeadRed #SS220-BartenderResprited-End
   - BartenderBowler
 
 - type: loadoutGroup
@@ -207,8 +209,14 @@
   name: loadout-group-bartender-jumpsuit
   loadouts:
   - BartenderJumpsuit
-  - BartenderJumpskirt
   - BartenderJumpsuitPurple
+  - BartenderJumpsuitRed #SS220-BartenderResprited-Begin
+  - BartenderJumpsuitGreen
+  - BartenderJumpsuitNanotrasen
+  - BartenderJumpskirt
+  - BartenderJumpskirtRed
+  - BartenderJumpskirtGreen
+  - BartenderJumpskirtNanotrasen #SS220-BartenderResprited-End
 
 - type: loadoutGroup
   id: BartenderOuterClothing
@@ -332,6 +340,7 @@
   - ChaplainNunRobe
   - ChaplainBlackHoodie
   - ChaplainHoodie
+  - HoodieChaplainWhite #SS220-Clothes
 
 - type: loadoutGroup
   id: ChaplainNeck
@@ -567,6 +576,7 @@
   loadouts:
   - QuartermasterHead
   - QuartermasterBeret
+  - QuartermasterHeadWarehouseman #SS220-QM-Trip
 
 - type: loadoutGroup
   id: QuartermasterJumpsuit
@@ -577,6 +587,8 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
+  - QuartermasterJumpsuitCargonovich #SS220-Cargonovich
+  - QuartermasterJumpsuitWarehouseman #SS220-QM-Trip
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -592,6 +604,7 @@
   minLimit: 0
   loadouts:
   - QuartermasterWintercoat
+  - QuartermasterOuterCoatQMWarehouseman #SS220-QM-Trip
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -639,17 +652,7 @@
   loadouts:
   - BlackShoes
   - CargoWinterBoots
-#SS220-MoreTurtleneck-Begin
-- type: loadoutGroup
-  id: SalvageSpecialistJumpsuit
-  name: loadout-group-salvage-specialist-jumpsuit
-  loadouts:
-  - UniformJumpsuitSalvageSpecialist
-  - SalvageSpecialistJumpsuitTurtleneck
-  - SalvageSpecialistJumpsuitTurtleneckAlt
-  - SalvageSpecialistJumpskirtTurtleneck
-  - SalvageSpecialistJumpskirtTurtleneckAlt
-#SS220-MoreTurtleneck-End
+
 - type: loadoutGroup
   id: SalvageSpecialistBackpack
   name: loadout-group-salvage-specialist-backpack
@@ -709,6 +712,16 @@
   - DarkChiefEngineerMantle
 #ss220-loadout-chief-engineer-end
 
+#ss220-loadout-ce-backpack-begin
+- type: loadoutGroup
+  id: ChiefEngineerBack
+  name: loadout-group-chief-engineer-backpack
+  loadouts:
+    - ChiefEngineerBackpack
+    - ChiefEngineerSatchel
+    - ChiefEngineerDuffel
+#ss220-loadout-ce-backpack-end
+
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
   name: loadout-group-chief-engineer-outerclothing
@@ -741,7 +754,7 @@
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange
   - StationEngineerHardhatRed
-  - SeniorEngineerBeret
+  # - SeniorEngineerBeret  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: StationEngineerJumpsuit
@@ -750,8 +763,8 @@
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
   - StationEngineerHazardsuit
-  - SeniorEngineerJumpsuit
-  - SeniorEngineerJumpskirt
+  # - SeniorEngineerJumpsuit  #SS220 Seniors roles
+  # - SeniorEngineerJumpskirt  #SS220 Seniors roles
   - StationEngineerJumpsuitTurtleneck #SS220-MoreTurtleneck-Begin
   - StationEngineerJumpsuitTurtleneckAlt
   - StationEngineerJumpskirtTurtleneck
@@ -785,7 +798,7 @@
   name: loadout-group-station-engineer-id
   loadouts:
   - StationEngineerPDA
-  - SeniorEngineerPDA
+  # - SeniorEngineerPDA  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: AtmosphericTechnicianJumpsuit
@@ -874,7 +887,7 @@
   loadouts:
   - RoboticistCap
   - SkullBandana
-  - ScientificBeret
+  # - ScientificBeret  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: ScientistNeck
@@ -891,8 +904,8 @@
   - ScientistJumpskirt
   - RoboticistJumpsuit
   - RoboticistJumpskirt
-  - SeniorResearcherJumpsuit
-  - SeniorResearcherJumpskirt
+  # - SeniorResearcherJumpsuit  #SS220 Seniors roles
+  # - SeniorResearcherJumpskirt  #SS220 Seniors roles
   - ScientistJumpsuitTurtleneck #SS220-MoreTurtleneck-Begin
   - ScientistJumpsuitTurtleneckAlt
   - ScientistJumpskirtTurtleneck
@@ -916,7 +929,7 @@
   - ScienceWintercoat
   - RoboticistLabCoat
   - RoboticistWintercoat
-  - SeniorResearcherLabCoat
+  # - SeniorResearcherLabCoat  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -940,7 +953,7 @@
   name: loadout-group-scientist-id
   loadouts:
   - ScientistPDA
-  - SeniorResearcherPDA
+  # - SeniorResearcherPDA  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: ResearchAssistantJumpsuit
@@ -981,6 +994,7 @@
   loadouts:
   - HeadofSecurityCloak
   - HeadofSecurityMantle
+  - SecurityHolster #SS220-HoS-Holster
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1021,6 +1035,15 @@
   - SecurityBeret
   - SecurityHat
 
+#SS220 holster loadout begin
+- type: loadoutGroup
+  id: SecurityNeck
+  name: loadout-group-security-neck
+  minLimit: 0
+  loadouts:
+  - SecurityHolster
+#SS220 holster loadout end
+
 - type: loadoutGroup
   id: SecurityJumpsuit
   name: loadout-group-security-jumpsuit
@@ -1029,8 +1052,8 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
-  - SeniorOfficerJumpsuit
-  - SeniorOfficerJumpskirt
+  # - SeniorOfficerJumpsuit  #SS220 Seniors roles
+  # - SeniorOfficerJumpskirt  #SS220 Seniors roles
   - SecurityJumpsuitTurtleneck #SS220-MoreTurtleneck-Begin
   - SecurityJumpskirtTurtleneck #SS220-MoreTurtleneck-End
 
@@ -1070,7 +1093,7 @@
   name: loadout-group-security-id
   loadouts:
   - SecurityPDA
-  - SeniorOfficerPDA
+  # - SeniorOfficerPDA  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: DetectiveHead
@@ -1080,12 +1103,14 @@
   - DetectiveFedora
   - DetectiveFedoraGrey
 
-- type: loadoutGroup
-  id: DetectiveNeck
-  name: loadout-group-detective-neck
-  minLimit: 0
-  loadouts:
-  - DetectiveTie
+#SS220 holster to neck begin
+#- type: loadoutGroup
+#  id: DetectiveNeck
+#  name: loadout-group-detective-neck
+#  minLimit: 0
+#  loadouts:
+#  - DetectiveTie
+#SS220 holster to neck end
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
@@ -1173,7 +1198,7 @@
   minLimit: 0
   loadouts:
   - MedicalBeret
-  - SeniorPhysicianBeret
+  # - SeniorPhysicianBeret  #SS220 Seniors roles
   - MedicalHeadMirror
   - BlueSurgeryCap
   - GreenSurgeryCap
@@ -1186,8 +1211,8 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
-  - SeniorPhysicianJumpsuit
-  - SeniorPhysicianJumpskirt
+  # - SeniorPhysicianJumpsuit  #SS220 Seniors roles
+  # - SeniorPhysicianJumpskirt  #SS220 Seniors roles
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
@@ -1203,7 +1228,7 @@
   loadouts:
   - RegularLabCoat
   - MedicalDoctorWintercoat
-  - SeniorPhysicianLabCoat
+  # - SeniorPhysicianLabCoat  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1225,7 +1250,7 @@
   name: loadout-group-medical-doctor-id
   loadouts:
   - MedicalDoctorPDA
-  - SeniorPhysicianPDA
+  # - SeniorPhysicianPDA  #SS220 Seniors roles
 
 - type: loadoutGroup
   id: MedicalGloves
@@ -1294,6 +1319,7 @@
   - ParamedicJumpskirt
   - ParamedicJumpsuitTurtleneck #SS220-MoreTurtleneck-Begin
   - ParamedicJumpskirtTurtleneck #SS220-MoreTurtleneck-End
+  - ParamedicFeldsher #SS220-ParamedFashion
 
 - type: loadoutGroup
   id: ParamedicOuterClothing
@@ -1309,54 +1335,6 @@
   loadouts:
   - BlueShoes
   - MedicalWinterBoots
-
-#SS220-brigmedic-loadout-begin
-- type: loadoutGroup
-  id: BrigmedicHead
-  name: loadout-group-brigmedic-head
-  minLimit: 0
-  loadouts:
-  - BrigmedicHead
-
-- type: loadoutGroup
-  id: BrigmedicMask
-  name: loadout-group-brigmedic-mask
-  minLimit: 0
-  loadouts:
-  - SterileMask
-  - BrigmedicMask
-
-- type: loadoutGroup
-  id: BrigmedicJumpsuit
-  name: loadout-group-brigmedic-jumpsuit
-  loadouts:
-  - BrigmedicJumpsuit
-  - BrigmedicJumpskirt
-
-- type: loadoutGroup
-  id: BrigmedicOuterClothing
-  name: loadout-group-brigmedic-outerclothing
-  minLimit: 0
-  loadouts:
-  - BrigmedicWindAMG
-  - BrigmedicVestSecurity
-
-- type: loadoutGroup
-  id: BrigmedicBackpack
-  name: loadout-group-brigmedic-backpack
-  loadouts:
-  - BrigmedicBackpack
-  - BrigmedicSatchel
-  - BrigmedicDuffel
-
-- type: loadoutGroup
-  id: BrigmedicShoes
-  name: loadout-group-brigmedic-shoes
-  loadouts:
-  - RedShoes
-  - BlueShoes
-  - MedicalWinterBoots
-#SS220-brigmedic-loadout-end
 
 - type: loadoutGroup
   id: SurvivalMedical
@@ -1375,6 +1353,7 @@
   loadouts:
   - ReporterJumpsuit
   - JournalistJumpsuit
+  - JumpsuitJournalistRed #SS220-Clothes
 
 - type: loadoutGroup
   id: BoxerJumpsuit

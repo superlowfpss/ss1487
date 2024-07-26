@@ -117,6 +117,7 @@
     runningState: building
     staticRecipes:
       - ClothingEyesGlassesMeson #SS220 Craftable-Welding-Mask
+      - ClothingWristWatch #SS220 Wrist Watch
       - Wirecutter
       - Igniter
       - Signaller
@@ -336,6 +337,7 @@
       - FauxTileAstroSnow
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
+      - ThermalVisorRND # SS220 Thermals
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -380,6 +382,7 @@
       - WeaponXrayCannon
       - WeaponEnergyCrossbow #SS220 Energy Crossbow
       - WeaponTaser #SS220 taserback
+      - ClothingEyesThermalGlassesSecurity #SS220 Thermals
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -814,6 +817,7 @@
       - WeaponXrayCannon
       - WeaponEnergyCrossbow #SS220 Energy Crossbow
       - WeaponTaser #SS220 taserback
+      - ClothingEyesThermalGlassesSecurity #SS220 Thermals
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1128,13 +1132,25 @@
       - CarpetWhite
   - type: EmagLatheRecipes
     emagStaticRecipes: #SS220 TODO: Rework recipes what are there after EMAG
-      - ClothingHeadHatCentcomcap
-      - ClothingHeadHatCentcom
-      - ClothingUniformJumpsuitCentcomAgent
-      - ClothingUniformJumpsuitCentcomFormal
-      - ClothingUniformJumpskirtCentcomFormalDress
-      - ClothingUniformJumpsuitCentcomOfficer
-      - ClothingUniformJumpsuitCentcomOfficial
+#SS220-Centcom-EmagLatheRecipes-Fix-Begin
+      # - ClothingHeadHatCentcomcap
+      # - ClothingHeadHatCentcom
+      # - ClothingUniformJumpsuitCentcomAgent
+      # - ClothingUniformJumpsuitCentcomFormal
+      # - ClothingUniformJumpskirtCentcomFormalDress
+      # - ClothingUniformJumpsuitCentcomOfficer
+      # - ClothingUniformJumpsuitCentcomOfficial
+      - ClothingHeadHatNavyFieldOfficerCap
+      - ClothingHeadHatBeretNanoTrasenOfficer
+      - ClothingHeadHatBeretNanoTrasenDiplomat
+      - ClothingUniformCentCommOfficer
+      - ClothingUniformJumpsuitCentcomOfficerTurtleneck
+      - ClothingUniformJumpskirtCentcomOfficerTurtleneck
+      - ClothingUniformNanotrasenDiplomat
+      - ClothingOuterWinterCentcomm
+      - ClothingNeckCloakFieldOfficerCentComm
+      - ClothingNeckScarfCentcomm
+#SS220-Centcom-EmagLatheRecipes-Fix-End
       - ClothingHeadHatSyndieMAA
       - ClothingHeadHatSyndie
       - ClothingUniformJumpsuitOperative
@@ -1147,7 +1163,7 @@
       - ClothingUniformJumpsuitPyjamaSyndicatePink
       - ClothingHeadPyjamaSyndicateRed
       - ClothingUniformJumpsuitPyjamaSyndicateRed
-      - ClothingOuterWinterCentcom
+      # - ClothingOuterWinterCentcom SS220-Centcom-EmagLatheRecipes-Fix
       - ClothingOuterWinterSyndie
       - ClothingOuterWinterSyndieCap
   - type: MaterialStorage

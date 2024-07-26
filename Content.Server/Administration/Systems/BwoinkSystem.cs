@@ -69,6 +69,10 @@ namespace Content.Server.Administration.Systems
         private const string TooLongText = "... **(too long)**";
 
         private int _maxAdditionalChars;
+        // start 220 ahelp spam
+        private TimeSpan _messageDelay;
+        public Dictionary<NetUserId, TimeSpan> LastMessageSentTime { get; private set; } = new();
+        // end 220 ahelp spam
 
         public override void Initialize()
         {
@@ -78,6 +82,7 @@ namespace Content.Server.Administration.Systems
             Subs.CVar(_config, CCVars.DiscordAHelpAvatar, OnAvatarChanged, true);
             Subs.CVar(_config, CVars.GameHostName, OnServerNameChanged, true);
             Subs.CVar(_config, CCVars.AdminAhelpOverrideClientName, OnOverrideChanged, true);
+            Subs.CVar(_config, CCVars.AdminAhelpMessageDelay, OnDelayChanged, true);
             _sawmill = IoCManager.Resolve<ILogManager>().GetSawmill("AHELP");
             _maxAdditionalChars = GenerateAHelpMessage("", "", true, _gameTicker.RoundDuration().ToString("hh\\:mm\\:ss"), _gameTicker.RunLevel, playedSound: false).Length;
             _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
@@ -101,6 +106,13 @@ namespace Content.Server.Administration.Systems
                 new BwoinkTextMessage(obj.UserId, default, Loc.GetString("bwoink-system-rate-limited"), playSound: false),
                 obj.Channel);
         }
+
+        // start 220 ahelp spam
+        private void OnDelayChanged(TimeSpan delay)
+        {
+            _messageDelay = delay;
+        }
+        // end 220 ahelp spam
 
         private void OnOverrideChanged(string obj)
         {
@@ -418,6 +430,13 @@ namespace Content.Server.Administration.Systems
             if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
                 return;
 
+            // start 220 ahelp spam
+            if (LastMessageSentTime.TryGetValue(message.UserId, out var lastMessageSentTime)
+                && _timing.CurTime - lastMessageSentTime < _messageDelay
+                && !senderAHelpAdmin)
+                return;
+            // end 220 ahelp spam
+
             var escapedText = FormattedMessage.EscapeText(message.Text);
 
             string bwoinkText;
@@ -439,7 +458,7 @@ namespace Content.Server.Administration.Systems
 
             // If it's not an admin / admin chooses to keep the sound then play it.
             var playSound = !senderAHelpAdmin || message.PlaySound;
-            var msg = new BwoinkTextMessage(message.UserId, senderSession.UserId, bwoinkText, playSound: playSound, isSenderAdmin:senderAHelpAdmin); // SS220
+            var msg = new BwoinkTextMessage(message.UserId, senderSession.UserId, bwoinkText, playSound: playSound, isSenderAdmin: senderAHelpAdmin); // SS220
 
             LogBwoink(msg);
 
@@ -499,6 +518,8 @@ namespace Content.Server.Administration.Systems
                 var nonAfkAdmins = GetNonAfkAdmins();
                 _messageQueues[msg.UserId].Enqueue(GenerateAHelpMessage(senderSession.Name, str, !personalChannel, _gameTicker.RoundDuration().ToString("hh\\:mm\\:ss"), _gameTicker.RunLevel, playedSound: playSound, noReceivers: nonAfkAdmins.Count == 0));
             }
+
+            LastMessageSentTime[message.UserId] = _timing.CurTime; // 220 ahelp spam
 
             if (admins.Count != 0 || sendsWebhook)
                 return;

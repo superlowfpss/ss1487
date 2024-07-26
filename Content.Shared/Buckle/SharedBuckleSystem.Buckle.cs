@@ -2,8 +2,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using Content.Shared.Alert;
 using Content.Shared.Buckle.Components;
-using Content.Shared.Climbing.Components;
-using Content.Shared.Climbing.Systems;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
@@ -34,8 +32,6 @@ public abstract partial class SharedBuckleSystem
     public static ProtoId<AlertCategoryPrototype> BuckledAlertCategory = "Buckled";
 
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
-    [Dependency] private readonly ClimbSystem _climbSystem = default!;
-
     private void InitializeBuckle()
     {
         SubscribeLocalEvent<BuckleComponent, ComponentShutdown>(OnBuckleComponentShutdown);
@@ -446,7 +442,7 @@ public abstract partial class SharedBuckleSystem
 
         // SS220 Readd-Vehicles begin
         if (user.HasValue && TryComp<VehicleComponent>(strap, out var vehicle) &&
-            vehicle.Rider != user)
+            vehicle.Rider != user && !_mobState.IsIncapacitated(buckle))
         {
             //SS220-Vehicle-doafter-fix begin
             //So here if the one to unbuckle isn't one riding the vehicle,
@@ -529,11 +525,6 @@ public abstract partial class SharedBuckleSystem
 
         var strapEv = new UnstrappedEvent(strap, buckle);
         RaiseLocalEvent(strap, ref strapEv);
-
-        // SS220 BedCollision Fix begin
-        if (HasComp<ClimbableComponent>(strap))
-            _climbSystem.ForciblySetClimbing(buckle, strap);
-        // SS220 BedCollision Fix begin
     }
 
     public bool CanUnbuckle(Entity<BuckleComponent?> buckle, EntityUid user, bool popup)

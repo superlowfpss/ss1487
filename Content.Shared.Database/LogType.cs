@@ -101,6 +101,7 @@ public enum LogType
     AtmosTemperatureChanged = 91,
     DeviceNetwork = 92,
     StoreRefund = 93,
+    CryoStorage = 94, // 220 Cryo-Storage
 
     /// <summary>
     /// User was rate-limited for some spam action.
@@ -108,5 +109,5 @@ public enum LogType
     /// <remarks>
     /// This is a default value used by <c>PlayerRateLimitManager</c>, though users can use different log types.
     /// </remarks>
-    RateLimited = 94,
+    RateLimited = 95
 }

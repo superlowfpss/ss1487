@@ -88,6 +88,7 @@
   - Glasses
   - Trinkets
   - Survival
+  - Gloves #SS220-IAA-Loadouts
 
 - type: roleLoadout
   id: JobChaplain
@@ -204,7 +205,7 @@
   groups:
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
-  - StationEngineerBackpack
+  - ChiefEngineerBack #ss220-ce-fix
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
@@ -299,6 +300,7 @@
   id: JobWarden
   groups:
   - WardenHead
+  - SecurityNeck #SS220 holster loadout
   - WardenJumpsuit
   - SecurityBackpack
   - SecurityBelt
@@ -311,6 +313,7 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
+  - SecurityNeck #SS220 holster loadout
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
@@ -324,7 +327,7 @@
   id: JobDetective
   groups:
   - DetectiveHead
-  - DetectiveNeck
+  # - DetectiveNeck #SS220 holster to neck
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing

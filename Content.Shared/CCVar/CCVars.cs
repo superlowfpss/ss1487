@@ -140,13 +140,13 @@ namespace Content.Shared.CCVar
         ///     Minimum time between meteor swarms in minutes.
         /// </summary>
         public static readonly CVarDef<float>
-            MeteorSwarmMinTime = CVarDef.Create("events.meteor_swarm_min_time", 12.5f, CVar.ARCHIVE | CVar.SERVERONLY);
+            MeteorSwarmMinTime = CVarDef.Create("events.meteor_swarm_min_time", 18.5f, CVar.ARCHIVE | CVar.SERVERONLY); //ss220 meteor fix
 
         /// <summary>
         ///     Maximum time between meteor swarms in minutes.
         /// </summary>
         public static readonly CVarDef<float>
-            MeteorSwarmMaxTime = CVarDef.Create("events.meteor_swarm_max_time", 17.5f, CVar.ARCHIVE | CVar.SERVERONLY);
+            MeteorSwarmMaxTime = CVarDef.Create("events.meteor_swarm_max_time", 22.5f, CVar.ARCHIVE | CVar.SERVERONLY); //ss220 meteor fix
 
         /*
          * Game
@@ -351,7 +351,7 @@ namespace Content.Shared.CCVar
         /// <summary>
         /// Whether the baby jail is currently enabled.
         /// </summary>
-        public static readonly CVarDef<bool> BabyJailEnabled  =
+        public static readonly CVarDef<bool> BabyJailEnabled =
             CVarDef.Create("game.baby_jail.enabled", false, CVar.NOTIFY | CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
@@ -874,6 +874,14 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<string> AdminAhelpOverrideClientName =
             CVarDef.Create("admin.override_adminname_in_client_ahelp", string.Empty, CVar.SERVERONLY);
+
+        // start 220 ahelp spam
+        /// <summary>
+        ///     Delay of ahelp messages for non-admins.
+        /// </summary>
+        public static readonly CVarDef<TimeSpan> AdminAhelpMessageDelay =
+            CVarDef.Create("admin.ahelp_message_delay", TimeSpan.FromSeconds(5), CVar.SERVERONLY);
+        // end 220 ahelp spam
 
         /// <summary>
         ///     The threshold of minutes to appear as a "new player" in the ahelp menu
