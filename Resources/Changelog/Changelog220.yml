@@ -4136,3 +4136,12 @@
   id: 329
   time: '2024-07-28T23:13:11.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1465
+- author: MIXnikita
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u0441\u043F\u0435\u0446\u044D\
+      \u0444\u0444\u0435\u043A\u0442 \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u044B\
+      \ \u0438\u0437 \u043E\u0433\u043D\u0435\u0441\u0442\u0440\u0435\u043B\u0430."
+    type: Tweak
+  id: 330
+  time: '2024-07-28T23:26:51.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1469
