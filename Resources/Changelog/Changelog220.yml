@@ -4237,3 +4237,13 @@
   id: 337
   time: '2024-07-29T20:47:21.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1484
+- author: Gnomeev
+  changes:
+  - message: "\u0422\u0435\u043F\u0435\u0440\u044C \u043D\u0435\u0432\u0438\u0434\u0438\
+      \u043C\u0430\u044F \u0438 \u043E\u0431\u044B\u0447\u043D\u0430\u044F \u043A\u043E\
+      \u0440\u043E\u0431\u043A\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u0435\
+      \u043C\u044B!"
+    type: Tweak
+  id: 338
+  time: '2024-07-30T13:20:37.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1487
