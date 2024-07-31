@@ -900,6 +900,7 @@
   - HeadofSecurityHead
   - HeadofSecurityBeret
   - HeadofSecurityBigCap #SS220-FreedomHoSCap
+  - HatCapHoS #ss220 sec loadout update
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -910,6 +911,10 @@
   - HeadofSecurityTurtleneck
   - HeadofSecurityTurtleneckSkirt
   - HeadofSecurityFormalSuit
+  - JumpsuitHoSGrey #ss220 sec loadout update
+  - JumpsuitHoSBlue #ss220 sec loadout update
+  - JumpskirtHoSParadeMale #ss220 sec loadout update
+  - JumpsuitHoSParadeMale #ss220 sec loadout update
 #  - HeadofSecurityFormalSkirt SS220-RemoveFormalSkirtLoadouts
 
 - type: loadoutGroup
@@ -920,6 +925,7 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   - SecurityHolster #SS220-HoS-Holster
+  - MantleHOSShoulder #ss220 sec loadout update
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -927,6 +933,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - WinterHoSUnarmored #ss220 sec loadout update
 
 - type: loadoutGroup
   id: WardenHead
@@ -959,15 +966,17 @@
   - SecurityHelmet
   - SecurityBeret
   - SecurityHat
+  - HatCowboyBlack #ss220 sec loadout update
 
-#SS220 holster loadout begin
+#SS220 neck loadout begin
 - type: loadoutGroup
   id: SecurityNeck
   name: loadout-group-security-neck
   minLimit: 0
   loadouts:
-  - SecurityHolster
-#SS220 holster loadout end
+  - SecurityHolster #SS220 holster loadout
+  - Headphones #SS220 sec loadout update
+#SS220 neck loadout end
 
 - type: loadoutGroup
   id: SecurityJumpsuit
@@ -981,6 +990,7 @@
   # - SeniorOfficerJumpskirt  #SS220 Seniors roles
   - SecurityJumpsuitTurtleneck #SS220-MoreTurtleneck-Begin
   - SecurityJumpskirtTurtleneck #SS220-MoreTurtleneck-End
+  - JumpsuitSecBlue #ss220 sec loadout update
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -1004,6 +1014,8 @@
   - ArmorVest
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - CoatSecurityOvercoat #ss220 sec loadout update
+  - VestArmorSec #ss220 sec loadout update
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1012,6 +1024,7 @@
   - CombatBoots
   - JackBoots
   - SecurityWinterBoots
+  - BootsJackSec #ss220 sec loadout update
 
 - type: loadoutGroup
   id: SecurityPDA
