@@ -64,8 +64,11 @@
             Slash: 12
             Heat: 12
             Structural: 15
-  - type: ItemToggleDisarmMalus
-    activatedDisarmMalus: 0.7
+  - type: ComponentToggler
+    components:
+    - type: Sharp
+    - type: DisarmMalus
+      malus: 0.7
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5
@@ -143,8 +146,11 @@
             Slash: 12
             Heat: 12
             Structural: 15
-  - type: ItemToggleDisarmMalus
-    activatedDisarmMalus: 0.7
+  - type: ComponentToggler
+    components:
+    - type: Sharp
+    - type: DisarmMalus
+      malus: 0.7
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5

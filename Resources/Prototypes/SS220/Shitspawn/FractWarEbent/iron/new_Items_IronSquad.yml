@@ -41,14 +41,15 @@
     sprintModifier: 1.1
     enabled: false
   - type: NoSlip
+
 - type: entity
   id: ActionToggleMagSyndieEbent
-  parent: ActionBaseToggleMagboots
+  parent: ActionToggleMagboots
   noSpawn: true
   components:
   - type: InstantAction
     icon: { sprite: /Textures/SS220/Clothing/Shoes/Boots/magsyndieebent.rsi, state: icon }
-    iconOn: /Textures/SS220/Clothing/Shoes/Boots/magsyndieebent.rsi/icon-on.png 
+    iconOn: /Textures/SS220/Clothing/Shoes/Boots/magsyndieebent.rsi/icon-on.png
 
 - type: entity
   parent: ClothingBackpack

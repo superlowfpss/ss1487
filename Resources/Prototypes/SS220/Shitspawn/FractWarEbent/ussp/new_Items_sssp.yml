@@ -19,9 +19,10 @@
     sprintModifier: 1.1
     enabled: false
   - type: NoSlip
+
 - type: entity
   id: ActionToggleMagUSSSPEbent
-  parent: ActionBaseToggleMagboots
+  parent: ActionToggleMagboots
   noSpawn: true
   components:
   - type: InstantAction
