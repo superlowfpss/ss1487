@@ -228,7 +228,7 @@ public sealed partial class DragonSystem : EntitySystem
             return;
 
         var mind = Comp<MindComponent>(mindContainer.Mind.Value);
-        foreach (var objId in mind.AllObjectives)
+        foreach (var objId in mind.Objectives)
         {
             if (_objQuery.TryGetComponent(objId, out var obj))
             {
@@ -250,7 +250,7 @@ public sealed partial class DragonSystem : EntitySystem
             return;
 
         var mind = Comp<MindComponent>(mindContainer.Mind.Value);
-        foreach (var objId in mind.AllObjectives)
+        foreach (var objId in mind.Objectives)
         {
             if (_objQuery.TryGetComponent(objId, out var obj))
             {

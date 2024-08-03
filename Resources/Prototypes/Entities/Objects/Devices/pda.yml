@@ -394,9 +394,7 @@
       visible: false #SS220 PDA-Resprite-End
   - type: Icon
     state: pda-clown
-  - type: Slippery
-    paralyzeTime: 4
-    launchForwardsMultiplier: 1.5 
+  - type: Slippery # secretly made of bananium
   - type: StepTrigger
   - type: CollisionWake
     enabled: false

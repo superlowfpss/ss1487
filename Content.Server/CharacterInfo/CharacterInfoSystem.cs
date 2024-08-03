@@ -37,10 +37,12 @@ public sealed class CharacterInfoSystem : EntitySystem
 
         if (_minds.TryGetMind(entity, out var mindId, out var mind))
         {
+            // SS220 Antag-List (moved code to GetObjectives method)
+
             if (_jobs.MindTryGetJobName(mindId, out var jobName))
                 jobTitle = jobName;
 
-            GetObjectives(mindId, mind, objectives);
+            GetObjectives(mindId, mind, objectives); // SS220 Antag-List
 
             // Get briefing
             briefing = _roles.MindGetBriefing(mindId);
@@ -70,9 +72,10 @@ public sealed class CharacterInfoSystem : EntitySystem
         RaiseNetworkEvent(new AntagonistInfoEvent(GetNetEntity(receiver), antagonist, jobTitle, objectives), args.SenderSession);
     }
 
+    // SS220 Antag-List begin
     private void GetObjectives([NotNullWhen(true)] EntityUid mindId, [NotNullWhen(true)] MindComponent mind, Dictionary<string, List<ObjectiveInfo>> objectives)
     {
-        foreach (var objective in mind.AllObjectives)
+        foreach (var objective in mind.Objectives)
         {
             var info = _objectives.GetInfo(objective, mindId, mind);
             if (info == null)
@@ -85,4 +88,5 @@ public sealed class CharacterInfoSystem : EntitySystem
             objectives[issuer].Add(info.Value);
         }
     }
+    // SS220 Antag-List end
 }
