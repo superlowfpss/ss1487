@@ -410,3 +410,6 @@ ClothingOuterCoatInspector: ClothingOuterCoatDetectiveLoadout
 BaseSSDConsole: null
 SSDStorageConsole: null
 CryopodSSD: CryogenicSleepUnitSpawner
+
+# 2024-06-23
+FloorTileItemReinforced: PartRodMetal1
