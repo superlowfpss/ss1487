@@ -56,7 +56,6 @@ public sealed class DrinkSystem : SharedDrinkSystem
     [Dependency] private readonly SolutionContainerSystem _solutionContainer = default!;
     [Dependency] private readonly StomachSystem _stomach = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
-    [Dependency] private readonly HandsSystem _hands = default!;
     [Dependency] private readonly ForensicsSystem _forensics = default!;
 
     public override void Initialize()
