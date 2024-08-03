@@ -86,10 +86,9 @@ public abstract partial class SharedGunSystem
 
     private void OnBallisticAmmoFillDoAfter(EntityUid uid, BallisticAmmoProviderComponent component, AmmoFillDoAfterEvent args)
     {
-        // start 220 ammoFillFix
         if (args.Handled || args.Cancelled)
             return;
-        // end 220 ammoFillFix
+
         if (Deleted(args.Target) ||
             !TryComp<BallisticAmmoProviderComponent>(args.Target, out var target) ||
             target.Whitelist == null)

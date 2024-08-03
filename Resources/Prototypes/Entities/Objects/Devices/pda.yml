@@ -1156,6 +1156,7 @@
     state: pda-clear #SS220 PDA-Resprite-End
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
+    notificationsEnabled: false
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
