@@ -62,7 +62,6 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly ReplacementAccentSystem _wordreplacement = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
@@ -74,7 +73,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     public const string DefaultAnnouncementSound = "/Audio/Announcements/announce.ogg";
     public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
 
-    public readonly TimeSpan coolDown = TimeSpan.FromSeconds(2); //ss220 chat unique
+    public readonly TimeSpan CoolDown = TimeSpan.FromSeconds(2); //ss220 chat unique
     public const int MaximumLengthMsg = 5; //ss220 chat unique
 
     private bool _loocEnabled = true;
@@ -259,7 +258,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             && message.Length >= MaximumLengthMsg)
         {
             var curTime = _gameTiming.CurTime;
-            if (curTime - chatStruct.lastMessageTimeSent < coolDown)
+            if (curTime - chatStruct.lastMessageTimeSent < CoolDown)
                 return;
 
             ChatMsgUnique[source] = new ChatUniqueStruct() { message = message, lastMessageTimeSent = curTime };
