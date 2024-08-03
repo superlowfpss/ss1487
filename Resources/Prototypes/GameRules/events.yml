@@ -107,7 +107,7 @@
 # - type: entity
 #   parent: BaseGameRule
 #   id: ClosetSkeleton
-#   noSpawn: true
+#   categories: [ GameRules ]
 #   components:
 #   - type: StationEvent
 #     weight: 5

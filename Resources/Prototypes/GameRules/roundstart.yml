@@ -25,7 +25,7 @@
 
 #SS220 survival minimum players begin
 - type: entity
-  noSpawn: true
+  categories: [ GameRules ]
   parent: BaseGameRule
   id: SurvivalRule
   components:
@@ -201,7 +201,7 @@
 #- type: entity
 #  id: Sandbox
 #  parent: BaseGameRule
-#  noSpawn: true
+#  categories: [ GameRules ]
 #  components:
 #  - type: SandboxRule
 
@@ -270,7 +270,7 @@
 - type: entity
   id: EmergencyShuttleAutoCall
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ GameRules ]
   components:
   - type: EmergencyShuttleAutoCallRule
 

@@ -96,7 +96,7 @@
 - type: entity
   id: EclipseNanotrasenStation
   parent: StandardNanotrasenStation
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: StationMinimap
       minimapData: !type:StationMinimapData

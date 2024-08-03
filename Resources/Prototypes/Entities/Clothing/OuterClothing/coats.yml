@@ -526,7 +526,7 @@
   parent: ClothingOuterStorageBase
   id: ClothingUniformJumpskirtCentcomFormalDress
   name: central command formal dress
-  noSpawn: true #SS220-CentcomFashion
+  categories: [ HideSpawnMenu ] #SS220-CentcomFashion
   description: A dress for special occasions
   components:
   - type: Sprite

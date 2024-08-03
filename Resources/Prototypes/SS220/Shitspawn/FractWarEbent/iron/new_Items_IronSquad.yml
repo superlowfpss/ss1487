@@ -45,7 +45,7 @@
 - type: entity
   id: ActionToggleMagSyndieEbent
   parent: ActionToggleMagboots
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     icon: { sprite: /Textures/SS220/Clothing/Shoes/Boots/magsyndieebent.rsi, state: icon }
