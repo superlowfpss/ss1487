@@ -537,8 +537,6 @@
   - type: Tag
     tags:
     - Ian # SS220 Shapochki
-  - type: RussianAccent
-  - type: AccentWearerNameClothing
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
