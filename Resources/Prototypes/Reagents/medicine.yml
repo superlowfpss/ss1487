@@ -1156,7 +1156,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 12
-          
+
 - type: reagent
   id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
   name: reagent-name-opporozidone
@@ -1318,56 +1318,57 @@
           types:
             Poison: 1
 
-- type: reagent
-  id: Haloperidol
-  name: reagent-name-haloperidol
-  group: Medicine
-  desc: reagent-desc-haloperidol
-  physicalDesc: reagent-physical-desc-crystalline
-  flavor: medicine
-  color: "#27870a"
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:Emote
-        emote: Yawn
-        showInChat: true
-        probability: 0.1
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        component: Drowsiness
-        time: 4
-        type: Add
-        refresh: false
-      - !type:GenericStatusEffect
-        key: Jitter
-        time: 4.0
-        type: Remove
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
-        time: 10.0
-        type: Remove
-      - !type:AdjustReagent
-        reagent: Desoxyephedrine
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: Ephedrine
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: Stimulants
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: THC
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: SpaceDrugs
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: Bananadine
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: SpaceGlue
-        amount: -3.0
-      - !type:AdjustReagent
-        reagent: MindbreakerToxin
-        amount: -3.0
+# SS220 Haloperidol (remove official one)
+# - type: reagent
+#   id: Haloperidol
+#   name: reagent-name-haloperidol
+#   group: Medicine
+#   desc: reagent-desc-haloperidol
+#   physicalDesc: reagent-physical-desc-crystalline
+#   flavor: medicine
+#   color: "#27870a"
+#   metabolisms:
+#     Medicine:
+#       effects:
+#       - !type:Emote
+#         emote: Yawn
+#         showInChat: true
+#         probability: 0.1
+#       - !type:GenericStatusEffect
+#         key: Drowsiness
+#         component: Drowsiness
+#         time: 4
+#         type: Add
+#         refresh: false
+#       - !type:GenericStatusEffect
+#         key: Jitter
+#         time: 4.0
+#         type: Remove
+#       - !type:GenericStatusEffect
+#         key: SeeingRainbows
+#         time: 10.0
+#         type: Remove
+#       - !type:AdjustReagent
+#         reagent: Desoxyephedrine
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: Ephedrine
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: Stimulants
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: THC
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: SpaceDrugs
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: Bananadine
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: SpaceGlue
+#         amount: -3.0
+#       - !type:AdjustReagent
+#         reagent: MindbreakerToxin
+#         amount: -3.0
