@@ -436,3 +436,6 @@ SignDrones: SignMaterials
 SignShield: null # what was this even for?
 SignHydro2: SignHydro1
 SignHydro3: SignHydro1
+
+# 2024-08-03 SS220 Use-Official-Cyborg-Esword
+EnergySwordDoubleBorg: CyborgEnergySwordDouble
