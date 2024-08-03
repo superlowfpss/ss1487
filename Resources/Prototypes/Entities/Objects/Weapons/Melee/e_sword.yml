@@ -356,7 +356,6 @@
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
 # ss220 FixESword
   - type: Reflect
-    enabled: false
     reflectProb: 0.95
     reflects:
       - NonEnergy

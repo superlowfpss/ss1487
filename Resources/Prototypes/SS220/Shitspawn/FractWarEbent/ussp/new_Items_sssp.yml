@@ -13,12 +13,12 @@
   - type: Clothing
     sprite: SS220/Clothing/Shoes/Boots/magboots-ussp.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagUSSSPEbent
   - type: ClothingSpeedModifier
     walkModifier: 1.1
     sprintModifier: 1.1
-    enabled: false
   - type: NoSlip
+  - type: ToggleClothing
+    action: ActionToggleMagUSSSPEbent
 
 - type: entity
   id: ActionToggleMagUSSSPEbent

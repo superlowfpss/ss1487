@@ -3,7 +3,7 @@
   id: MindSlaveObeyObjective
   components:
   - type: Objective
-    issuer: syndicate
+    issuer: objective-issuer-syndicate
     difficulty: 1
     icon:
       sprite: SS220/Alerts/MindSlave.rsi

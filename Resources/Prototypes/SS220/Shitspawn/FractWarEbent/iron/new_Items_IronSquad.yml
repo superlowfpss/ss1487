@@ -35,12 +35,12 @@
   - type: Clothing
     sprite: SS220/Clothing/Shoes/Boots/magsyndieebent.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagSyndieEbent
   - type: ClothingSpeedModifier
     walkModifier: 1.1
     sprintModifier: 1.1
-    enabled: false
   - type: NoSlip
+  - type: ToggleClothing
+    action: ActionToggleMagSyndieEbent
 
 - type: entity
   id: ActionToggleMagSyndieEbent

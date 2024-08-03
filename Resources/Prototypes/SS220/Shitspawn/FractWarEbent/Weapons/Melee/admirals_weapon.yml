@@ -33,7 +33,6 @@
     size: Small
     sprite: SS220/Objects/Weapons/Melee/e_axe_inhands.rsi
   - type: Reflect
-    enabled: true
     reflects: Energy
     reflectProb: .95
     spread: 75
@@ -115,7 +114,6 @@
     size: Small
     sprite: SS220/Objects/Weapons/Melee/e_sword_ebent_inhands_double.rsi
   - type: Reflect
-    enabled: true
     reflects: Energy
     reflectProb: .95
     spread: 75
