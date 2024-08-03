@@ -31,8 +31,9 @@ public sealed class CharacterInfoSystem : EntitySystem
             return;
 
         var entity = args.SenderSession.AttachedEntity.Value;
-        var jobTitle = "No Profession";
+
         var objectives = new Dictionary<string, List<ObjectiveInfo>>();
+        var jobTitle = Loc.GetString("character-info-no-profession");
         string? briefing = null;
 
         if (_minds.TryGetMind(entity, out var mindId, out var mind))
