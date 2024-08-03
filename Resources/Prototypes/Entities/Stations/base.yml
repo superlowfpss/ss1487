@@ -49,17 +49,26 @@
       path: /Maps/SS220/Shuttles/cargo.yml # SS220 shuttle upd
     - type: GridSpawn
       groups:
-        trade:
+        vgroid: !type:DungeonSpawnGroup
+          minimumDistance: 1000
+          nameDataset: names_borer
+          addComponents:
+          - type: Gravity
+            enabled: true
+            inherent: true
+          protos:
+          - VGRoid
+        trade: !type:GridSpawnGroup
           addComponents:
             - type: ProtectedGrid
             - type: TradeStation
           paths:
             - /Maps/SS220/Shuttles/trading_outpost.yml # SS220 shuttle upd
-        mining:
+        mining: !type:GridSpawnGroup
           paths:
           - /Maps/Shuttles/mining.yml # SS220 shuttle upd
         # Spawn last
-        ruins:
+        ruins: !type:GridSpawnGroup
           hide: true
           nameGrid: true
           minCount: 2

@@ -267,6 +267,8 @@
         Piercing: 0.8
         Heat: 0.8
         Radiation: 0.5
+  - type: FireProtection
+    reduction: 0.2
 
 #Chief Medical Officer's Hardsuit
 - type: entity
