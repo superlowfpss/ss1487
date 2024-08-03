@@ -106,7 +106,7 @@
   - type: GameRule
     minPlayers: 20
   - type: LoadMapRule
-    gameMap: SS220_syndicate # SS220 Nuke-Outpost
+    mapPath: /Maps/SS220/ss220-nukeoutpost.yml
   - type: AntagSelection
     selectionTime: PrePlayerSpawn
     definitions:

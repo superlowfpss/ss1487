@@ -33,7 +33,8 @@ namespace Content.IntegrationTests.Tests
             "SS220_CentComm",
             "Dart",
             "NukieOutpost",
-            "SS220_syndicate"
+            "SS220_syndicate",
+            "Dart"
         };
 
         private static readonly string[] Grids =
@@ -59,7 +60,6 @@ namespace Content.IntegrationTests.Tests
             "Bagel",
             "Origin",
             "CentComm",
-            "NukieOutpost",
             "Box",
             "Europa",
             "Saltern",
