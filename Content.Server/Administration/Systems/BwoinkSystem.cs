@@ -24,6 +24,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared.SS220.CCVars;
 
 namespace Content.Server.Administration.Systems
 {
@@ -92,7 +93,7 @@ namespace Content.Server.Administration.Systems
             Subs.CVar(_config, CCVars.DiscordAHelpAvatar, OnAvatarChanged, true);
             Subs.CVar(_config, CVars.GameHostName, OnServerNameChanged, true);
             Subs.CVar(_config, CCVars.AdminAhelpOverrideClientName, OnOverrideChanged, true);
-            Subs.CVar(_config, CCVars.AdminAhelpMessageDelay, OnDelayChanged, true);
+            Subs.CVar(_config, CCVars220.AdminAhelpMessageDelay, OnDelayChanged, true);
             _sawmill = IoCManager.Resolve<ILogManager>().GetSawmill("AHELP");
             var defaultParams = new AHelpMessageParams(
                 string.Empty,
@@ -127,9 +128,9 @@ namespace Content.Server.Administration.Systems
         }
 
         // start 220 ahelp spam
-        private void OnDelayChanged(TimeSpan delay)
+        private void OnDelayChanged(float delay)
         {
-            _messageDelay = delay;
+            _messageDelay = TimeSpan.FromSeconds(delay);
         }
         // end 220 ahelp spam
 
@@ -577,7 +578,7 @@ namespace Content.Server.Administration.Systems
                 return;
 
             // start 220 ahelp spam
-            if (LastMessageSentTime.TryGetValue(message.UserId, out var lastMessageSentTime)
+            if (LastMessageSentTime.TryGetValue(senderSession.UserId, out var lastMessageSentTime)
                 && _timing.CurTime - lastMessageSentTime < _messageDelay
                 && !senderAHelpAdmin)
                 return;
@@ -697,7 +698,7 @@ namespace Content.Server.Administration.Systems
                 _messageQueues[msg.UserId].Enqueue(GenerateAHelpMessage(messageParams));
             }
 
-            LastMessageSentTime[message.UserId] = _timing.CurTime; // 220 ahelp spam
+            LastMessageSentTime[senderSession.UserId] = _timing.CurTime; // 220 ahelp spam
 
             if (admins.Count != 0 || sendsWebhook)
                 return;
