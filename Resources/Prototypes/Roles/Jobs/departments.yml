@@ -115,9 +115,9 @@
 
 - type: department
   id: Cryo
-  name: cryo
+  name: department-Cryo
   sort: 0
-  description: Крио
+  description: department-Cryo
   color: "#88FF88"
   roles: []
   primary: false
@@ -142,7 +142,7 @@
   id: GhostRoles
   name: ghost-roles
   sort: 0
-  description: Ghost roles
+  description: ghost-roles
   color: "#A9A9A9"
   roles:
   - GhostRole
