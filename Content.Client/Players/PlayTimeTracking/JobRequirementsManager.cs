@@ -1,9 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
-using Content.Client.Administration.Managers;
+using Content.Client.Lobby;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.JobWhitelist;
 using Content.Shared.Players.PlayTimeTracking;
+using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Robust.Client;
 using Robust.Client.Player;
@@ -95,13 +96,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         Updated?.Invoke();
     }
 
-    //SS220-Client-admin-check-for-jobs
-    private bool IsBypassedChecks()
-    {
-        return _adminManager.IsActive();
-    }
-
-    public bool IsAllowed(JobPrototype job, HumanoidCharacterProfile profile, [NotNullWhen(false)] out FormattedMessage? reason)
+    public bool IsAllowed(JobPrototype job, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         reason = null;
 
@@ -118,83 +113,23 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         if (player == null)
             return true;
 
-        return CheckAllowed(job, profile, out reason);
+        return CheckRoleRequirements(job, profile, out reason);
     }
 
-    //SS220 Species-Job-Requirement begin
-    public void BuildReason(ReasonList reasons, out FormattedMessage reason)
-    {
-        reason = FormattedMessage.FromMarkup(string.Join('\n', reasons));
-    }
-
-    public bool CheckAllowed(JobPrototype job, HumanoidCharacterProfile profile, [NotNullWhen(false)] out FormattedMessage? reason)
-    {
-        reason = null;
-        ReasonList reasons = new();
-
-        var bCheckSpecies = CheckSpeciesRestrict(job, profile, reasons);
-        var bCheckRoleTime = CheckRoleTime(job, out var roleTimeReason);
-        if (roleTimeReason is not null)
-            reasons.Add(roleTimeReason.ToMarkup());
-
-        if (bCheckSpecies && bCheckRoleTime)
-        {
-            return true;
-        }
-
-        BuildReason(reasons, out reason);
-        return false;
-    }
-
-    public bool CheckSpeciesRestrict(JobPrototype job, HumanoidCharacterProfile profile, ReasonList reasons)
-    {
-        var species = _prototypeManager.Index<SpeciesPrototype>(profile.Species);
-
-        if (species is not null)
-        {
-            if (JobRequirements.TryRequirementsSpeciesMet(job, species, profile.Sex, out var reason, _prototypeManager)) //ss220-arahFix
-                return true;
-
-            reasons.Add(reason.ToMarkup());
-            return false;
-        }
-
-        return true;
-    }
-
-    // for compatible things like xaml for ghost roles
-    public bool CheckRoleTime(HashSet<JobRequirement>? requirements, [NotNullWhen(false)] out FormattedMessage? reason)
-    {
-        reason = null;
-        ReasonList reasons = new();
-
-        if (!CheckRoleTime(requirements, reasons))
-        {
-            BuildReason(reasons, out reason);
-            return false;
-        }
-        return true;
-    }
-    //SS220 Species-Job-Requirement end
-
-    public bool CheckRoleTime(JobPrototype job, [NotNullWhen(false)] out FormattedMessage? reason)
+    public bool CheckRoleRequirements(JobPrototype job, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         var reqs = _entManager.System<SharedRoleSystem>().GetJobRequirement(job);
-        return CheckRoleTime(reqs, out reason);
+        return CheckRoleRequirements(reqs, profile, out reason);
     }
 
-    public bool CheckRoleTime(HashSet<JobRequirement>? requirements, ReasonList reasons)
+    public bool CheckRoleRequirements(HashSet<JobRequirement>? requirements, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
 
         foreach (var requirement in requirements)
         {
-            if (JobRequirements.TryRequirementMet(requirement, _roles, out var jobReason, _entManager, _prototypes))
-                continue;
-
-            //SS220-Client-admin-check-for-jobs
-            if (IsBypassedChecks())
+            if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason))
                 continue;
 
             reasons.Add(jobReason.ToMarkup());

@@ -9,6 +9,8 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 180000 # SS220-RoleTime
+    - !type:AgeRequirement
+      requiredAge: 30 #SS220-age-restr
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
