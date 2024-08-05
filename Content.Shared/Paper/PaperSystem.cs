@@ -100,7 +100,7 @@ public sealed class PaperSystem : EntitySystem
     private void OnInteractUsing(Entity<PaperComponent> entity, ref InteractUsingEvent args)
     {
         // only allow editing if there are no stamps or when using a cyberpen
-        var editable = entity.Comp.StampedBy.Count == 0 || _tagSystem.HasTag(args.Used, "WriteIgnoreStamps");
+        var editable = entity.Comp.StampedBy.Count == 0 || _tagSystem.HasTag(args.Used, "WriteIgnoreStamps") && entity.Comp.Writable; //SS220-upstream-merge
         if (_tagSystem.HasTag(args.Used, "Write") && editable)
         {
             if (entity.Comp.EditingDisabled)
@@ -202,7 +202,6 @@ public sealed class PaperSystem : EntitySystem
     public void SetContent(Entity<PaperComponent> entity, string content)
     {
         entity.Comp.Content = content + '\n';
-        Dirty(entity);
         UpdateUserInterface(entity);
 
         if (!TryComp<AppearanceComponent>(entity, out var appearance))

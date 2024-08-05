@@ -1,3 +1,4 @@
+using Content.Shared.SS220.Photocopier;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -5,11 +6,17 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Paper;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-public sealed partial class PaperComponent : Component
+public sealed partial class PaperComponent : Component, IPhotocopyableComponent
 {
     public PaperAction Mode;
     [DataField("content"), AutoNetworkedField]
     public string Content { get; set; } = "";
+
+    /// <summary>
+    ///     Allows to forbid to write on paper without using stamps as a hack
+    /// </summary>
+    [DataField("writable")]
+    public bool Writable { get; set; } = true;
 
     [DataField("contentSize")]
     public int ContentSize { get; set; } = 6000;
@@ -24,13 +31,25 @@ public sealed partial class PaperComponent : Component
     public string? StampState { get; set; }
 
     [DataField, AutoNetworkedField]
-    public bool EditingDisabled;
+    public bool EditingDisabled = false;
 
     /// <summary>
     /// Sound played after writing to the paper.
     /// </summary>
     [DataField("sound")]
     public SoundSpecifier? Sound { get; private set; } = new SoundCollectionSpecifier("PaperScribbles", AudioParams.Default.WithVariation(0.1f));
+
+    public IPhotocopiedComponentData GetPhotocopiedData()
+    {
+        return new PaperPhotocopiedData()
+        {
+            Content = Content,
+            EditingDisabled = EditingDisabled,
+            ContentSize = ContentSize,
+            StampedBy = StampedBy,
+            StampState = StampState
+        };
+    }
 
     [Serializable, NetSerializable]
     public sealed class PaperBoundUserInterfaceState : BoundUserInterfaceState
@@ -83,5 +102,51 @@ public sealed partial class PaperComponent : Component
     {
         Blank,
         Written
+    }
+}
+
+[Serializable]
+public sealed class PaperPhotocopiedData : IPhotocopiedComponentData
+{
+    [Dependency, NonSerialized] private readonly IEntitySystemManager _sysMan = default!;
+
+    public PaperPhotocopiedData()
+    {
+        IoCManager.InjectDependencies(this);
+    }
+
+    public string? Content;
+    public bool? EditingDisabled;
+    public int? ContentSize;
+    public List<StampDisplayInfo>? StampedBy;
+    public string? StampState;
+
+    public void RestoreFromData(EntityUid uid, Component someComponent)
+    {
+        var paperSystem = _sysMan.GetEntitySystem<PaperSystem>();
+
+        if (someComponent is not PaperComponent paperComponent)
+            return;
+
+        if (ContentSize is { } contentSize)
+            paperComponent.ContentSize = contentSize;
+
+        var entity = new Entity<PaperComponent>(uid, paperComponent);
+
+        //Don't set empty content string so empty paper notice is properly displayed
+        if (!string.IsNullOrEmpty(Content))
+            paperSystem.SetContent(entity, Content);
+
+        if (EditingDisabled is { } editingDisabled)
+            paperComponent.EditingDisabled = editingDisabled;
+
+        // Apply stamps
+        if (StampState is null || StampedBy is null)
+            return;
+
+        foreach (var stampedBy in StampedBy)
+        {
+            paperSystem.TryStamp(entity, stampedBy, StampState);
+        }
     }
 }

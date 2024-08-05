@@ -1,4 +1,5 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
+using Content.Client.Administration.Managers; //SS220-Client-admin-check-for-jobs
 using Content.Client.Lobby;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
@@ -13,9 +14,6 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Shared.Preferences;
-using Content.Shared.Humanoid.Prototypes;
-using ReasonList = System.Collections.Generic.List<string>;
 
 namespace Content.Client.Players.PlayTimeTracking;
 
@@ -27,8 +25,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
-    [Dependency] private readonly IClientAdminManager _adminManager = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly IClientAdminManager _adminManager = default!; //SS220-Client-admin-check-for-jobs
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();
@@ -96,6 +93,12 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         Updated?.Invoke();
     }
 
+    //SS220-Client-admin-check-for-jobs
+    private bool IsBypassedChecks()
+    {
+        return _adminManager.IsActive();
+    }
+
     public bool IsAllowed(JobPrototype job, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         reason = null;
@@ -124,18 +127,25 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
 
     public bool CheckRoleRequirements(HashSet<JobRequirement>? requirements, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason)
     {
+        reason = null;
+
         if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
 
+        var reasons = new List<string>();
         foreach (var requirement in requirements)
         {
             if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason))
                 continue;
 
+            if (IsBypassedChecks()) //SS220-Client-admin-check-for-jobs
+                continue;
+
             reasons.Add(jobReason.ToMarkup());
         }
 
-        return reasons.Count == 0; //SS220 Species-Job-Requirement
+        reason = reasons.Count == 0 ? null : FormattedMessage.FromMarkup(string.Join('\n', reasons));
+        return reason == null;
     }
 
     public bool CheckWhitelist(JobPrototype job, [NotNullWhen(false)] out FormattedMessage? reason)

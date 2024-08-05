@@ -8,7 +8,11 @@
       department: Science
       time: 180000 # SS220-RoleTime
     - !type:AgeRequirement
-      requiredAge: 30 #SS220-age-restr
+      requiredAge: 20
+    - !type:SpeciesRequirement #SS220-jobbans begin
+      inverted: true
+      species:
+      - Felinid #SS220-jobbans end
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
