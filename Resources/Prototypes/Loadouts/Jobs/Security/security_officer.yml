@@ -33,10 +33,6 @@
 #SS220 holster loadout begin
 - type: loadout
   id: SecurityHolster
-  equipment: SecurityHolster
-
-- type: startingGear
-  id: SecurityHolster
   equipment:
     neck: ClothingBeltHolster
 #SS220 holster loadout end
