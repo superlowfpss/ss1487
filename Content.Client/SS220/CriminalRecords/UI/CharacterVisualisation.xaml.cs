@@ -111,14 +111,13 @@ public sealed partial class CharacterVisualisation : BoxContainer
         {
             foreach (var loadout in loadouts)
             {
-                if (!_prototype.TryIndex(loadout.Prototype, out var loadoutProto) || loadoutProto.StartingGear == null)
+                if (!_prototype.TryIndex(loadout.Prototype, out var loadoutProto) ||
+                    loadoutProto.Equipment == null)
                     continue;
-
-                var loadoutGear = _prototype.Index(loadoutProto.StartingGear.Value);
 
                 foreach (var slot in slots)
                 {
-                    var itemType = ((IEquipmentLoadout) loadoutGear).GetGear(slot.Name);
+                    var itemType = ((IEquipmentLoadout) loadoutProto).GetGear(slot.Name);
 
                     if (itemType != string.Empty)
                     {
