@@ -4567,3 +4567,14 @@
   id: 359
   time: '2024-08-06T19:57:04.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1527
+- author: Ady4
+  changes:
+  - message: "\u0422\u0435\u043F\u0435\u0440\u044C \u0432\u0441\u0435 \u0444\u0438\
+      \u0433\u0443\u0440\u043A\u0438 \u0438\u043C\u0435\u044E\u0442 \u0441\u0432\u043E\
+      \u0438 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u0435 \u0444\u0440\
+      \u0430\u0437\u044B. \u041C\u0438\u043C \u0441\u043A\u0440\u043E\u043C\u043D\u043E\
+      \ \u043C\u043E\u043B\u0447\u0438\u0442."
+    type: Add
+  id: 360
+  time: '2024-08-07T03:58:54.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1525
