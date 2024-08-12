@@ -4677,3 +4677,19 @@
   id: 370
   time: '2024-08-10T09:25:50.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1560
+- author: kirus59, okroshka1984, Bomjojuk
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
+      \u0439 \u0445\u0430\u0439\u0440\u0438\u0441\u043A \u0434\u043B\u044F \u041A\u0432\
+      \u0430\u0440\u0442\u0438\u0440\u043C\u0435\u0439\u0441\u0442\u0435\u0440\u0430\
+      \ - \u0433\u0440\u0430\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\
+      \u0439 \u043A\u0430\u0441\u0442\u0435\u0442!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0446\u0435\u043B\
+      \u044C \u043D\u0430 \u043A\u0440\u0430\u0436\u0443 \u043A\u0430\u0441\u0442\u0435\
+      \u0442\u0430 \u0434\u043B\u044F \u0442\u0440\u0435\u0439\u0442\u043E\u0440\u043E\
+      \u0432."
+    type: Add
+  id: 371
+  time: '2024-08-12T04:39:07.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1415
