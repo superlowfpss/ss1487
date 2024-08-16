@@ -4743,3 +4743,12 @@
   id: 376
   time: '2024-08-14T16:06:14.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1588
+- author: gogenych
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0443\u0440\u043E\u043D\
+      \ \u043F\u0440\u0438 \u0431\u0440\u043E\u0441\u043A\u0435 \u043C\u043E\u043D\
+      \u0442\u0438\u0440\u043E\u0432\u043A\u0438"
+    type: Add
+  id: 377
+  time: '2024-08-16T07:36:35.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1592
