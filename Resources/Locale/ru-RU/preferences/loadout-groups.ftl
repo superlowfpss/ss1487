@@ -176,5 +176,6 @@ loadout-group-brigmedic-mask = Бригмедик, маска
 
 # Wildcards
 loadout-group-reporter-jumpsuit = Репортёр, комбинезон
+loadout-group-psychologist-jumpsuit = Психолог, комбинезон
 loadout-group-boxer-jumpsuit = Боксёр, комбинезон
 loadout-group-boxer-gloves = Боксёр, перчатки
