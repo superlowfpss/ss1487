@@ -4863,3 +4863,12 @@
   id: 384
   time: '2024-08-17T08:44:49.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1603
+- author: Kemran
+  changes:
+  - message: "\u0423\u0431\u0440\u0430\u043D \u0414\u0435\u043F\u0430\u0440\u0442\u0430\
+      \u043C\u0435\u043D\u0442 \u0412\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0438\
+      \u0445 \u0414\u0435\u043B."
+    type: Remove
+  id: 385
+  time: '2024-08-17T10:27:03.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1604
