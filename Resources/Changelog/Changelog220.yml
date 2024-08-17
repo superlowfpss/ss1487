@@ -4872,3 +4872,13 @@
   id: 385
   time: '2024-08-17T10:27:03.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1604
+- author: coolboy911
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0434\u0432\
+      \u043E\u0439\u043D\u043E\u0435 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\
+      \ \u0445\u0438\u043C\u0438\u043A\u0430\u0442\u043E\u0432 \u043D\u0430 \u043A\
+      \u0443\u0432\u0448\u0438\u043D\u0435"
+    type: Fix
+  id: 386
+  time: '2024-08-17T17:27:34.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1605
