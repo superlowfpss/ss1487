@@ -4918,3 +4918,13 @@
   id: 390
   time: '2024-08-18T12:18:25.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1612
+- author: ReeZii
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u043E\u0433\u0440\
+      \u0430\u043D\u0438\u0447\u0435\u043D\u0438\u0435 \u043D\u0430 \u0438\u0441\u043F\
+      \u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435 \u044D\u043C\u043E\
+      \u0446\u0438\u0439 (5 \u0441\u0435\u043A\u0443\u043D\u0434)"
+    type: Add
+  id: 391
+  time: '2024-08-18T20:33:41.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1614
