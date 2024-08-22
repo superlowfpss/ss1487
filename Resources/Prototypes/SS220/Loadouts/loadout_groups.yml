@@ -1,3 +1,13 @@
+# Command
+
+  # Капитан
+- type: loadoutGroup
+  id: CAPSiutstorage
+  name: loadout-group-captain-siutstorage
+  minLimit: 0
+  loadouts:
+  - CapOfficerCutlass
+
 # InternalAffairs
 
 #ss220 iaa fix start
