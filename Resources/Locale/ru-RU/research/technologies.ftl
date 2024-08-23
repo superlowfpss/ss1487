@@ -31,6 +31,7 @@ research-technology-biofabrication = Биофабрикация
 research-technology-crew-monitoring = Мониторинг экипажа
 research-technology-bluespace-chemistry = Блюспейс-химия
 research-technology-salvage-weapons = Утилизаторское оружие
+research-technology-special-means = Специальные средства
 research-technology-draconic-munitions = Драконьи боеприпасы
 research-technology-uranium-munitions = Урановые боеприпасы
 research-technology-explosive-technology = Взрывчатые вещества
