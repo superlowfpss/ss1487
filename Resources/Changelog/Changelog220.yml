@@ -5127,3 +5127,13 @@
   id: 406
   time: '2024-08-22T20:15:26.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1643
+- author: Oxygen033
+  changes:
+  - message: "\u0423\u0431\u0440\u0430\u043D \u0438\u043C\u043F\u043B\u0430\u043D\u0442\
+      \ \u043F\u043E\u0434\u0447\u0438\u043D\u0438\u0442\u0435\u043B\u044C \u0440\u0430\
+      \u0437\u0443\u043C\u0430 \u0438\u0437 \u0430\u043F\u043B\u0438\u043D\u043A\u0430\
+      \ \u043E\u0434\u0438\u043D\u043E\u0447\u043D\u043E\u0433\u043E \u042F\u041E"
+    type: Remove
+  id: 407
+  time: '2024-08-23T05:21:25.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1638
