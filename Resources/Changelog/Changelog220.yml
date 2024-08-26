@@ -5190,3 +5190,15 @@
   id: 413
   time: '2024-08-26T21:41:56.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1657
+- author: kirus59
+  changes:
+  - message: "\u0422\u0435\u043F\u0435\u0440\u044C \u0438\u043D\u0444\u043E\u0440\u043C\
+      \u0430\u0446\u0438\u044F \u043E \u0440\u0435\u0430\u043A\u0446\u0438\u0438 \u0443\
+      \u0437\u043B\u0430 \u0432\u044B\u0432\u043E\u0434\u0438\u0442\u0441\u044F \u0442\
+      \u043E\u043B\u044C\u043A\u043E \u0435\u0441\u043B\u0438 \u044D\u0442\u043E\u0442\
+      \ \u0443\u0437\u0435\u043B \u0431\u044B\u043B \u0430\u043A\u0442\u0438\u0432\
+      \u0438\u0440\u043E\u0432\u0430\u043D \u0440\u0430\u043D\u0435\u0435"
+    type: Tweak
+  id: 414
+  time: '2024-08-26T21:43:16.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1659
