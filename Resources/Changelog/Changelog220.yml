@@ -5174,3 +5174,11 @@
   id: 411
   time: '2024-08-26T09:01:32.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1641
+- author: Oxygen033
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043A\u043E\u043A\u0442\
+      \u0435\u0439\u043B\u044C \u0424\u0440\u0435\u043D\u0447-75"
+    type: Add
+  id: 412
+  time: '2024-08-26T11:07:58.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1649
