@@ -5165,3 +5165,12 @@
   id: 410
   time: '2024-08-25T18:31:42.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1652
+- author: TTTomaTTT
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043F\u0438\u0442\u043E\
+      \u043C\u0435\u0446 \u0415-\u041D \u0434\u043B\u044F \u0440\u043E\u0431\u043E\
+      \u0442\u043E\u0442\u0435\u0445\u043D\u0438\u043A\u043E\u0432."
+    type: Add
+  id: 411
+  time: '2024-08-26T09:01:32.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1641
