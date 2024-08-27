@@ -18,6 +18,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Ghost;
 using Content.Shared.Humanoid;
+using Content.Shared.Mind;
 using Content.Shared.Players;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
@@ -235,7 +236,7 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
         for (var i = 0; i < count; i++)
         {
-            var session = (ICommonSession?) null;
+            var session = (ICommonSession?)null;
             if (picking)
             {
                 if (!playerPool.TryPickAndTake(RobustRandom, out session) && noSpawner)
@@ -345,10 +346,11 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
         if (session != null)
         {
-            // start 220 AntagSelectionFix
             var curMind = session.GetMind();
 
-            if (curMind == null || session.AttachedEntity != antagEnt)
+            if (curMind == null ||
+                !TryComp<MindComponent>(curMind.Value, out var mindComp) ||
+                mindComp.OwnedEntity != antagEnt)
             {
                 curMind = _mind.CreateMind(session.UserId, Name(antagEnt.Value));
                 _mind.SetUserId(curMind.Value, session.UserId);
@@ -357,8 +359,6 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
             _mind.TransferTo(curMind.Value, antagEnt, ghostCheckOverride: true);
             _role.MindAddRoles(curMind.Value, def.MindComponents, null, true);
             ent.Comp.SelectedMinds.Add((curMind.Value, Name(player)));
-            // end 220 AntagSelectionFix
-
             SendBriefing(session, def.Briefing);
         }
 
@@ -482,7 +482,7 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
     private void OnObjectivesTextGetInfo(Entity<AntagSelectionComponent> ent, ref ObjectivesTextGetInfoEvent args)
     {
-        if (ent.Comp.AgentName is not {} name)
+        if (ent.Comp.AgentName is not { } name)
             return;
 
         args.Minds = ent.Comp.SelectedMinds;
