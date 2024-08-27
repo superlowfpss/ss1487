@@ -15,7 +15,7 @@
     unfoldedHideLayers:
     - Snout
   - type: Mask
-    disableOnFolded: true #ss220 bandana fix
+    disableOnFolded: true
   - type: IngestionBlocker
   - type: IdentityBlocker
     coverage: MOUTH
