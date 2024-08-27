@@ -1,3 +1,5 @@
+ent-LogicEmptyCircuit = пустая плата
+    .desc = Кажется, чего-то не хватает.
 ent-BaseLogicItem = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-LogicGateOr = логический элемент
@@ -20,3 +22,7 @@ ent-LogicGateXnor = { ent-LogicGateOr }
     .desc = { ent-LogicGateOr.desc }
 ent-EdgeDetector = детектор сигнала
     .desc = Определяет уровень сигнала и разделяет его. Устройство игнорирует импульсные сигналы.
+ent-PowerSensor = датчик питания
+    .desc = Генерирует сигналы в ответ на изменение напряжения в сети. Может циклически переключаться между напряжениями кабеля.
+ent-MemoryCell = ячейка памяти
+    .desc = Схема D-триггер защелки, хранящая сигнал, который может быть изменён в зависимости от входного и разрешающего портов.
