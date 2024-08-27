@@ -95,7 +95,7 @@
     state: pen_cap
 
 - type: entity
-  name: CentCom pen
+  name: CentComm pen
   parent: CyberPen
   id: PenCentcom
   categories: [ HideSpawnMenu ] #SS220 New CentCom

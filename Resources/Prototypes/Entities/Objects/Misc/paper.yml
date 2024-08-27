@@ -420,10 +420,10 @@
 
 - type: entity
   id: BoxFolderCentCom
-  name: CentCom folder
+  name: CentComm folder
   parent: BoxFolderBase
   suffix: DO NOT MAP
-  description: CentCom's miserable little pile of secrets!
+  description: CentComm's miserable little pile of secrets!
   categories: [ HideSpawnMenu ] #SS220 New CentCom
   components:
   - type: Sprite
@@ -493,8 +493,8 @@
 - type: entity
   id: BoxFolderCentComClipboard
   parent: BoxFolderClipboard
-  name: centcom clipboard
-  description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentCom officials, seldom seen actually used.
+  name: CentComm clipboard
+  description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentComm officials, seldom seen actually used.
   categories: [ HideSpawnMenu ] #SS220 New CentCom
   components:
   - type: Sprite

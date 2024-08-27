@@ -519,7 +519,7 @@
 ## Central Command
 
 - type: entity
-  name: CentCom official
+  name: CentComm official
   id: RandomHumanoidSpawnerCentcomOfficial
   categories: [ HideSpawnMenu ] #SS220 New CentCom
   components:

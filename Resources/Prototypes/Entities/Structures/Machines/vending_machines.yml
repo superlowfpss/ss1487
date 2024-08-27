@@ -2133,7 +2133,7 @@
   id: VendingMachineCentDrobe
   categories: [ HideSpawnMenu ] #SS220 New CentCom
   name: CentDrobe
-  description: A one-of-a-kind vending machine for all your centcom aesthetic needs!
+  description: A one-of-a-kind vending machine for all your centcomm aesthetic needs!
   components:
   - type: VendingMachine
     pack: CentDrobeInventory

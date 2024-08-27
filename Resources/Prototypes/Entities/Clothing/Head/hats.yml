@@ -242,7 +242,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCentcom
-  name: CentCom brand hat
+  name: CentComm brand hat
   description: "It's good to be the emperor."
   categories: [ HideSpawnMenu ] #SS220 New CentCom
   components:
@@ -943,7 +943,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCentcomcap
-  name: CentCom cap
+  name: CentComm cap
   description: An extravagant, fancy Central Commander cap.
   categories: [ HideSpawnMenu ] #SS220 New CentCom
   components:

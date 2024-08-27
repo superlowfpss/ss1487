@@ -619,7 +619,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Centcom Agent
+    jobTitle: Centcomm Agent
   # SS220 new CentComm begin
   - type: Access
     groups:

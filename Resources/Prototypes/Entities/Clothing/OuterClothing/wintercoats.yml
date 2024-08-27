@@ -167,8 +167,8 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterCentcom
-  name: CentCom winter coat
-  categories: [ HideSpawnMenu ] #SS220-new-centcomm
+  name: CentComm winter coat
+  categories: [ HideSpawnMenu ] #SS220 New CentCom
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
