@@ -81,7 +81,7 @@ public abstract partial class SharedGunSystem
         {
             BreakOnMove = false, // 220 ammoFillFix
             BreakOnDamage = false,
-            NeedHand = true
+            NeedHand = true,
         });
     }
 

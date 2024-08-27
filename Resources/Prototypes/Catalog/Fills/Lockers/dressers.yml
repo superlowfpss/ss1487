@@ -120,6 +120,7 @@
       - id: ClothingEyesGlasses
       - id: ClothingOuterWinterRD
       - id: ClothingOuterCoatRDFormalDress #SS220-FormalDress
+      - id: ClothingOuterCoatRD
 
 - type: entity
   id: DresserWardenFilled
