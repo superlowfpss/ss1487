@@ -41,13 +41,6 @@
     size: Normal
     shape:
     - 0,0,0,1
-  # SS220 crowbar-on-belt begin
-  - type: Clothing
-    sprite: Objects/Tools/crowbar.rsi
-    quickEquip: false
-    slots:
-      - Belt
-  # SS220 crowbar-on-belt end
   # SS220 crowbar-damage-on-hit begin
   - type: DamageOtherOnHit
     damage:

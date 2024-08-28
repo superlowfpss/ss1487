@@ -153,17 +153,6 @@
   - SterileMask
   # Ведущий врач (Конец)
 
-  # Психолог (Начало)
-- type: loadoutGroup
-  id: PsychologistJumpsuit
-  name: loadout-group-psychologist-jumpsuit
-  loadouts:
-  - PsychologistJumpsuit
-  - PsychologistJumpskirt
-  - PsychologistJumpsuitTurtleneck
-  - PsychologistJumpskirtTurtleneck
-  # Психолог (Конец)
-
   # Бригмедик (Начало)
 - type: loadoutGroup
   id: BrigmedicHead

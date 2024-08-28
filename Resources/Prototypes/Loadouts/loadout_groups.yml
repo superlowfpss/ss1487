@@ -1406,6 +1406,8 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistJumpsuitTurtleneck #SS220-MoreTurtleneck
+  - PsychologistJumpskirtTurtleneck #SS220-MoreTurtleneck
 
 - type: loadoutGroup
   id: BoxerJumpsuit

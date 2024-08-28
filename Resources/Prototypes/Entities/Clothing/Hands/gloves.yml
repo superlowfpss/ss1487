@@ -269,8 +269,10 @@
     sprite: Clothing/Hands/Gloves/combat.rsi # Corvax-Resprite
   - type: Clothing
     sprite: Clothing/Hands/Gloves/combat.rsi # Corvax-Resprite
-  - type: GloveHeatResistance
-    heatResistance: 1400
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10
   - type: Tag
     tags:
     - Kangaroo

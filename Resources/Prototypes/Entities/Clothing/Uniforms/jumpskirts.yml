@@ -856,6 +856,6 @@
   description: I don't lose things. I place things in locations which later elude me.
   components:
     - type: Sprite
-      sprite: Clothing/Uniforms/Jumpskirt/psychologist.rsi
+      sprite: SS220/Clothing/Uniforms/Jumpskirt/psychologist.rsi #SS220-Psychologist-Resprite
     - type: Clothing
-      sprite: Clothing/Uniforms/Jumpskirt/psychologist.rsi
+      sprite: SS220/Clothing/Uniforms/Jumpskirt/psychologist.rsi #SS220-Psychologist-Resprite

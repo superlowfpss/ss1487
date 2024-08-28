@@ -42,8 +42,8 @@ public sealed class EventManagerSystem : EntitySystem
         if (GameTicker.CurrentPreset != null && GameTicker.CurrentPreset.DisableRandomEvents)
         {
             var errStr = Loc.GetString("station-event-system-run-random-event-disablerandevents");
-            Log.Info(errStr);
-            return errStr;
+            Log.Error(errStr);
+            return;
         }
 
         var randomEvent = PickRandomEvent();

@@ -302,14 +302,13 @@
       - id: PetCarrier
       #SS220 Maint-Drinks Begin
       - !type:GroupSelector
+        children:
         - id: DrinkMopwataBottleRandom
-          weight: 0.20
+          prob: 0.20
         - id: DrinkVodkaKazakiBottleFull
-          weight: 0.05
+          prob: 0.05
         - id: DrinkBankateJarFull
-          weight: 0.20
-        - id: null
-          weight: 0.75
+          prob: 0.20
       #SS220 Maint-Drinks End
       - id: LidSalami
         weight: 0.05
