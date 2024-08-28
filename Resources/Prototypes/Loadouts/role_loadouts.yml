@@ -514,6 +514,7 @@
   id: JobPsychologist
   groups:
   - GroupTankHarness
+  - PsychologistJumpsuit
   - MedicalBackpack
   - PsychologistJumpsuit #SS220-MoreTurtleneck
   - Glasses

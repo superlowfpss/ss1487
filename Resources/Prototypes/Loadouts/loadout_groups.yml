@@ -1394,6 +1394,13 @@
   - JumpsuitJournalistRed #SS220-Clothes
 
 - type: loadoutGroup
+  id: PsychologistJumpsuit
+  name: loadout-group-psychologist-jumpsuit
+  loadouts:
+  - PsychologistJumpsuit
+  - PsychologistJumpskirt
+
+- type: loadoutGroup
   id: BoxerJumpsuit
   name: loadout-group-boxer-jumpsuit
   loadouts:

@@ -203,5 +203,7 @@ loadout-group-brigmedic-mask = Brigmedic mask
 # Wildcards
 loadout-group-reporter-jumpsuit = Reporter jumpsuit
 
+loadout-group-psychologist-jumpsuit = Psychologist jumpsuit
+
 loadout-group-boxer-jumpsuit = Boxer jumpsuit
 loadout-group-boxer-gloves = Boxer gloves
