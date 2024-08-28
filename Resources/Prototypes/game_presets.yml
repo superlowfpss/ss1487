@@ -9,8 +9,8 @@
     - SurvivalRule #SS220 survival rule
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
+    # - SpaceTrafficControlFriendlyEventScheduler # SS220-NoUnknownShuttles
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -25,7 +25,7 @@
   rules:
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -42,7 +42,7 @@
     - Zombie
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -65,7 +65,7 @@
     - MeteorSwarmMildScheduler
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
@@ -81,7 +81,7 @@
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -93,7 +93,7 @@
   showInVote: false #4boring4vote
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+  # - SpaceTrafficControlFriendlyEventScheduler # SS220-NoUnknownShuttles
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -117,7 +117,7 @@
   rules:
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -128,7 +128,7 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+  # - SpaceTrafficControlFriendlyEventScheduler # SS220-NoUnknownShuttles
   - BasicRoundstartVariation
 
 # - type: gamePreset
@@ -155,7 +155,7 @@
     - SubGamemodesRule
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -183,7 +183,7 @@
     - SubGamemodesRule
     - BasicStationEventScheduler
     - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
+    # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
     - BasicRoundstartVariation
 
 # - type: gamePreset
@@ -218,7 +218,7 @@
   - Zombie
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -234,5 +234,5 @@
   - Zombie
   - BasicStationEventScheduler
   - KesslerSyndromeScheduler
-  - SpaceTrafficControlEventScheduler
+  # - SpaceTrafficControlEventScheduler # SS220-NoUnknownShuttles
   - BasicRoundstartVariation
