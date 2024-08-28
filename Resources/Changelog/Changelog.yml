@@ -1,34 +1,4 @@
 ﻿Entries:
-- author: nikthechampiongr
-  changes:
-  - message: Fixed records consoles sometimes failing to show crew records.
-    type: Fix
-  id: 6587
-  time: '2024-05-12T15:07:54.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/27883
-- author: ShadowCommander
-  changes:
-  - message: Fixed cyborg laws window and other UIs breaking when the built in light
-      was on.
-    type: Fix
-  id: 6588
-  time: '2024-05-12T22:14:35.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/27956
-- author: mirrorcult
-  changes:
-  - message: The open slot storage keybinds (V, shift+V) now close the window if it's
-      already opened
-    type: Tweak
-  id: 6589
-  time: '2024-05-13T00:03:07.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/27962
-- author: lzk228
-  changes:
-  - message: Fixed color jumpskirts female mask.
-    type: Fix
-  id: 6590
-  time: '2024-05-13T19:25:58.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/27984
 - author: aspiringLich
   changes:
   - message: Tweaked the Chemical, Booze, and Soda Dispenser UIs to aid readability.
@@ -3782,3 +3752,35 @@
   id: 7086
   time: '2024-08-11T03:05:54.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/30104
+- author: Plykiya
+  changes:
+  - message: Cooking shelves have been renamed to Kitchen shelves, you can now put
+      more drinks and cutlery in them.
+    type: Tweak
+  id: 7087
+  time: '2024-08-11T06:21:34.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30858
+- author: BombasterDS
+  changes:
+  - message: You can now change the suit's sensors on incapacitated people without
+      taking it off
+    type: Tweak
+  id: 7088
+  time: '2024-08-11T09:04:43.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/29668
+- author: lzk228
+  changes:
+  - message: RCD UI can be activated only in hand.
+    type: Tweak
+  id: 7089
+  time: '2024-08-11T09:15:28.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30861
+- author: TokenStyle
+  changes:
+  - message: Pax reagent now refresh pacified.
+    type: Tweak
+  - message: Pax reagent pacified duration has been changed from 2 seconds to 4 seconds.
+    type: Tweak
+  id: 7090
+  time: '2024-08-11T09:19:01.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30778
