@@ -1,6 +1,7 @@
 using Content.Shared.Access.Systems;
 using Content.Shared.PDA;
 using Content.Shared.SS220.CriminalRecords;
+using Content.Shared.Roles;
 using Content.Shared.StatusIcon;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -30,11 +31,11 @@ public sealed partial class IdCardComponent : Component
     public ProtoId<JobIconPrototype> JobIcon = "JobIconUnknown";
 
     /// <summary>
-    /// The unlocalized names of the departments associated with the job
+    /// The proto IDs of the departments associated with the job
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public List<LocId> JobDepartments = new();
+    public List<ProtoId<DepartmentPrototype>> JobDepartments = new();
 
     // SS220 Criminal-Records begin
     [DataField, AutoNetworkedField]

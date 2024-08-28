@@ -109,7 +109,7 @@
         - Ian # SS220 Shapochki
 
 - type: entity
-  parent: ClothingScarfBase
+  parent: [ ClothingScarfBase, BaseSyndicateContraband ]
   id: ClothingNeckScarfStripedSyndieGreen
   name: striped syndicate green scarf
   description: A stylish striped syndicate green scarf. The perfect winter accessory for those with a keen fashion sense, and those who are in the mood to steal something.
@@ -123,7 +123,7 @@
         - Ian # SS220 Shapochki
 
 - type: entity
-  parent: ClothingScarfBase
+  parent: [ ClothingScarfBase, BaseSyndicateContraband ]
   id: ClothingNeckScarfStripedSyndieRed
   name: striped syndicate red scarf
   description: A stylish striped syndicate red scarf. The perfect winter accessory for those with a keen fashion sense, and those who are in the mood to steal something.

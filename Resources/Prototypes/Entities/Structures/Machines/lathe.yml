@@ -16,7 +16,7 @@
         mask:
         - MachineMask
         layer:
-          - MachineLayer  
+          - MachineLayer
   - type: Lathe
   - type: MaterialStorage
   - type: Destructible
@@ -1089,14 +1089,6 @@
       - ClothingOuterWinterWardenUnarmored
       - ClothingOuterWinterQM
       - ClothingOuterWinterRD
-      - ClothingNeckMantleCap
-      - ClothingNeckMantleCE
-      - ClothingNeckMantleCMO
-      - ClothingNeckMantleHOP
-      - ClothingNeckMantleHOS
-      - ClothingNeckMantleHOSShoulder # Corvax-Resprite: Old mantle
-      - ClothingNeckMantleRD
-      - ClothingNeckMantleQM
       - ClothingOuterWinterMusician
       - ClothingOuterWinterClown
       - ClothingOuterWinterMime

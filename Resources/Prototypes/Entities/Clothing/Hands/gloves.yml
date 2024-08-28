@@ -77,7 +77,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: ClothingHandsGlovesBoxingBlue
+  parent: [ClothingHandsGlovesBoxingBlue, BaseSyndicateContraband]
   id: ClothingHandsGlovesBoxingRigged
   suffix: Rigged
   components:
@@ -91,7 +91,7 @@
     mustBeEquippedToUse: true
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: [ClothingHandsBase, BaseCommandContraband]
   id: ClothingHandsGlovesCaptain
   name: captain gloves
   description: Regal blue gloves, with a nice gold trim. Swanky.
@@ -260,7 +260,7 @@
       - type: CriminalRecordsHacker
 
 - type: entity
-  parent: ClothingHandsGlovesColorBlack
+  parent: [ClothingHandsGlovesColorBlack, BaseMinorContraband]
   id: ClothingHandsGlovesCombat
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
@@ -402,7 +402,7 @@
     lockToHands: false
 
 - type: entity
-  parent: ClothingHandsButcherable
+  parent: [ClothingHandsButcherable, BaseSyndicateContraband]
   id: ClothingHandsGlovesNorthStar
   name: gloves of the north star
   description: These gloves allow you to punch incredibly fast.
