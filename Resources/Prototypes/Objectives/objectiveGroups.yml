@@ -105,6 +105,7 @@
     BoozeDispenserStealObjective: 1
     AltarNanotrasenStealObjective: 1
     PlantRDStealObjective: 1
+    ToiletGoldenStealObjective: 1
 
 # SS220 Delete thief objective animals begin
 # - type: weightedRandom

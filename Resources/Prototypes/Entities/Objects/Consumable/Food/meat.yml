@@ -1536,6 +1536,10 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-meat
+  - type: Construction
+    graph: Cutlet
+    node: start
+    defaultTarget: cutlet
 
 - type: entity
   name: raw bear cutlet
@@ -1571,6 +1575,10 @@
         name: food-sequence-burger-content-bear
       taco:
         name: food-sequence-content-bear
+  - type: Construction
+    graph: BearCutlet
+    node: start
+    defaultTarget: bear cutlet
 
 - type: entity
   name: raw penguin cutlet
@@ -1604,6 +1612,10 @@
         name: food-sequence-burger-content-penguin
       taco:
         name: food-sequence-content-penguin
+  - type: Construction
+    graph: PenguinCutlet
+    node: start
+    defaultTarget: penguin cutlet
 
 - type: entity
   name: raw chicken cutlet
@@ -1642,6 +1654,10 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-meat
+  - type: Construction
+    graph: ChickenCutlet
+    node: start
+    defaultTarget: chicken cutlet
 
 - type: entity
   name: raw duck cutlet
@@ -1680,6 +1696,10 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-meat
+  - type: Construction
+    graph: DuckCutlet
+    node: start
+    defaultTarget: duck cutlet
 
 - type: entity
   name: raw lizard cutlet
@@ -1721,6 +1741,10 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-tail
+  - type: Construction
+    graph: LizardCutlet
+    node: start
+    defaultTarget: lizard cutlet
 
 - type: entity
   name: raw spider cutlet
@@ -1752,6 +1776,10 @@
         name: food-sequence-burger-content-spider
       taco:
         name: food-sequence-content-spider
+  - type: Construction
+    graph: SpiderCutlet
+    node: start
+    defaultTarget: spider cutlet
 
 - type: entity
   name: raw xeno cutlet
@@ -1785,6 +1813,10 @@
         name: food-sequence-content-xeno
       taco:
         name: food-sequence-content-xeno
+  - type: Construction
+    graph: XenoCutlet
+    node: start
+    defaultTarget: xeno cutlet
 
 - type: entity
   name: raw killer tomato cutlet
@@ -1874,6 +1906,9 @@
         sprite:
           sprite: Objects/Consumable/Food/meat.rsi
           state: cutlet-cooked
+  - type: Construction
+    graph: Cutlet
+    node: cutlet
 
 - type: entity
   name: bear cutlet
@@ -1908,6 +1943,9 @@
         name: food-sequence-burger-content-bear
       taco:
         name: food-sequence-content-bear
+  - type: Construction
+    graph: BearCutlet
+    node: bear cutlet
 
 - type: entity
   name: penguin cutlet
@@ -1940,6 +1978,9 @@
         name: food-sequence-burger-content-penguin
       taco:
         name: food-sequence-content-penguin
+  - type: Construction
+    graph: PenguinCutlet
+    node: penguin cutlet
 
 - type: entity
   name: chicken cutlet
@@ -1977,6 +2018,9 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-meat
+  - type: Construction
+    graph: ChickenCutlet
+    node: chicken cutlet
 
 - type: entity
   name: duck cutlet
@@ -2014,6 +2058,9 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-meat
+  - type: Construction
+    graph: DuckCutlet
+    node: duck cutlet
 
 - type: entity
   name: lizard cutlet
@@ -2052,6 +2099,9 @@
         sprite:
           sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-tail-cooked
+  - type: Construction
+    graph: LizardCutlet
+    node: lizard cutlet
 
 - type: entity
   name: spider cutlet
@@ -2081,6 +2131,9 @@
     entries:
       burger:
         name: food-sequence-burger-content-spider
+  - type: Construction
+    graph: SpiderCutlet
+    node: spider cutlet
 
 - type: entity
   name: xeno cutlet
@@ -2110,3 +2163,6 @@
     entries:
       burger:
         name: food-sequence-content-xeno
+  - type: Construction
+    graph: XenoCutlet
+    node: xeno cutlet
