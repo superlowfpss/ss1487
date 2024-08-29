@@ -208,6 +208,7 @@
     - AnomalyScanner
     - ForensicScanner
     # SS220-AdminComforts-End
+    - Multitool
 
 #Gladiator with spear
 - type: startingGear

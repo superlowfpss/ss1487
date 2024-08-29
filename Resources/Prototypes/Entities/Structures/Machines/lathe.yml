@@ -779,6 +779,8 @@
       - BoxShotgunIncendiary
       - BoxShotgunUranium
       # - BoxShellTranquilizer
+      - ClothingBackpackElectropack
+      - ClothingOuterStraightjacket
       - ExplosivePayload
       - FlashPayload
       - GrenadeBlast
@@ -828,7 +830,6 @@
       - WeaponEnergyCrossbow #SS220 Energy Crossbow
       - WeaponTaser #SS220 taserback
       - ClothingEyesThermalGlassesSecurity #SS220 Thermals
-      - ClothingBackpackElectropack
   - type: MaterialStorage
     whitelist:
       tags:

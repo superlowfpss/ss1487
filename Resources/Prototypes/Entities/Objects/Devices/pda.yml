@@ -70,6 +70,7 @@
     deviceNetId: Wireless
     receiveFrequencyId: Pda
     prefix: device-address-prefix-console
+    savableAddress: false
   - type: WirelessNetworkConnection
     range: 500
   - type: CartridgeLoader
@@ -1152,6 +1153,7 @@
         - Write #SS220 PDA-Resprite-End
   - type: HealthAnalyzer
     scanDelay: 0
+    silent: true
   - type: Sprite #SS220 PDA-Resprite-Start
     sprite: Objects/Devices/pda.rsi
     layers:
