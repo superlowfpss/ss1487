@@ -9,6 +9,8 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Input;
 using Content.Shared.Interaction;
 using Content.Shared.Item;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Events;
@@ -61,6 +63,7 @@ public sealed class PullingSystem : EntitySystem
         SubscribeLocalEvent<PullableComponent, ModifyUncuffDurationEvent>(OnModifyUncuffDuration);
         SubscribeLocalEvent<PullableComponent, StopBeingPulledAlertEvent>(OnStopBeingPulledAlert);
 
+        SubscribeLocalEvent<PullerComponent, UpdateMobStateEvent>(OnStateChanged);
         SubscribeLocalEvent<PullerComponent, AfterAutoHandleStateEvent>(OnAfterState);
         SubscribeLocalEvent<PullerComponent, EntGotInsertedIntoContainerMessage>(OnPullerContainerInsert);
         SubscribeLocalEvent<PullerComponent, EntityUnpausedEvent>(OnPullerUnpaused);
@@ -92,6 +95,17 @@ public sealed class PullingSystem : EntitySystem
         entity.Comp.NeedsHands = false;
     }
     //SS220-Cart-system end
+
+    private void OnStateChanged(EntityUid uid, PullerComponent component, ref UpdateMobStateEvent args)
+    {
+        if (component.Pulling == null)
+            return;
+
+        if (TryComp<PullableComponent>(component.Pulling, out var comp) && (args.State == MobState.Critical || args.State == MobState.Dead))
+        {
+            TryStopPull(component.Pulling.Value, comp);
+        }
+    }
 
     private void OnBuckled(Entity<PullableComponent> ent, ref StrappedEvent args)
     {
