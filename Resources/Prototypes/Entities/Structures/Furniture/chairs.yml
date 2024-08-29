@@ -47,7 +47,7 @@
         sound:
           collection: MetalBreak
   - type: StaticPrice
-    price: 10
+    price: 50
   - type: AddSleepAction #SS220-chair-sleep
 
 #Starts unanchored, cannot be rotated while anchored
@@ -406,4 +406,4 @@
             min: 2
             max: 4
   - type: StaticPrice
-    price: 20
+    price: 50
