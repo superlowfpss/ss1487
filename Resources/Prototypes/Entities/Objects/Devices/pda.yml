@@ -107,6 +107,15 @@
     - DoorBumpOpener
   - type: Input
     context: "human"
+  - type: SentienceTarget # sentient PDA = pAI lite
+    flavorKind: station-event-random-sentience-flavor-mechanical
+    weight: 0.001 # 1,000 PDAs = as likely to be picked as 1 regular animal
+  - type: BlockMovement
+    blockInteraction: false # lets the PDA toggle its own flashlight
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
 
 - type: entity
   parent: BasePDA
@@ -331,6 +340,8 @@
       visible: false #SS220 PDA-Resprite-End
   - type: Icon
     state: pda-cook
+  - type: ReplacementAccent # for random sentience event
+    accent: italian
 
 - type: entity
   parent: BasePDA
@@ -449,6 +460,7 @@
       visible: false #SS220 PDA-Resprite-End
   - type: Icon
     state: pda-mime
+  - type: Muted # for random sentience event
 
 - type: entity
   name: chaplain PDA
