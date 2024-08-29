@@ -18,7 +18,7 @@ public sealed class ShowJobIconsSystem : EquipmentHudSystem<ShowJobIconsComponen
     private const string JobIconForNoId = "JobIconNoId";
 
     /// SS220 Add borg icon for hud begin
-    [ValidatePrototypeId<StatusIconPrototype>]
+    [ValidatePrototypeId<JobIconPrototype>]
     private const string JobIconForBorg = "JobIconBorg";
     /// SS220 Add borg icon for hud end
 

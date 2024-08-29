@@ -175,7 +175,8 @@
       - id: DrinkMugDog
       - id: CigarGold
       - id: ClothingUniformJumpsuitFamilyGuy
-      - id: WristwatchGold
+      # - id: WristwatchGold
+      - id: ClothingWristWatchGold # SS220 Wristwatch
 
 - type: entity
   name: Maint Loot Spawner

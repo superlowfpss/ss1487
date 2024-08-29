@@ -113,7 +113,8 @@
       rolls: !type:RangeNumberSelector
         range: 4, 7
     - id: SpaceCash1000
-    - id: WristwatchGold
+    # - id: WristwatchGold
+    - id: ClothingWristWatchGold # SS220 Wristwatch
 
 - type: entityTable
   id: SalvageTreasureRare

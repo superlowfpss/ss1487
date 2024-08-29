@@ -621,14 +621,16 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: LightTubeCrystalYellow
-    damage:
-      types:
-        Heat: 5
   - type: PointLight
     radius: 8
     energy: 3
     softness: 0.5
     color: "#ffea19" #Неоновый жёлтый
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 2
+    popupText: powered-light-component-burn-hand
 
 - type: entity
   id: AlwaysPoweredlightYellow
@@ -648,14 +650,16 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: LightTubeCrystalPurple
-    damage:
-      types:
-        Heat: 5
   - type: PointLight
     radius: 8
     energy: 3
     softness: 0.5
     color: "#bc13fe" #Неоновый фиолетовый
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 2
+    popupText: powered-light-component-burn-hand
 
 - type: entity
   id: AlwaysPoweredlightPurple

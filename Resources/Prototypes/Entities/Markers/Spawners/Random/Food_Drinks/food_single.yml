@@ -48,11 +48,6 @@
       - FoodBakedDumplings
       - FoodBakedChevreChaud
       - FoodBakedNugget
-      - FoodTacoBeef
-      - FoodTacoChicken
-      - FoodTacoFish
-      - FoodTacoBeefSupreme
-      - FoodTacoChickenSupreme
       - FoodCheburek #ss220 cooking
       - FoodTacoShell
     chance: 0.8
