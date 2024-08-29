@@ -32,6 +32,9 @@ public sealed class SharedSuicideSystem : EntitySystem
         // then getting the total to use in calculations for spreading out damage.
         appliedDamageSpecifier.DamageDict.Remove("Structural");
 
+        // SS220 Stamina Damage
+        appliedDamageSpecifier.DamageDict.Remove("Stamina");
+
         // Split the total amount of damage needed to kill the target by every damage type in the DamageSpecifier
         foreach (var (key, value) in appliedDamageSpecifier.DamageDict)
         {
