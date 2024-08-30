@@ -24,6 +24,7 @@
     HandTeleporterStealObjective: 0.5
     SecretDocumentsStealObjective: 0.5
     MultiPhaseEnergyGunStealObjective: 0.5 #SS220 MultiPhaze Energy Gun
+    EnergyShotgunStealObjective: 0.5
 
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
