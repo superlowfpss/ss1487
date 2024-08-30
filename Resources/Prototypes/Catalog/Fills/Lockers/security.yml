@@ -22,7 +22,7 @@
       - id: HoloprojectorSecurity
 #      - id: ClothingEyesHudSecurity #SS220-MinorTweaks
       - id: BookSpaceLaw
-      - id: ClothingNeckShockCollar
+      - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
         amount: 2
@@ -51,7 +51,7 @@
       - id: HoloprojectorSecurity #SS220 guranteed-holo-projector
 #      - id: ClothingEyesHudSecurity #SS220-MinorTweaks
       - id: BookSpaceLaw
-      - id: ClothingNeckShockCollar
+      - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
         amount: 2

@@ -76,7 +76,6 @@
     ForensicScannerStealObjective: 1                    #sec
     ExpensiveLighterDetectiveStealObjective: 0.5 #SS220 Zippo-Steal-Detective
     ClothingHeadHatWardenStealObjective: 1
-    ClothingNeckShockCollarStealObjective: 1
     ClothingOuterHardsuitVoidParamedStealObjective: 1   #med
     MedicalTechFabCircuitboardStealObjective: 1
     ClothingHeadsetAltMedicalStealObjective: 1

@@ -18,6 +18,7 @@
 - type: speciesBaseSprites
   id: MobHumanSprites
   sprites:
+    Special: MobHumanoidAnyMarking
     Head: MobHumanHead
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
@@ -26,6 +27,7 @@
     HeadTop: MobHumanoidAnyMarking # Corvax-Sponsors
     Tail: MobHumanoidAnyMarking # Corvax-Sponsors
     Eyes: MobHumanoidEyes
+    HeadTop: MobHumanoidAnyMarking
     LArm: MobHumanLArm
     RArm: MobHumanRArm
     LHand: MobHumanLHand
@@ -38,6 +40,9 @@
 - type: markingPoints
   id: MobHumanMarkingLimits
   points:
+    Special: # the cat ear joke
+      points: 0
+      required: false
     Hair:
       points: 1
       required: false
