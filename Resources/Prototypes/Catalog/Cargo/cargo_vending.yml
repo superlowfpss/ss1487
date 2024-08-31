@@ -172,7 +172,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockSeedsFilled
-  cost: 3995 # SS220 Cargo fix
+  cost: 4095 # SS220 Cargo fix
   category: cargoproduct-category-name-hydroponics
   group: market
 
