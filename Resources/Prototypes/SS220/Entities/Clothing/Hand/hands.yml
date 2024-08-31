@@ -42,3 +42,15 @@
       flatReductions:
         Heat: 10
   - type: Insulated
+
+- type: entity
+  parent: ClothingHandsGlovesJanitor
+  id: ClothingHandsGlovesOrangeJanitor
+  name: оранжевые резиновые перчатки
+  description: Высококачественные резиновые перчатки, скрипящие от желания сделать уборку!
+  suffix: Не маппить
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Hands/Gloves/orangejanitor.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Hands/Gloves/orangejanitor.rsi
