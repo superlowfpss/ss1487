@@ -53,6 +53,7 @@
     - id: SpaceCash1000
     - id: WeaponDisabler
     - id: ClothingWristWatchGold # SS220 Wrist Watch
+    - id: ClothingEyesGlassesCommand
 
 # No laser table + Laser table
 - type: entityTable
@@ -138,6 +139,7 @@
     - id: Telescopichka # SS220 Telescopic Baton
     - id: ClothingOuterCoatHOP # Corvax-Resprite
     - id: ClothingWristWatchGold # SS220 Wrist Watch
+    - id: ClothingEyesHudCommand
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
