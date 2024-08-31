@@ -1,4 +1,5 @@
 using Content.Shared.Audio;
+using Content.Shared.Ghost;
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
@@ -57,6 +58,11 @@ public abstract class SharedEmitSoundSystem : EntitySystem
 
     private void HandleEmitSoundOnUIOpen(EntityUid uid, EmitSoundOnUIOpenComponent component, AfterActivatableUIOpenEvent args)
     {
+        // Ghost-UI-Activation-On-Use begin
+        if (HasComp<GhostComponent>(args.User))
+            return;
+        // Ghost-UI-Activation-On-Use end
+
         TryEmitSound(uid, component, args.User);
     }
 
