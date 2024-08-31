@@ -140,3 +140,11 @@
       dependsOnComponents:
       - type: AllowSuitStorage
       displayName: Suit Storage
+    - name: slotq
+      slotTexture: slotq
+      slotFlags: SLOTQ
+      stripTime: 8
+      uiWindowPos: 2,0
+      strippingWindowPos: 3,1
+      displayName: Slotq
+      

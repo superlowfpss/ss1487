@@ -84,6 +84,9 @@
       },
       {
         "name": "web"
+      },
+      {
+        "name": "slotq"
       }
    ]
 }
