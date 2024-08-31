@@ -5473,3 +5473,13 @@
   id: 431
   time: '2024-08-31T20:11:13.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1709
+- author: yulilok
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0434\u0440\u0443\
+      \u0433\u0438\u0435 \u0446\u0432\u0435\u0442\u0430 \u043E\u0431\u043C\u043E\u0442\
+      \u043E\u043A \u0432 loadout \u0431\u0435\u0437\u0434\u0435\u043B\u0443\u0448\
+      \u043A\u0438."
+    type: Add
+  id: 432
+  time: '2024-08-31T20:31:39.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1710
