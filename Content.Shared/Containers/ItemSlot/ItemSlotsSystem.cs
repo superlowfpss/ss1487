@@ -211,6 +211,7 @@ namespace Content.Shared.Containers.ItemSlots
                     continue;
 
                 slots.Add(slot);
+                break; //ss220 WhitelistFailPopup bugfix https://github.com/SerbiaStrong-220/space-station-14/pull/1702
             }
 
             if (slots.Count == 0)
