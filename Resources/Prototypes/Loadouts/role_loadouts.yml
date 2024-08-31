@@ -27,6 +27,11 @@
   - Trinkets
   - GroupSpeciesBreathTool
 
+# Silicons
+- type: roleLoadout
+  id: JobStationAi
+  nameDataset: names_ai
+
 # Civilian
 - type: roleLoadout
   id: JobPassenger
@@ -34,6 +39,7 @@
   - GroupTankHarness
   - PassengerJumpsuit
   - CommonBackpack
+  - PassengerNeck
   - PassengerFace
   - PassengerGloves
   - PassengerOuterClothing
@@ -175,8 +181,9 @@
   - MimeJumpsuit
   - MimeBackpack
   - MimeOuterClothing
+  - MimeBelt
   - Glasses
-  - Survival
+  - SurvivalMime
   - Trinkets
 
 - type: roleLoadout
@@ -348,6 +355,7 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
   - SecurityHoSSiutstorage #SS220-OfficerCutlass
 
@@ -363,6 +371,7 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -378,6 +387,7 @@
   - SecurityBelt
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -392,6 +402,7 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -526,6 +537,7 @@
   id: JobPsychologist
   groups:
   - GroupTankHarness
+  - PsychologistJumpsuit
   - MedicalNeck #SS220-WhiteScarf
   - MedicalBackpack
   - PsychologistJumpsuit #SS220-MoreTurtleneck
@@ -589,3 +601,9 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalEVA
+  groups:
+  - GroupEVATank
+  - SurvivalExtended
