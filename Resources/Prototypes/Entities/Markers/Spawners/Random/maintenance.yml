@@ -177,6 +177,7 @@
       - id: ClothingUniformJumpsuitFamilyGuy
       # - id: WristwatchGold
       - id: ClothingWristWatchGold # SS220 Wristwatch
+      - id: RubberStampGreytide
 
 - type: entity
   name: Maint Loot Spawner
