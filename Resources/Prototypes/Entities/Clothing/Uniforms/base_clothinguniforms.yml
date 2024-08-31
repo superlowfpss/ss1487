@@ -27,6 +27,18 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+  - type: Storage
+    grid:
+    - 0,0,0,1
+    maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
 
 - type: entity
   abstract: true
