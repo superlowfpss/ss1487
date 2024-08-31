@@ -297,6 +297,7 @@
   - UniformJumpsuitSalvageSpecialist
   - SalvageSpecialistJumpsuitTurtleneck
   - UniformJumpsuitFlannelSalvage
+  - ClothingUniformJumpsuitExpeditor
 
 - type: loadoutGroup
   id: SalvageSpecialistHead
@@ -306,6 +307,7 @@
   - ClothingHeadHatSalvage
   - ClothingHeadBandSalvage
   - ClothingHeadHatHardhatViolet
+  - ClothingHeadBeretSalvageSpecialist
   # Утилизатор (Конец)
 #! Отдел снабжения (Конец)
 
