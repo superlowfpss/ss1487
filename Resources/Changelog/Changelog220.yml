@@ -5688,3 +5688,19 @@
   id: 451
   time: '2024-09-05T17:07:39.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1648
+- author: yulilok
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0441\u043F\u0440\
+      \u0430\u0439\u0442 \u043D\u0430\u0433\u0440\u0443\u0434\u043D\u043E\u0439 \u043A\
+      \u0430\u043C\u0435\u0440\u044B \u043F\u0440\u0438 \u043D\u043E\u0448\u0435\u043D\
+      \u0438\u0438."
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043A\u043E\u043C\u043F\
+      \u043E\u043D\u0435\u043D\u0442 StationAiVision \u043D\u0430 \u043D\u0430\u0433\
+      \u0440\u0443\u0434\u043D\u0443\u044E \u043A\u0430\u043C\u0435\u0440\u0443 \u0438\
+      \ \u043D\u0430 \u043A\u0430\u043C\u0435\u0440\u0443 \u0434\u0435\u0442\u0435\
+      \u043A\u0442\u0438\u0432\u0430."
+    type: Add
+  id: 452
+  time: '2024-09-05T17:14:06.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1757
