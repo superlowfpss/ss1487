@@ -5679,3 +5679,12 @@
   id: 450
   time: '2024-09-05T17:06:20.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1755
+- author: Rtmfool
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
+      \u0430 \u0418\u0421\u041D \"\u0417\u0430\u0442\u043C\u0435\u043D\u0438\u0435\
+      \""
+    type: Tweak
+  id: 451
+  time: '2024-09-05T17:07:39.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1648
