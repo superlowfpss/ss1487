@@ -35,6 +35,7 @@
   - type: ActiveListener
     range: 10
   - type: DetectiveCameraAttach
+  - type: StationAiVision
   - type: Tag
     tags:
     - DetectiveCamera
