@@ -2369,7 +2369,7 @@
   components:
     - type: NpcFactionMember
       factions:
-        - Xeno
+        - SpiderHostile #ss220 spider queen
     - type: InputMover
     - type: MobMover
     - type: HTN

@@ -181,6 +181,11 @@
   parent: MobSpaceBasic
   description: It's so glowing, it looks dangerous.
   components:
+  #ss220 spider queen begin
+  - type: NpcFactionMember
+    factions:
+    - SpiderHostile
+  #ss220 spider queen end
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Animals/spacespider.rsi
