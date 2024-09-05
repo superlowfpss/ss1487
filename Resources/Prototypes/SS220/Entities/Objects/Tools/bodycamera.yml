@@ -29,6 +29,7 @@
   - type: ActiveListener
     range: 10
   - type: DetectiveCamera
+  - type: WearableCamera
   - type: Tag
     tags:
     - DetectiveCamera

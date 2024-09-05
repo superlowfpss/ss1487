@@ -34,7 +34,6 @@
         - BodyCameraBase
   - type: ActiveListener
     range: 10
-  - type: DetectiveCamera
   - type: DetectiveCameraAttach
   - type: Tag
     tags:
