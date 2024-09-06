@@ -5770,3 +5770,13 @@
   id: 459
   time: '2024-09-06T19:34:05.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1769
+- author: UrPrice
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u0440\u0430\u0431\u043E\
+      \u0442\u0430 \u0421\u041C\u042D\u0421\u043E\u0432, \u0434\u043E\u0431\u0430\u0432\
+      \u043B\u0435\u043D \u0441\u0432\u0435\u0440\u0445\u0437\u0430\u0440\u044F\u0434\
+      \ \u043D\u0430: Eclipse, Axioma, Frankenstein, Donuts!"
+    type: Tweak
+  id: 460
+  time: '2024-09-06T21:31:56.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1778
