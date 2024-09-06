@@ -5728,3 +5728,17 @@
   id: 455
   time: '2024-09-06T07:20:08.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1762
+- author: disssr
+  changes:
+  - message: "\u0421\u0442\u0430\u043D\u043D\u0435\u0440-\u043F\u0443\u043B\u0435\u043C\
+      \u0435\u0442 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0438\u0433\u043D\
+      \u043E\u0440\u0438\u0440\u0443\u0435\u0442 \u0440\u0435\u0437\u0438\u0441\u0442\
+      \u044B \u043A \u0441\u0442\u0430\u043C\u0438\u043D\u0430 \u0443\u0440\u043E\u043D\
+      \u0443"
+    type: Fix
+  - message: "\u0423\u0440\u043E\u043D \u043F\u043E \u0441\u0442\u0430\u043C\u0438\
+      \u043D\u0435 \u043F\u043E\u0432\u044B\u0448\u0435\u043D \u0434\u043E 20"
+    type: Tweak
+  id: 456
+  time: '2024-09-06T09:09:05.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1671
