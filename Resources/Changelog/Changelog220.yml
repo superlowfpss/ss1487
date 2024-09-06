@@ -5704,3 +5704,27 @@
   id: 452
   time: '2024-09-05T17:14:06.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1757
+- author: spo9k, Persia
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043D\u043E\u0432\
+      \u0430\u044F \u043A\u0430\u0440\u0442\u0430 Donuts"
+    type: Add
+  id: 453
+  time: '2024-09-06T07:19:30.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1738
+- author: UrPrice
+  changes:
+  - message: "\u0412\u043D\u0435\u0441\u0435\u043D\u044B \u0438\u0437\u043C\u0435\u043D\
+      \u0435\u043D\u0438\u044F \u0432 NSS Axioma (ver. 0.91)."
+    type: Tweak
+  id: 454
+  time: '2024-09-06T07:19:53.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1760
+- author: UrPrice
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u0430\u0440\u0442\
+      \u0430 NSS \"Frankenstein\" (1.01 ver)!"
+    type: Tweak
+  id: 455
+  time: '2024-09-06T07:20:08.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1762
