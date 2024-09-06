@@ -5761,3 +5761,12 @@
   id: 458
   time: '2024-09-06T19:10:23.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1775
+- author: UrPrice
+  changes:
+  - message: "\u0422\u042D\u0413 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0451\u043D\
+      \ \u043D\u0430 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 NSS: Frankenstein,\
+      \ Axioma, Donuts, Eclipse!"
+    type: Tweak
+  id: 459
+  time: '2024-09-06T19:34:05.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1769
