@@ -5780,3 +5780,14 @@
   id: 460
   time: '2024-09-06T21:31:56.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1778
+- author: kirus59
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430 \u043E\u0448\
+      \u0438\u0431\u043A\u0430, \u0438\u0437-\u0437\u0430 \u043A\u043E\u0442\u043E\
+      \u0440\u043E\u0439 \u0441\u0443\u0445\u043E\u0436\u0438\u043B\u0438\u044F \u043C\
+      \u043E\u0433\u043B\u0438 \u043D\u0435 \u043D\u0430\u043D\u043E\u0441\u0438\u0442\
+      \u044C \u0443\u0440\u043E\u043D"
+    type: Fix
+  id: 461
+  time: '2024-09-06T21:37:51.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1782
