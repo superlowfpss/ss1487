@@ -5742,3 +5742,12 @@
   id: 456
   time: '2024-09-06T09:09:05.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1671
+- author: Bomjojuk
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043B\u0438\u0447\
+      \u043D\u044B\u0435 \u043E\u0447\u043A\u0438 \u041A\u0432\u0430\u0440\u0442\u0438\
+      \u0440\u043C\u0435\u0439\u0441\u0442\u0435\u0440\u0430"
+    type: Add
+  id: 457
+  time: '2024-09-06T18:49:50.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1751
