@@ -698,7 +698,8 @@
     highPressureMultiplier: 0.2
     lowPressureMultiplier: 1000
   - type: TemperatureProtection #ss-220 armReb
-    coefficient: 0.001  #ss-220 armReb
+    heatingCoefficient: 0.001 #ss-220 armReb
+    coolingCoefficient: 0.001 #ss220 armReb
   - type: ExplosionResistance
     damageCoefficient: 0.2  #ss-220 armReb
   - type: Armor
