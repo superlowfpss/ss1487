@@ -5848,3 +5848,13 @@
   id: 467
   time: '2024-09-07T21:20:00.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1797
+- author: FunTust
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0438\u0437\
+      \u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0441\u043F\u0440\u0430\u0439\u0442\
+      \u0430 \u0440\u043F\u0433 \u043F\u043E\u0441\u043B\u0435 \u0432\u044B\u0441\u0442\
+      \u0440\u0435\u043B\u0430"
+    type: Fix
+  id: 468
+  time: '2024-09-07T22:53:14.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1795
