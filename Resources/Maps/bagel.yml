@@ -106804,6 +106804,58 @@ entities:
     - type: Transform
       pos: 24.45261,20.352545
       parent: 60
+- proto: HandheldRadio
+  entities:
+  - uid: 1490
+    components:
+    - type: Transform
+      pos: -59.26437,1.5359869
+      parent: 60
+  - uid: 13259
+    components:
+    - type: Transform
+      pos: 24.411985,-0.3682616
+      parent: 60
+  - uid: 13261
+    components:
+    - type: Transform
+      pos: 24.630735,-0.3057616
+      parent: 60
+  - uid: 16085
+    components:
+    - type: Transform
+      pos: 1.2244415,19.742865
+      parent: 60
+  - uid: 16086
+    components:
+    - type: Transform
+      pos: 1.4275665,19.899115
+      parent: 60
+  - uid: 16087
+    components:
+    - type: Transform
+      pos: 1.6463165,19.742865
+      parent: 60
+  - uid: 16088
+    components:
+    - type: Transform
+      pos: 1.4275665,19.555365
+      parent: 60
+  - uid: 19150
+    components:
+    - type: Transform
+      pos: 20.615211,21.651546
+      parent: 60
+  - uid: 19875
+    components:
+    - type: Transform
+      pos: 42.07676,-1.444672
+      parent: 60
+  - uid: 20006
+    components:
+    - type: Transform
+      pos: -59.482983,1.5744543
+      parent: 60
 - proto: HandLabeler
   entities:
   - uid: 438
@@ -116457,58 +116509,6 @@ entities:
     components:
     - type: Transform
       pos: -5.5,38.5
-      parent: 60
-- proto: RadioHandheld
-  entities:
-  - uid: 1490
-    components:
-    - type: Transform
-      pos: -59.26437,1.5359869
-      parent: 60
-  - uid: 13259
-    components:
-    - type: Transform
-      pos: 24.411985,-0.3682616
-      parent: 60
-  - uid: 13261
-    components:
-    - type: Transform
-      pos: 24.630735,-0.3057616
-      parent: 60
-  - uid: 16085
-    components:
-    - type: Transform
-      pos: 1.2244415,19.742865
-      parent: 60
-  - uid: 16086
-    components:
-    - type: Transform
-      pos: 1.4275665,19.899115
-      parent: 60
-  - uid: 16087
-    components:
-    - type: Transform
-      pos: 1.6463165,19.742865
-      parent: 60
-  - uid: 16088
-    components:
-    - type: Transform
-      pos: 1.4275665,19.555365
-      parent: 60
-  - uid: 19150
-    components:
-    - type: Transform
-      pos: 20.615211,21.651546
-      parent: 60
-  - uid: 19875
-    components:
-    - type: Transform
-      pos: 42.07676,-1.444672
-      parent: 60
-  - uid: 20006
-    components:
-    - type: Transform
-      pos: -59.482983,1.5744543
       parent: 60
 - proto: RagItem
   entities:
@@ -134568,6 +134568,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -16.5,41.5
       parent: 60
+    - type: ApcPowerReceiver
+      powerDisabled: True
 - proto: TegCirculator
   entities:
   - uid: 19188
@@ -151013,22 +151015,16 @@ entities:
     - type: Transform
       pos: -25.5,-6.5
       parent: 60
-    - type: Physics
-      canCollide: False
   - uid: 7225
     components:
     - type: Transform
       pos: -23.5,-1.5
       parent: 60
-    - type: Physics
-      canCollide: False
   - uid: 12685
     components:
     - type: Transform
       pos: -28.5,-17.5
       parent: 60
-    - type: Physics
-      canCollide: False
   - uid: 18642
     components:
     - type: Transform

@@ -192,8 +192,8 @@ ClothingHeadHatHoodRad: null
 RadioHandheld: HandheldRadio
 
 # 2024-01-20 - ss220 engineering rebalance
-TegCenter: null
-TegCirculator: null
+# TegCenter: null # - ss220 ER by 06.09.24
+# TegCirculator: null # - ss220 ER by 06.09.24
 
 # 2024-01-12
 SpaceMedipen: null
