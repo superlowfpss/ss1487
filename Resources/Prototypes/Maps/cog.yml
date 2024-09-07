@@ -51,7 +51,7 @@
             Detective: [ 1, 1 ]
             SecurityCadet: [ 4, 4 ]
             IAA: [ 1, 1 ] #Corvax-IAA
-            Lawyer: [ 2, 2 ] #they also got a office now
+            # Lawyer: [ 2, 2 ] #they also got a office now SS220-upstream
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
