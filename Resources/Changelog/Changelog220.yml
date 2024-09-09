@@ -5908,3 +5908,11 @@
   id: 473
   time: '2024-09-08T19:58:44.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1811
+- author: UrPrice
+  changes:
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0430 NSS Donuts [ver\
+      \ 0.25]"
+    type: Tweak
+  id: 474
+  time: '2024-09-09T05:33:47.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1817
