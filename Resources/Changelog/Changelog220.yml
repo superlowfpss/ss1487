@@ -5963,3 +5963,14 @@
   id: 479
   time: '2024-09-09T16:38:49.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1826
+- author: IlyaElDunaev
+  changes:
+  - message: "\u0412 \u043E\u0445\u0440\u0430\u043D\u043D\u044B\u0439 \u0422\u0435\
+      \u0445\u0444\u0430\u0431 \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B\
+      \ \u0440\u0435\u0446\u0435\u043F\u0442\u044B \u0440\u0435\u0437\u0438\u043D\u043E\
+      \u0432\u044B\u0445 \u0431\u043E\u0435\u043F\u0440\u0438\u043F\u0430\u0441\u043E\
+      \u0432"
+    type: Fix
+  id: 480
+  time: '2024-09-09T23:00:09.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1821
