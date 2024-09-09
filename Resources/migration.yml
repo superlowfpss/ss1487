@@ -473,9 +473,9 @@ ClothingBeltSuspenders: ClothingBeltSuspendersRed
 ClothingNeckShockCollar: ClothingBackpackElectropack
 
 # 2024-08-22
-ComputerShuttleSalvage: null
-SalvageShuttleConsoleCircuitboard: null
-SalvageShuttleCircuitboardStealObjective: null
+# ComputerShuttleSalvage: null # SS220 Revert SalvageShuttle
+# SalvageShuttleConsoleCircuitboard: null # SS220 Revert SalvageShuttle
+# SalvageShuttleCircuitboardStealObjective: null # SS220 Revert SalvageShuttle
 
 # 2024-08-28
 ClothingBackpackDuffelSyndicateCostumeCentcom: null

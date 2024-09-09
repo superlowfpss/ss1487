@@ -371,7 +371,13 @@ public sealed class AdminSystem : EntitySystem
         var admins = PanicBunker.CountDeadminnedAdmins
             ? _adminManager.AllAdmins
             : _adminManager.ActiveAdmins;
-        var hasAdmins = admins.Any();
+        // var hasAdmins = admins.Any();
+
+        // SS220 additional admin rights check.
+        var hasAdmins = admins
+            .Select(x => _adminManager.GetAdminData(_playerManager.GetSessionById(x.UserId)))
+            .Where(x => x is not null && x.HasFlag(AdminFlags.Ban) && x.Title != Loc.GetString("admin-manager-admin-data-host-title"))
+            .Any();
 
         // TODO Fix order dependent Cvars
         // Please for the sake of my sanity don't make cvars & order dependent.
