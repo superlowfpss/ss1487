@@ -5782,3 +5782,11 @@
   id: 482
   time: '2024-09-10T20:54:14.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1822
+- author: Okroshka
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u0431\u0438\u043D\u0442\u043E\u0432."
+    type: Tweak
+  id: 483
+  time: '2024-09-10T21:09:07.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1833
