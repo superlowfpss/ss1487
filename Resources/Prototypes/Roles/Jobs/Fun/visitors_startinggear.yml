@@ -282,7 +282,7 @@
     outerClothing: ClothingOuterArmorBasicSlim
     pocket1: WeaponPistolMk58
     pocket2: MagazinePistol
-  inhand: 
+  inhand:
   - FlashlightSeclite
 
 - type: startingGear
@@ -859,7 +859,7 @@
     eyes: ClothingEyesHudMedical
     pocket1: RegenerativeMesh
     pocket2: PillCanisterBicaridine
-  inhand: 
+  inhand:
   - ScalpelAdvanced
   - MedicatedSuture
 
@@ -1040,7 +1040,7 @@
 #    mask: ClothingMaskItalianMoustache # right now this is broken for vox, so its inhand.
     id: VisitorPDA
     back: ClothingBackpackSatchel
-    belt: ClothingBeltChefFilled
+    #belt: ClothingBeltChefFilled SS220-chef-resprite
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterJacketChef
     pocket1: ButchCleaver
@@ -1058,7 +1058,7 @@
 #    mask: ClothingMaskItalianMoustache # right now this is broken for vox, so its inhand.
     id: VisitorPDA
     back: ClothingBackpack
-    belt: ClothingBeltChefFilled
+    #belt: ClothingBeltChefFilled SS220-chef-resprite
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterWinterChef
     pocket1: RollingPin
