@@ -54,7 +54,7 @@ public sealed partial class ArticleEditorPanel : Control
         ButtonPreview.OnPressed += OnPreview;
         ButtonCancel.OnPressed += OnCancel;
         ButtonPublish.OnPressed += OnPublish;
-        ButtonSaveDraft.OnPressed += OnDraftSaved;
+        //ButtonSaveDraft.OnPressed += OnDraftSaved; SS220-upstream-merge
 
         // SS220 Text Edit Limits begin
         //TitleField.OnTextChanged += args => OnTextChanged(args.Text.Length, args.Control, SharedNewsSystem.MaxTitleLength);

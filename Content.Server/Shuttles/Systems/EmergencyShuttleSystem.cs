@@ -334,7 +334,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             _chatSystem.DispatchStationAnnouncement(
                 result.Station,
                 Loc.GetString("emergency-shuttle-good-luck"),
-                playDefaultSound: false);
+                playSound: false);
 
             // TODO: Need filter extensions or something don't blame me.
             _audio.PlayGlobal("/Audio/Misc/notice1.ogg", Filter.Broadcast(), true);
@@ -369,7 +369,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
                 ("direction", direction),
                 ("location", location),
                 ("extended", extendedText)),
-            playDefaultSound: false);
+            playSound: false);
 
         // Trigger shuttle timers on the shuttle.
 
