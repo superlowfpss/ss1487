@@ -5764,3 +5764,12 @@
   id: 480
   time: '2024-09-09T23:00:09.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1821
+- author: Werzet
+  changes:
+  - message: "\u0432\u0435\u0441\u0435\u043B\u044C\u0435 \u0438\u0437 \u0441\u043F\
+      \u0438\u0441\u043A\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\
+      \u0439"
+    type: Remove
+  id: 481
+  time: '2024-09-10T09:23:43.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1828
