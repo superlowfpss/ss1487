@@ -37,7 +37,7 @@ latejoin-arrival-announcement =
         [male] прибыл
         [female] прибыла
         [epicene] прибыли
-       *[neuter] прибыл
+       *[neuter] прибыло
     } на станцию!
 #SS220-upstream-merge
 latejoin-arrival-announcement-special = { $job } { $character } { $gender ->
