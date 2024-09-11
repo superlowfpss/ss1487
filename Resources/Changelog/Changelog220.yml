@@ -5873,3 +5873,20 @@
   id: 490
   time: '2024-09-11T19:04:05.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1841
+- author: Kemran, Okroshka, BLACKWOLF, Python, Plagexx
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u0444\u0440\u0430\u043A\u0446\u0438\u043E\u043D\u043D\u044B\
+      \u0445 \u0443\u043D\u0438\u0444\u043E\u0440\u043C: \u0443\u043D\u0438\u0444\u043E\
+      \u0440\u043C\u0430 NanoTrasen, \u0443\u043D\u0438\u0444\u043E\u0440\u043C\u0430\
+      \ \u0441\u0442\u0430\u0440\u0448\u0435\u0433\u043E \u0438\u043D\u0436\u0435\u043D\
+      \u0435\u0440\u0430 NT \u0438 Syndie, \u0443\u043D\u0438\u0444\u043E\u0440\u043C\
+      \u0430 \u0440\u0435\u043A\u0440\u0443\u0442\u0430 NT \u0438 Syndie, \u0443\u043D\
+      \u0438\u0444\u043E\u0440\u043C\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0434\
+      \u0438\u043A\u0430 NT \u0438 Syndie, \u0443\u043D\u0438\u0444\u043E\u0440\u043C\
+      \u0430 \u0440\u0435\u043C\u043E\u043D\u0442\u043D\u0438\u043A\u0430 NT \u0438\
+      \ Syndie."
+    type: Tweak
+  id: 491
+  time: '2024-09-11T19:53:48.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1840
