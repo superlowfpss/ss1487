@@ -5932,3 +5932,17 @@
   id: 495
   time: '2024-09-12T20:39:15.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1846
+- author: yulilok
+  changes:
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0440\u0435\u043C\
+      \u044F \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0438 \u044D\
+      \u043D\u0435\u0440\u0433\u043E-\u0430\u0440\u0431\u0430\u043B\u0435\u0442\u0430\
+      ."
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u0432\u0440\u0435\u043C\
+      \u044F \u043E\u0433\u043B\u0443\u0448\u0435\u043D\u0438\u044F \u044D\u043D\u0435\
+      \u0440\u0433\u043E-\u0430\u0440\u0431\u0430\u043B\u0435\u0442\u0430"
+    type: Tweak
+  id: 496
+  time: '2024-09-13T14:59:12.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1853
