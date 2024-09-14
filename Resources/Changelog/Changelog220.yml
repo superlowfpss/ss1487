@@ -5966,3 +5966,12 @@
   id: 498
   time: '2024-09-14T05:16:54.0000000+00:00'
   url: https://github.com/SerbiaStrong-220/space-station-14/pull/1861
+- author: ReeZii
+  changes:
+  - message: "\u041F\u043E\u0434\u043A\u0440\u0435\u043F\u043B\u0435\u043D\u0438\u0435\
+      \ \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u043F\u043E\u043B\u0443\
+      \u0447\u0430\u0435\u0442 \u0446\u0435\u043B\u0438"
+    type: Fix
+  id: 499
+  time: '2024-09-14T13:58:21.0000000+00:00'
+  url: https://github.com/SerbiaStrong-220/space-station-14/pull/1863
