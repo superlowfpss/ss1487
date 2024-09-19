@@ -56,27 +56,29 @@
     tags:
     - Wheat
 
-- type: entity
-  name: meatwheat bushel
-  description: Some blood-drenched wheat stalks. You can crush them into what passes for meat if you squint hard enough.
-  id: MeatwheatBushel
-  parent: ProduceBase
-  components:
-  - type: Sprite
-    sprite: Objects/Specific/Hydroponics/meatwheat.rsi
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 10
-  - type: SpawnItemsOnUse
-    items:
-      - id: FoodMeatWheat
-    sound:
-      path: /Audio/Voice/Slime/slime_squish.ogg
-  - type: Produce
-    seedId: meatwheat
+#SS220-keep-our-meathwheat begin
+# - type: entity
+#   name: meatwheat bushel
+#   description: Some blood-drenched wheat stalks. You can crush them into what passes for meat if you squint hard enough.
+#   id: MeatwheatBushel
+#   parent: ProduceBase
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Specific/Hydroponics/meatwheat.rsi
+#   - type: SolutionContainerManager
+#     solutions:
+#       food:
+#         reagents:
+#         - ReagentId: UncookedAnimalProteins
+#           Quantity: 10
+#   - type: SpawnItemsOnUse
+#     items:
+#       - id: FoodMeatWheat
+#     sound:
+#       path: /Audio/Voice/Slime/slime_squish.ogg
+#   - type: Produce
+#     seedId: meatwheat
+#SS220-keep-our-meathwheat end
 
 - type: entity
   name: oat bushel
