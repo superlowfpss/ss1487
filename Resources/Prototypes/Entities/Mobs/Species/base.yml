@@ -215,6 +215,7 @@
     - FootstepSound
     - DoorBumpOpener
     - ZombifyableByMelee
+    - AnomalyHost
 
 - type: entity
   save: false
