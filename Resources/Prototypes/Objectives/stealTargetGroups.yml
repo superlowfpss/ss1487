@@ -153,49 +153,12 @@
 
 # Thief single item
 
-- type: stealTargetGroup #SS220-Zippo-Steal-Begin
-  id: ExpensiveLighterNanotrasen
-  name: дорогая зажигалка из золота
-  sprite:
-    sprite: SS220/Objects/Tools/lighters.rsi
-    state: zippo_nt_icon_base
-
-- type: stealTargetGroup
-  id: ExpensiveLighterShield
-  name: дорогая зажигалка щита
-  sprite:
-    sprite: SS220/Objects/Tools/lighters.rsi
-    state: zippo_shield_icon_base
-
-- type: stealTargetGroup
-  id: ExpensiveLighterSyndicate
-  name: дорогая зажигалка синдиката
-  sprite:
-    sprite: SS220/Objects/Tools/lighters.rsi
-    state: zippo_syndi_icon_base #SS220-Zippo-Steal-End
-
-# SS220 Wrist Watch Begin
-- type: stealTargetGroup
-  id: WristWatchGold
-  name: наручные часы командования
-  sprite:
-    sprite: SS220/Clothing/Hands/WristWatch/nt-watch-gold.rsi
-    state: icon
-# SS220 Wrist Watch End
-
 - type: stealTargetGroup
   id: ForensicScanner
   name: steal-target-groups-forensic-scanner
   sprite:
     sprite: Objects/Devices/forensic_scanner.rsi
     state: forensicnew
-
-- type: stealTargetGroup #SS220-Zippo-Steal-Detective-Begin
-  id: ExpensiveLighterDetective
-  name: дорогая зажигалка детектива
-  sprite:
-    sprite: SS220/Objects/Tools/lighters.rsi
-    state: zippo_detective_icon_base #SS220-Zippo-Steal-Detective-End
 
 # - type: stealTargetGroup
 #   id: FlippoEngravedLighter
