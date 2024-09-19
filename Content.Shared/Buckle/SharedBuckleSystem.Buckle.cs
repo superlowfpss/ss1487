@@ -318,7 +318,7 @@ public abstract partial class SharedBuckleSystem
         }
         //ss220 fix buckle with two hands end
 
-        if (buckleComp.Buckled)
+        if (buckleComp.Buckled && !TryUnbuckle(buckleUid, user, buckleComp))
         {
             if (popup)
             {
