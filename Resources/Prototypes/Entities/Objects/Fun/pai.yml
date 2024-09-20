@@ -3,7 +3,7 @@
 - type: entity
   parent: BaseItem
   id: PersonalAI
-  noSpawn: true #SS220 PAI with encryption keys
+  categories: [ HideSpawnMenu ] #SS220 PAI with encryption keys
   name: personal ai device
   description: Your electronic pal who's fun to be with!
   components:
