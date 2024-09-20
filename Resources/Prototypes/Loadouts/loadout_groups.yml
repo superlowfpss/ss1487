@@ -398,6 +398,7 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
+  - ChaplainNeckCloak #ss220-dress-cloak-tweak
 
 - type: loadoutGroup
   id: JanitorHead
