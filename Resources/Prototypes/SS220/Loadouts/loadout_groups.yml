@@ -560,7 +560,7 @@
 
   # Плащи
 - type: loadoutGroup
-  id: Neck # Не используется
+  id: SponsorNeck # Не используется
   name: loadout-group-neck
   loadouts:
   - CoderNeck
