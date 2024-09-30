@@ -4,7 +4,6 @@ using Content.Server.CartridgeLoader;
 using Content.Server.CartridgeLoader.Cartridges;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
-using Content.Server.Interaction;
 using Content.Server.MassMedia.Components;
 using Content.Server.Popups;
 using Content.Server.Station.Systems;
@@ -29,8 +28,6 @@ public sealed class NewsSystem : SharedNewsSystem
 {
     [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly InteractionSystem _interaction = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
     [Dependency] private readonly CartridgeLoaderSystem _cartridgeLoaderSystem = default!;
@@ -38,7 +35,6 @@ public sealed class NewsSystem : SharedNewsSystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly GameTicker _ticker = default!;
-    [Dependency] private readonly AccessReaderSystem _accessReader = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
 
     public override void Initialize()
