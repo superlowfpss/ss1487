@@ -212,6 +212,8 @@
     - FoodLemon
   mutationPrototypes:
     - lemoon
+    - lime
+    - orange
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6
@@ -264,6 +266,9 @@
   packetPrototype: LimeSeeds
   productPrototypes:
     - FoodLime
+  mutationPrototypes:
+    - orange
+    - lemon
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6
@@ -292,6 +297,8 @@
     - FoodOrange
   mutationPrototypes:
     - extradimensionalOrange
+    - lemon
+    - lime
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6
