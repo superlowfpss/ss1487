@@ -45,9 +45,12 @@ namespace Content.Shared.VendingMachines
         [DataField, AutoNetworkedField]
         public Dictionary<string, VendingMachineInventoryEntry> ContrabandInventory = new();
 
+        //SS220-place-items-in-vendingmachine begin
         [DataField("whitelist")]
         public EntityWhitelist? Whitelist;
+        //SS220-place-items-in-vendingmachine begin
 
+        [DataField, AutoNetworkedField]
         public bool Contraband;
 
         public bool Ejecting;
