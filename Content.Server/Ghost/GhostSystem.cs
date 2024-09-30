@@ -203,11 +203,10 @@ namespace Content.Server.Ghost
             if (!playerMgr.TryGetSessionById(userId, out var targetPlayer))
                 return;
 
-            _ticker.Respawn(targetPlayer);
-
-
+            _gameTicker.Respawn(targetPlayer);
         }
         //SS-220 end noDeath
+
         private void OnRelayMoveInput(EntityUid uid, GhostOnMoveComponent component, ref MoveInputEvent args)
         {
             // If they haven't actually moved then ignore it.

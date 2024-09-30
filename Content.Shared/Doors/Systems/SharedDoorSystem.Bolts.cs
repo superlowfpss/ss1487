@@ -93,7 +93,7 @@ public abstract partial class SharedDoorSystem
             return false;
 
         if (TerminatingOrDeleted(ent)) // otherwise shuttles that are docked roundstart will break tests
-            return;
+            return false;
 
         ent.Comp.BoltsDown = value;
         Dirty(ent, ent.Comp);

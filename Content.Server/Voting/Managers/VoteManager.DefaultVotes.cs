@@ -528,8 +528,9 @@ namespace Content.Server.Voting.Managers
                         _voteWebhooks.UpdateWebhookIfConfigured(webhookState, eventArgs);
 
                         uint minutes = (uint)_cfg.GetCVar(CCVars.VotekickBanDuration);
+                        var ticker = _entityManager.EntitySysManager.GetEntitySystem<GameTicker>();
 
-                        _bans.CreateServerBan(targetUid, target, null, null, targetHWid, minutes, severity, reason);
+                        _bans.CreateServerBan(targetUid, target, null, null, targetHWid, minutes, severity, null, ticker.RoundId, reason, false);
                     }
                 }
                 else
