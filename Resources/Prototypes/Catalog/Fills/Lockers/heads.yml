@@ -23,6 +23,7 @@
     - id: Telescopichka # SS220 Telescopic Baton
     - id: ClothingWristWatchGold # SS220 Wrist Watch
     - id: GlassCaseEngravedKnuckledusterFilled # SS220 New Qm highrisk
+    - id: AstroNavCartridge
 
 - type: entity
   id: LockerQuarterMasterFilled
