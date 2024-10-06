@@ -457,6 +457,9 @@
     - TileYellowCircuit
     - TileOrangeCircuit
     - TileRedCircuit #SS220-sheetifier-rework-end
+    - FloorGreenCircuit
+    - FloorBlueCircuit
+    - FloorRedCircuit
     - MicrowaveMachineCircuitboard
     - ReagentGrinderMachineCircuitboard
     - ElectricGrillMachineCircuitboard
