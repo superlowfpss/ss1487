@@ -1,5 +1,4 @@
 // EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
-using Robust.Shared.GameStates;
 
 namespace Content.Server.SS220.Thermals;
 
@@ -9,8 +8,10 @@ namespace Content.Server.SS220.Thermals;
 [RegisterComponent]
 public sealed partial class ThermalVisionImplantComponent : Component
 {
-    [DataField]
     public bool IsActive = false;
+
     [DataField, ViewVariables]
-    public float ThermalVisionRadius = 8f;
+    public float VisionRadius = 8f;
+    [DataField, ViewVariables]
+    public float CloseVisionRadius = 2f;
 }
