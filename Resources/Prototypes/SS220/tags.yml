@@ -130,3 +130,7 @@
 
 - type: Tag
   id: SpiderLittle
+
+ #Add Tourniquet to medic's belt 
+- type: Tag
+  id: Tourniquet 
