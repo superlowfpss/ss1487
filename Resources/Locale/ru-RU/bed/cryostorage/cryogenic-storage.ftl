@@ -7,6 +7,6 @@ earlyleave-cryo-announcement =
         [male] был перемещён
         [female] была перемещена
         [epicene] были перемещены
-       *[neuter] было перемещёно
+       *[neuter] было перемещено
     } в криогенное хранилище!
 earlyleave-cryo-sender = Станция
