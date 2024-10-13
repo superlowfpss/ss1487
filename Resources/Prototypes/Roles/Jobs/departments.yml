@@ -40,7 +40,7 @@
   id: CentralCommand
   name: department-CentralCommand
   description: department-CentralCommand-description
-  color: "#0c344d"
+  color: "#18689a" #ss220-chatcolor
   roles:
   - CentralCommandOfficial
   - CBURN
