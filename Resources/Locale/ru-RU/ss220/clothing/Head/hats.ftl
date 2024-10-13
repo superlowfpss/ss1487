@@ -36,3 +36,7 @@ ent-ClothingHeadKiver = кивер
     .desc = Головной убор солдата великой армии Королевства.
 ent-ClothingHeadPithHelmet = пробковый шлем
     .desc = Армейский шлем армии Речной Республики.
+ent-ClothingHeadWhiteCapHardhat = белая капитанская каска
+    .desc = Хорошо быть белым королём.
+ent-ClothingHeadWhiteCapHat = белая капитанская шляпа
+    .desc = Специальная белая шляпа для капитана.
