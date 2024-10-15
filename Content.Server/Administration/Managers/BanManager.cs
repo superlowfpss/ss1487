@@ -87,18 +87,6 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         _cachedBanExemptions.Remove(player);
     }
 
-    private async void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
-    {
-        if (e.NewStatus != SessionStatus.Connected || _cachedRoleBans.ContainsKey(e.Session.UserId))
-            return;
-
-        var netChannel = e.Session.Channel;
-        ImmutableArray<byte>? hwId = netChannel.UserData.HWId.Length == 0 ? null : netChannel.UserData.HWId;
-        await CacheDbRoleBans(e.Session.UserId, netChannel.RemoteEndPoint.Address, hwId);
-
-        SendRoleBans(e.Session);
-    }
-
     private async Task<ServerRoleBanDef> AddRoleBan(ServerRoleBanDef banDef)
     {
         banDef = await _db.AddServerRoleBanAsync(banDef);
