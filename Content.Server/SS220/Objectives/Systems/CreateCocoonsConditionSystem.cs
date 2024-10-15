@@ -28,10 +28,10 @@ public sealed partial class CreateCocoonsConditionSystem : EntitySystem
 
     private float GetProgress(EntityUid mindId, MindComponent mind, int target)
     {
-        if (!_role.MindHasRole<SpiderQueenRoleComponent>(mindId, out _, out var spiderQueenRole))
+        if (!_role.MindHasRole<SpiderQueenRoleComponent>(mindId, out var spiderQueenRole))
             return 0f;
 
-        if (spiderQueenRole.Value.Comp.IsCreateCocoonsCompletedOnce)
+        if (spiderQueenRole.Value.Comp2.IsCreateCocoonsCompletedOnce)
             return 1f;
 
         var mobUid = mind.CurrentEntity;
@@ -44,7 +44,7 @@ public sealed partial class CreateCocoonsConditionSystem : EntitySystem
             : (float)spiderQueen.CocoonsList.Count / (float)target;
 
         if (progress == 1f)
-            spiderQueenRole.Value.Comp.IsCreateCocoonsCompletedOnce = true;
+            spiderQueenRole.Value.Comp2.IsCreateCocoonsCompletedOnce = true;
 
         return progress;
     }

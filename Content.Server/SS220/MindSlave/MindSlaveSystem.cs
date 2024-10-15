@@ -163,10 +163,10 @@ public sealed class MindSlaveSystem : EntitySystem
 
         var objective = _objectives.TryCreateObjective(mindId, mindComp, MindSlaveObjectiveId);
         _role.MindAddRole(mindId, MindSlaveAntagId, mindComp, true);
-        if (_role.MindHasRole<MindSlaveRoleComponent>(mindId, out _, out var slaveRole))
+        if (_role.MindHasRole<MindSlaveRoleComponent>(mindId, out var slaveRole))
         {
-            slaveRole.Value.Comp.masterEntity = master;
-            slaveRole.Value.Comp.objectiveEntity = objective;
+            slaveRole.Value.Comp2.masterEntity = master;
+            slaveRole.Value.Comp2.objectiveEntity = objective;
         }
 
         var masterName = masterMindComp.CharacterName ?? Loc.GetString("mindslave-unknown-master");
@@ -228,14 +228,14 @@ public sealed class MindSlaveSystem : EntitySystem
         if (!_mind.TryGetMind(slave, out var mindId, out var mindComp))
             return false;
 
-        if (!_role.MindHasRole<MindSlaveRoleComponent>(mindId, out _, out var mindSlave))
+        if (!_role.MindHasRole<MindSlaveRoleComponent>(mindId, out var mindSlave))
             return false;
 
         var briefing = Loc.GetString("mindslave-removed-slave");
         _antagSelection.SendBriefing(slave, briefing, Color.Red, null);
         _popup.PopupEntity(briefing, slave, slave, Shared.Popups.PopupType.LargeCaution);
 
-        var master = mindSlave.Value.Comp.masterEntity;
+        var master = mindSlave.Value.Comp2.masterEntity;
         if (master != null && TryComp<MindSlaveMasterComponent>(master.Value, out var masterComponent))
         {
             var briefingMaster = mindComp.CharacterName != null ? Loc.GetString("mindslave-removed-slave-master", ("name", mindComp.CharacterName), ("ent", slave)) :
@@ -252,7 +252,7 @@ public sealed class MindSlaveSystem : EntitySystem
         _role.MindRemoveRole<MindSlaveRoleComponent>(mindId);
 
         //If slave had a valid objective - remove it, otherwise - remove briefing
-        var objective = mindSlave.Value.Comp.objectiveEntity;
+        var objective = mindSlave.Value.Comp2.objectiveEntity;
         if (objective != null)
             _mind.TryRemoveObjective(mindId, mindComp, objective.Value);
         else
