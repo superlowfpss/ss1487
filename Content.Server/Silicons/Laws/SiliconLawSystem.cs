@@ -196,7 +196,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
             ghostRole.RoleDescription = Loc.GetString("roles-antag-subverted-silicon-name");
             ghostRole.RoleRules = Loc.GetString("roles-antag-subverted-silicon-objective");
 
-            EnsureComp<SubvertedSiliconRoleComponent>(uid).PrototypeId = component.AntagonistRole;
+            _roles.MindAddRole(mindId, "MindRoleSubvertedSilicon");
         }
         else
         {
