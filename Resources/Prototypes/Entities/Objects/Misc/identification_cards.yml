@@ -609,7 +609,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Central Commander
+    jobTitle: job-name-cc-default # #SS220 (upstream 65 localization)
   - type: Access
     groups:
     - AllAccess
