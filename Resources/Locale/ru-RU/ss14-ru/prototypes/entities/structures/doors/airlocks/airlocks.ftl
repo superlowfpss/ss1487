@@ -62,6 +62,7 @@ ent-AirlockCargoGlass = { ent-AirlockGlass }
     .desc = { ent-AirlockGlass.desc }
 ent-AirlockChemistryGlass = { ent-AirlockGlass }
     .suffix = Химия
+    .desc = { ent-AirlockGlass.desc }
 ent-AirlockHydroponicsGlass = { ent-AirlockGlass }
     .suffix = Гидропоника
     .desc = { ent-AirlockGlass.desc }
