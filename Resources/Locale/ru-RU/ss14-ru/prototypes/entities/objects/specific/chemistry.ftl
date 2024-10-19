@@ -1,5 +1,7 @@
 ent-BaseBeaker = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
+ent-BaseBeakerMetallic = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
 ent-Beaker = мензурка
     .desc = Используется для хранения среднего количества химикатов и растворов.
 ent-CryoxadoneBeakerSmall = { ent-Beaker }
@@ -18,6 +20,8 @@ ent-BorgDropper = борг-пипетка
 ent-BaseSyringe = шприц
     .desc = Используется для забора образцов крови у существ, или для введения им реагентов.
 ent-Syringe = { ent-BaseSyringe }
+    .desc = { ent-BaseSyringe.desc }
+ent-PrefilledSyringe = { ent-BaseSyringe }
     .desc = { ent-BaseSyringe.desc }
 ent-SyringeBluespace = блюспейс-шприц
     .desc = Инъекции с использованием передовой блюспейс-технологии.
