@@ -24,6 +24,7 @@
     - id: ClothingWristWatchGold # SS220 Wrist Watch
     - id: GlassCaseEngravedKnuckledusterFilled # SS220 New Qm highrisk
     - id: AstroNavCartridge
+    - id: DeviceCalculator # SS220 Calculator
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -44,7 +45,7 @@
     - id: CigarGoldCase
       prob: 0.25
     - id: ClothingBeltSheathFilled
-    - id: ClothingHeadsetAltCommand
+    - id: ClothingHeadsetAltCaptain #SS220-Law Department
     - id: ClothingOuterArmorCaptainCarapace
     - id: CommsComputerCircuitboard
     - id: DoorRemoteCommand
@@ -175,6 +176,7 @@
     - id: Telescopichka
     - id: ClothingWristWatchGold # SS220 Wrist Watch
     - id: CigPackENG #SS220 Cigarettes
+    - id: DeviceCalculator # SS220 Calculator
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -235,6 +237,7 @@
     - id: Telescopichka # SS220 Telescopic Baton
     - id: ClothingWristWatchGold # SS220 Wrist Watch
     - id: CigPackMED #SS220 Cigarettes
+    - id: MedTekCartridge
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -289,6 +292,7 @@
     - id: Telescopichka # SS220 Telescopic Baton
     - id: CigPackRnD #SS220 Cigarettes
     - id: ClothingOuterReactiveArmor #SS220 New RD highrisk
+    - id: DeviceCalculator # SS220 Calculator
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

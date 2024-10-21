@@ -120,6 +120,7 @@
     staticRecipes:
       - ClothingEyesGlassesMeson #SS220 Craftable-Welding-Mask
       - ClothingWristWatch #SS220 Wrist Watch
+      - DeviceCalculator #SS220 Calculator
       - Wirecutter
       - Igniter
       - Signaller
@@ -456,7 +457,10 @@
     - TilePurpleCircuit
     - TileYellowCircuit
     - TileOrangeCircuit
-    - TileRedCircuit #SS220-sheetifier-rework-end
+    - TileRedCircuit
+    # - FloorGreenCircuit
+    # - FloorBlueCircuit
+    # - FloorRedCircuit SS220-sheetifier-rework-end
     - MicrowaveMachineCircuitboard
     - ReagentGrinderMachineCircuitboard
     - ElectricGrillMachineCircuitboard
@@ -489,6 +493,7 @@
       - SolarTrackerElectronics
       - TurboItemRechargerCircuitboard
       - PowerComputerCircuitboard
+      - SuperMatterObserverCircuitboard  # SS220 superMatter-crystal
       - AutolatheHyperConvectionMachineCircuitboard
       - ProtolatheHyperConvectionMachineCircuitboard
       - CircuitImprinterHyperConvectionMachineCircuitboard

@@ -626,6 +626,12 @@
   id: FirelockElectronics
 
 - type: Tag
+  id: FireExtinguisher
+
+- type: Tag
+  id: FireHelmet
+
+- type: Tag
   id: Flare
 
 - type: Tag
@@ -1000,6 +1006,9 @@
   id: Nugget # for chicken nuggets
 
 - type: Tag
+  id: FakeNukeDisk
+
+- type: Tag
   id: NukeOpsUplink
 
 - type: Tag
@@ -1186,7 +1195,7 @@
 - type: Tag
   id: SecureWindoor
 
-- type: Tag  
+- type: Tag
   id: SecurityHelmet
 
 - type: Tag
@@ -1521,5 +1530,10 @@
 - type: Tag
   id: ShrineMaidenWig
 # SS220-TohaUpdate-End
+
+# SS220 Fix #2009 begin
+- type: Tag
+  id: HolofanProjectorSecurity
+# SS220 Fix #2009 end
 
 # ALPHABETICAL

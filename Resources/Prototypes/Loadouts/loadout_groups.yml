@@ -5,6 +5,8 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  - FlowerWreath
+  - Hairflower
   - PlushieLizard
   - PlushieSpaceLizard
   - Lighter
@@ -18,6 +20,7 @@
   - ClothingNeckAromanticPin
   - ClothingNeckAsexualPin
   - ClothingNeckBisexualPin
+  - ClothingNeckGayPin
   - ClothingNeckIntersexPin
   - ClothingNeckLesbianPin
   - ClothingNeckNonBinaryPin
@@ -103,6 +106,10 @@
   - CaptainWhiteHead
   - CaptainWhiteBeret
   #ss220-loadout-captain-end
+  #ss220-loadout-fullwhitecap-Begin
+  - CaptainWhiteHardhat
+  - CaptainWhiteHat
+  #ss220-loadout-fullwhitecap-End
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -112,6 +119,10 @@
   - CaptainJumpskirt
   - CaptainFormalSuit
   - CaptainWhiteJumpsuit #ss220-loadout-captain
+#ss220-loadout-fullwhitecap-Begin
+  - CaptainWhiteJumpskirt
+  - CaptainWhiteFormalSuit
+#ss220-loadout-fullwhitecap-End
 #  - CaptainFormalSkirt SS220-RemoveFormalSkirtLoadouts
 
 - type: loadoutGroup
@@ -123,6 +134,7 @@
   - CaptainCloakFormal
   - CaptainMantle
   - CaptainFormalWhiteCloak #ss220-loadout-captain
+  - CaptainWhiteMantle #ss220-loadout-fullwhitecap
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -147,6 +159,7 @@
   - CaptainWhiteOuterClothing
   - CaptainWhiteCoat
 #ss220-loadout-captain-end
+  - CaptainWhiteWintercoat #ss220-loadout-fullwhitecap
 
 - type: loadoutGroup
   id: HoPHead
@@ -411,6 +424,8 @@
   loadouts:
   - JanitorHead
   - JanitorOrangeHat #SS220-OrangeJanitor
+  - JanitorJRHat #SS220-JRHat
+  - JanitorJRSoft #SS220-JRSoft
 
 - type: loadoutGroup
   id: JanitorJumpsuit
@@ -420,6 +435,7 @@
   - JanitorJumpskirt
   - JanitorBlueJumpsuit #SS220-Janitor-Control
   - JanitorOrangeJumpsuit #SS220-OrangeJanitor
+  - JanitorJRJumpsuit #SS220-JanitorJR
 
 - type: loadoutGroup
   id: JanitorGloves
@@ -430,6 +446,7 @@
   - JanitorOrangeGloves #SS220-OrangeJanitor
   - OrangeGloves
   - PurpleGloves
+  - JanitorJRGloves #SS220-JRGloves
 
 - type: loadoutGroup
   id: JanitorOuterClothing

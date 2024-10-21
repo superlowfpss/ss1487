@@ -26,7 +26,7 @@
   - HeadOfPersonnel
   - SeniorService #ss220-SEniorService
   - Janitor
-  - Lawyer
+#  - Lawyer #SS220-Law Department
   - Librarian
   - Mime
   - Musician
@@ -40,7 +40,7 @@
   id: CentralCommand
   name: department-CentralCommand
   description: department-CentralCommand-description
-  color: "#0c344d"
+  color: "#18689a" #ss220-chatcolor
   roles:
   - CentralCommandOfficial
   - CBURN
@@ -63,7 +63,8 @@
   color: "#052EED"
   roles:
   - Captain
-  - IAA # Corvax-IAA
+#  - IAA #SS220-Law Department
+  - Magistrate #SS220-Law Department
   - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -129,6 +130,7 @@
   - SecurityPilot
   - Detective #SS220-Transfer Detective To Security
 
+
 - type: department
   id: Science
   name: department-Science
@@ -149,11 +151,13 @@
   color: "#88FF88"
   roles: []
   primary: false
+  editorHidden: true # ss220-departments-hidden
   weight: -50
 
 - type: department
   id: Silicon
   name: department-Silicon
+  sort: 0 # ss220-departments-fix
   description: department-Silicon-description
   color: "#D381C9"
   roles:
@@ -184,4 +188,5 @@
   roles:
   - GhostRole
   primary: false
+  editorHidden: true # ss220-departments-hidden
   weight: -100

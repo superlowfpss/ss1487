@@ -152,6 +152,13 @@
     - DoorBumpOpener
   - type: ReplacementAccent #SS220 No talking dragons
     accent: genericAggressive
+    # ss220 lowTTKUpdate
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Dragon
+    ## ss220 lowTTKUpdate
+  - type: Puller
+    needsHands: false
 
 - type: entity
   parent: BaseMobDragon

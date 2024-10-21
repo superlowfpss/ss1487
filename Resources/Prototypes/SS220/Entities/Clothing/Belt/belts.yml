@@ -12,6 +12,10 @@
   - type: Clothing
     sprite: Clothing/Belt/assault.rsi
   - type: Storage
+    blacklist: # SS220 Fix #2009 begin
+      tags:
+        - HolofanProjector
+    # SS220 Fix #2009 end
 
 - type: entity
   parent: ClothingBeltWebbingSRT
@@ -364,3 +368,50 @@
     contents:
     - id: FoodShakerSalt
     - id: FoodShakerPepper
+
+# Уборщик
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltJanitorJR
+  name: the janitor Junk Recycles RPS
+  description: A belt-and-shoulder tactical belt system made of recycled leather worn by Junk Recyclers.
+  suffix: JR, For playing time
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Belt/janitor_jr_webbing.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Belt/janitor_jr_webbing.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - Wrench
+        - Bottle
+        - Spray
+        - Soap
+        - Flashlight
+        - CigPack
+        - TrashBag
+        - WetFloorSign
+        - HolosignProjector
+        - Plunger
+        - JanicartKeys # SS220 Readd-Vehicles
+      components:
+        - LightReplacer
+        - SmokeOnTrigger
+    maxItemSize: Large
+  - type: Appearance  
+
+- type: entity
+  id: ClothingBeltJanitorJRFilled
+  parent: ClothingBeltJanitorJR
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Soap #Make a soap group and pick between when i'm not lazy
+      - id: SprayBottleSpaceCleaner
+      - id: CleanerGrenade
+        amount: 2
+      - id: FlashlightLantern
+      - id: LightReplacer
